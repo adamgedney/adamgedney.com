@@ -1,0 +1,322 @@
+
+
+
+
+/* 	Copyright Adam Gedney 10/21/13
+	contact: adam.gedney@gmail.com
+	http://adamgedney.com
+
+"Good UI design is humble.” – Jono DiCarlo
+*/
+/*
+white: f6feff;
+icon light gray: cccccc;
+light gray: 5c5c5c;
+text mid gray: 5d5d5d;
+dark gray: 252525;
+red: d93330;
+blue: 5d95ba;
+
+----------------SASS------------------*/
+$white: #f6feff;
+$icon-gray: #ccc;
+$light-gray: #5c5c5c;
+$text-gray: #5d5d5d;
+$dark-gray: #252525;
+$red: #d93330;
+$blue: #5d95ba;
+
+
+/*--------------------------------------Start CSS Reset---------------------------------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, cite, code,del, em, img, strike, strong, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+
+ul {
+list-style: none;
+}
+
+/*--------------------------------------End CSS Reset / Start General-------------------------------*/
+
+
+body{
+background: url('../images/bg.jpg') no-repeat $white;
+background-size: cover;
+background-attachment: fixed;
+color: $text-gray;
+font: 62.5% 'Droid Serif', "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+}
+
+h1, h2, h3, h4{
+	font-family: 'Ubuntu', "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+}
+
+h1{
+font-size: 7.2em; /*18x4*/
+line-height: 1.5;
+}
+
+h2{
+font-size: 5.4em;/*18x3*/
+line-height: 1.5;
+}
+
+h3{
+font-size: 3em;/*18x2 - 6*/
+line-height: 1.5;
+}
+
+p, ul, dl{
+font-size: 1.8em;
+font-weight: 100;
+line-height: 1.5;
+margin-bottom: 20px;
+}
+
+ul{
+line-height: 1.5;
+}
+
+a{
+text-decoration: none;
+color: $blue;
+opacity: 1;
+transition-duration: .7s;
+-webkit-transition-duration: .7s;
+}
+
+a:hover{
+opacity: .5;
+transition-duration: .7s;
+-webkit-transition-duration: .7s;
+}
+
+img{
+	max-width: 100%;
+}
+
+/*--------------------------------------End General / Start Objects------------------------------------*/
+
+.hide-text{
+	text-indent: 200%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.container{
+	width: 100%;
+}
+
+.page{
+	width: 100%;
+	height: 831px;
+	margin-bottom: 9px;
+}
+
+.double{
+	height: 1680px;
+}
+
+.red{
+	color: $red;
+}
+
+.text-gray{
+	color: $text-gray;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+.heart{
+	font-size: .85em;
+}
+
+
+
+
+
+/*--------------------------------------End Objects / Start Main------------------------------------*/
+
+header{
+	height: 0;
+}
+
+.page:nth-child(1n+1){
+	background: $white;
+	color: $dark-gray;
+}
+
+.page:nth-child(2n+1){
+	background: $dark-gray;
+	color: $icon-gray;
+}
+
+.page-inner{
+	max-width: 1140px;
+	margin: 0 auto;
+	padding-top: 54px;
+	text-align: center;
+	font-weight: 100;
+}
+
+.page p{
+	width: 504px; /*28x18*/
+	margin: 0 auto;
+	font-weight: 100;
+}
+
+.img-container{
+	overflow: hidden;
+	margin-top: 36px;
+}
+
+.img-container a{
+	padding: 5px;
+	margin-right: 9px;
+	float: left;
+	display: block;
+	width: 210px;
+	height: 210px;
+	background: $icon-gray;
+}
+
+/*--------------------------------------------Landing----------------------------------------------*/
+
+
+
+.page.landing{
+	background: $white;
+	height: 535px;/* 18x7=126 -> 831-126 -170 for landing-arrow */
+	color: $dark-gray;
+}
+
+.arrow-container{
+	overflow: hidden;
+	width: 100%;
+	margin: -10px auto 90px;
+}
+
+.landing-arrow{
+	margin: 0 auto;
+}
+
+
+
+/*--------------------------------------------"I Like" Page----------------------------------------------*/
+
+.like .img-container{
+	height: 378px;/*18x21*/
+	overflow: hidden;
+}
+
+.like .img-container a.zig-zag{
+	margin-top: 36px;
+}
+
+.like .img-container a.zig-zag-1{
+	margin-top: 166px;
+}
+
+.like .img-container a.zig-zag-2{
+	margin-top: 90px;
+}
+
+.like .img-container a.zig-zag-3{
+	margin-top: 162px;
+}
+
+.like .img-container a.zig-zag-4{
+	margin-top: 108px;
+}
+
+/*---------------------------------------------"I Love" Page------------------------------------------------*/
+
+
+img.web-logos{
+	text-align: center;
+	margin-top: 18px;
+}
+
+
+
+
+/*---------------------------------------------"I Work" Page------------------------------------------------*/
+
+a.resume{
+	font-size: 1.8em;
+	color: $icon-gray;
+	margin:36px 0 72px;
+	display: block;
+}
+
+a.resume img{
+	height: 40px;
+	margin-right: 18px;
+}
+
+.work .img-container{
+	margin: 18px 0 126px;
+}
+
+.work h3{
+	color: $red;
+	text-align: left;
+}
+
+.page p.quote{
+	width: 100%;
+	font-size: 3.6em;
+	font-family: 'Tangerine', cursive;
+}
+
+
+/*---------------------------------------------Contact Page------------------------------------------------*/
+
+.contact .page-inner{
+
+}
+
+#map-canvas{
+	width: 100%;
+	height: 530px;
+	margin-top: 72px;
+-webkit-box-shadow: 0px 0px 9px rgba(50, 50, 50, 0.76);
+   -moz-box-shadow: 0px 0px 9px rgba(50, 50, 50, 0.76);
+        box-shadow: 0px 0px 9px rgba(50, 50, 50, 0.76);
+}
+
+
+
+
+/*---------------------------------------------footer------------------------------------------------*/
+
+
+footer{
+	background: $dark-gray;
+	height: 144px; /*18x8*/
+	padding-top: 70px;
+}
+
+footer p{
+	width: 200px;
+	margin: 0 auto;
+}

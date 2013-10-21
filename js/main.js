@@ -9,6 +9,7 @@
 		
 		var settings = {
 			zoom: 6,
+			maxZoom: 10,
 			center: latlng,
 			mapTypeControl: true,
 			mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},

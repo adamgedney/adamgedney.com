@@ -71,14 +71,14 @@ p, ul, dl {
 ul {
   line-height: 1.5; }
 
-a {
+a, input[type="submit"] {
   text-decoration: none;
   color: #5d95ba;
   opacity: 1;
   transition-duration: .7s;
   -webkit-transition-duration: .7s; }
 
-a:hover {
+a:hover, input[type="submit"]:hover {
   opacity: .5;
   transition-duration: .7s;
   -webkit-transition-duration: .7s; }
@@ -108,6 +108,9 @@ img {
 
 .text-gray {
   color: #5d5d5d; }
+
+.dark-gray {
+  color: #252525; }
 
 .underline {
   text-decoration: underline; }
@@ -218,6 +221,10 @@ a.resume img {
   font-family: "Tangerine", cursive; }
 
 /*---------------------------------------------Contact Page------------------------------------------------*/
+.contact {
+  height: 1584px;
+  /*18x88*/ }
+
 #map-canvas {
   width: 100%;
   height: 530px;
@@ -225,6 +232,52 @@ a.resume img {
   -webkit-box-shadow: 0px 0px 9px rgba(50, 50, 50, 0.76);
   -moz-box-shadow: 0px 0px 9px rgba(50, 50, 50, 0.76);
   box-shadow: 0px 0px 9px rgba(50, 50, 50, 0.76); }
+
+.contact-body {
+  overflow: hidden;
+  width: 802px;
+  margin: 63px auto 0; }
+
+.contact-form {
+  width: 366px;
+  float: left;
+  margin: 9px 36px 0 0; }
+
+.contact-form input[type="text"], .contact-form input[type="submit"], .contact-form textarea {
+  width: 366px;
+  height: 54px;
+  border-radius: 2px;
+  border: 1px solid #5d5d5d;
+  margin-bottom: 9px;
+  padding: 9px;
+  font-family: "Droid Serif", "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+  font-size: 1.8em;
+  color: #cccccc; }
+
+.contact-form textarea {
+  height: 198px; }
+
+.contact-form input[type="submit"] {
+  background: #d93330;
+  border: none;
+  font-family: "Ubuntu", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  color: #f6feff; }
+
+.contact-content {
+  width: 400px;
+  float: left; }
+
+.contact-content p {
+  width: 400px;
+  text-align: left;
+  color: #5d5d5d;
+  font-weight: 100; }
+
+p.info {
+  margin: 81px auto;
+  text-align: center;
+  width: 200px; }
 
 /*---------------------------------------------footer------------------------------------------------*/
 footer {
@@ -234,5 +287,5 @@ footer {
   padding-top: 70px; }
 
 footer p {
-  width: 200px;
+  width: 220px;
   margin: 0 auto; }

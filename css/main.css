@@ -87,6 +87,9 @@ a:hover, input[type="submit"]:hover {
   transition-duration: .7s;
   -webkit-transition-duration: .7s; }
 
+a.no-tran:hover {
+  opacity: 1; }
+
 img {
   max-width: 100%; }
 

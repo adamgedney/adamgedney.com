@@ -1,6 +1,6 @@
+$(function(){
 
 
-	initialize();
 
 // Google maps
 	function initialize() {
@@ -39,6 +39,56 @@
 	});
 	};// /initialize()
 	
+	initialize();
+
+	//contact icon hover states
+	//on mouse over
+	$(document).on('mouseover', 'img.github-icon', function(){
+		$(".github-icon").attr('src', 'images/github-icon-hover.png');
+	});
+
+	$(document).on('mouseover', 'img.forrst-icon', function(){
+		$(".forrst-icon").attr('src', 'images/forrst-icon-hover.png');
+	});
+
+	$(document).on('mouseover', 'img.linkedin-icon', function(){
+		$(".linkedin-icon").attr('src', 'images/linkedin-icon-hover.png');
+	});
+
+	$(document).on('mouseover', 'img.dribbble-icon', function(){
+		$(".dribbble-icon").attr('src', 'images/dribbble-icon-hover.png');
+	});
+
+	$(document).on('mouseover', 'img.fb-icon', function(){
+		$(".fb-icon").attr('src', 'images/fb-icon-hover.png');
+	});
 
 
-// https://maps.google.com/maps?q=virginia+beach,+VA&hl=en&sll=27.698638,-83.804601&sspn=12.683443,22.412109&t=h&hnear=Virginia+Beach,+Virginia&z=10
+	//contact icon hover states
+	//on mouse out
+	$(document).on('mouseout', 'img.github-icon', function(){
+		$(".github-icon").attr('src', 'images/github-icon.png');
+	});
+
+	$(document).on('mouseout', 'img.forrst-icon', function(){
+		$(".forrst-icon").attr('src', 'images/forrst-icon.png');
+	});
+
+	$(document).on('mouseout', 'img.linkedin-icon', function(){
+		$(".linkedin-icon").attr('src', 'images/linkedin-icon.png');
+	});
+
+	$(document).on('mouseout', 'img.dribbble-icon', function(){
+		$(".dribbble-icon").attr('src', 'images/dribbble-icon.png');
+	});
+
+	$(document).on('mouseout', 'img.fb-icon', function(){
+		$(".fb-icon").attr('src', 'images/fb-icon.png');
+	});
+
+});
+
+
+
+
+

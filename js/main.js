@@ -9,7 +9,10 @@
 		
 		var settings = {
 			zoom: 6,
-			maxZoom: 10,
+			minZoom: 6,
+			maxZoom: 6,
+			scrollwheel: false,
+			scaleControl: false,
 			center: latlng,
 			mapTypeControl: true,
 			mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},

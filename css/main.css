@@ -221,6 +221,10 @@ a.resume img {
   font-family: "Tangerine", cursive; }
 
 /*---------------------------------------------Contact Page------------------------------------------------*/
+.contact {
+  height: 1584px;
+  /*18x88*/ }
+
 #map-canvas {
   width: 100%;
   height: 530px;
@@ -231,9 +235,8 @@ a.resume img {
 
 .contact-body {
   overflow: hidden;
-  margin-top: 72px;
   width: 802px;
-  margin: 0 auto; }
+  margin: 63px auto 0; }
 
 .contact-form {
   width: 366px;
@@ -272,7 +275,7 @@ a.resume img {
   font-weight: 100; }
 
 p.info {
-  margin-top: 36px;
+  margin: 81px auto;
   text-align: center;
   width: 200px; }
 
@@ -284,5 +287,5 @@ footer {
   padding-top: 70px; }
 
 footer p {
-  width: 200px;
+  width: 220px;
   margin: 0 auto; }

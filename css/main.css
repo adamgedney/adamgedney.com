@@ -76,7 +76,11 @@ a, input[type="submit"] {
   color: #5d95ba;
   opacity: 1;
   transition-duration: .7s;
-  -webkit-transition-duration: .7s; }
+  -webkit-transition-duration: .7s;
+  outline: none; }
+
+a:visited {
+  outline: none; }
 
 a:hover, input[type="submit"]:hover {
   opacity: .5;

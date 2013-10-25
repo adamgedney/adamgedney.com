@@ -350,7 +350,7 @@ nav ul li {
   width: 100%; }
 
 .project-inner {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto; }
 
 .description {
@@ -374,11 +374,12 @@ nav ul li {
   margin-bottom: 108px; }
 
 .details-desc {
-  width: 570px;
-  padding-right: 18px;
+  max-width: 570px;
+  padding-right: 3.157895%;
+  /*18px*/
   float: left; }
 
-.details-desc h3 {
+.details-desc h3, .shots h3 {
   font-weight: 100;
   margin-bottom: 9px;
   color: #d93330; }
@@ -387,7 +388,7 @@ nav ul li {
   margin-bottom: 162px; }
 
 .details-sidebar {
-  width: 570px;
+  max-width: 570px;
   float: right;
   padding-top: 10px; }
 
@@ -408,6 +409,21 @@ nav ul li {
   display: block;
   font-size: 1.4em;
   margin-bottom: 9px; }
+
+.shots {
+  overflow: hidden;
+  margin-bottom: 88px; }
+
+.shots img {
+  display: block;
+  margin-bottom: 36px; }
+
+.shot-left-col {
+  float: left;
+  margin-right: 36px; }
+
+.shot-right-col {
+  float: left; }
 
 /*---------------------------------------------footer------------------------------------------------*/
 footer {

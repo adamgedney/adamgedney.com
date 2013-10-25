@@ -1,4 +1,8 @@
-/* 	Copyright Adam Gedney 10/21/13
+/* 
+	Thanks for checking out my code!!
+
+
+	Copyright Adam Gedney 10/21/13
 	contact: adam.gedney@gmail.com
 	http://adamgedney.com
 
@@ -155,13 +159,11 @@ header {
   margin-top: 36px; }
 
 .img-container a {
-  padding: 5px;
-  margin-right: 9px;
   float: left;
   display: block;
-  width: 210px;
-  height: 210px;
-  background: #cccccc; }
+  width: 20%;
+  /*210px*/
+  height: 210px; }
 
 /*--------------------------------------------Landing----------------------------------------------*/
 .page.landing {
@@ -285,6 +287,53 @@ p.info {
   margin: 81px auto;
   text-align: center;
   width: 200px; }
+
+/*----------------------------------------------Project Page Template--------------------------------*/
+body.projects {
+  background: #f6feff; }
+
+.projects header {
+  height: 50px;
+  background: #252525;
+  font-family: "Ubuntu", "Helvetica Neue Light", Helvetica, Arial, sans-serif; }
+
+.header-inner {
+  width: 1140px;
+  margin: 0 auto;
+  font-weight: 100; }
+
+.projects header h1 {
+  color: #cccccc;
+  font-size: 1.6em;
+  display: inline;
+  line-height: 50px; }
+
+nav {
+  overflow: hidden;
+  display: inline; }
+
+nav ul {
+  float: right; }
+
+nav ul a {
+  color: #cccccc; }
+
+nav ul li {
+  display: inline-block;
+  font-size: .8em;
+  padding-left: 18px;
+  line-height: 50px; }
+
+.featured {
+  height: 800px;
+  width: 100%; }
+
+.featured img {
+  height: 800px;
+  width: 100%; }
+
+footer.projects-footer {
+  margin-top: 36px; }
 
 /*---------------------------------------------footer------------------------------------------------*/
 footer {

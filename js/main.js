@@ -9,10 +9,7 @@ $(function(){
 		
 		var settings = {
 			zoom: 6,
-			minZoom: 6,
-			maxZoom: 6,
 			scrollwheel: false,
-			scaleControl: false,
 			center: latlng,
 			mapTypeControl: true,
 			mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
@@ -86,7 +83,29 @@ $(function(){
 		$(".fb-icon").attr('src', 'images/fb-icon.png');
 	});
 
-});
+
+	//--------------------------------animate.css hover animations----------------------
+	$(document).on('mouseover', '.img-container a', function(){
+		$(this).addClass('animated pulse');
+	});
+
+	$(document).on('mouseout', '.img-container a', function(){
+		$(this).removeClass('animated pulse');
+	});
+
+	// profile pic swing
+	$(document).on('mouseover', 'img.profile-pic', function(){
+		$(this).addClass('animated swing');
+	});
+	//remove swing
+	$(document).on('mouseout', 'img.profile-pic', function(){
+		setTimeout(removeSwing,2500);		
+	});
+	function removeSwing(){
+		$('img.profile-pic').removeClass('animated swing');
+	};
+
+});// function
 
 
 

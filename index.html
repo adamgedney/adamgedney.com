@@ -1,3 +1,12 @@
+<!-- Thanks for checking out my code!!
+
+
+	Copyright Adam Gedney 10/21/13
+	contact: adam.gedney@gmail.com
+	http://adamgedney.com
+
+"Good UI design is humble.” – Jono DiCarlo -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +38,7 @@
 	<script src="js/html5shiv.js"></script>
 	<![endif]-->
 </head>
-	<body>
+	<body class="animated fadeIn">
 
 		<header>
 			<h1 class="hide-text">Adam Gedney's Front-End Developer Portfolio</h1>
@@ -38,7 +47,7 @@
 			<div class="container">
 				<div class="page landing">
 					<div class="page-inner">
-						<img src="images/profile.png" alt="Adam Gedney Profile Image" />
+						<img class="profile-pic" src="images/profile.png" alt="Adam Gedney Profile Image" />
 						<h1>My name is <span class="red">Adam Gedney.</span></h1>
 							<h2>I'm a front-end developer.</h2>
 						<h3 class="text-gray">(I also write & do <span class="underline">lots</span> of other things)</h3>
@@ -94,7 +103,7 @@
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->
 
-				<div class="page double work">
+				<div class="page double work" id="work">
 					<div class="page-inner">
 						<h1 class="red">I work...</h1>
 
@@ -104,41 +113,41 @@
 
 						<h3>Front-end</h3>
 						<div class="img-container">
-							<a href="images/work/" ><img src="images/truck-thumb.jpg" alt="love image 1"/></a>
+							<a href="images/work/" ><img src="images/synergy-thumb.jpg" alt="love image 1"/></a>
 							
 							<a href="images/work/" ><img src="images/mantissa-thumb.jpg" alt="love image 4"/></a>
 
 							<a href="images/work/" ><img src="images/maceo-thumb.jpg" alt="love image 2"/></a>
 
-							<a href="images/work/" ><img src="images/liberty-thumb.jpg" alt="love image 3"/></a>
+							<a href="images/work/" ><img src="images/angelfireMobile-thumb.jpg" alt="love image 3"/></a>
 							
 							<a href="images/work/" ><img src="images/jericho-thumb.jpg" alt="love image 5"/></a>
 						</div><!-- /.love-img-container-->
 
 						<h3>Development</h3>
 						<div class="img-container">
-							<a href="images/work/" ><img src="images/design-thumb.jpg" alt="love image 1"/></a>
+							<a href="images/work/" ><img src="images/bloggityMac-thumb.jpg" alt="love image 1"/></a>
 							
-							<a href="images/work/" ><img src="images/code-thumb.jpg" alt="love image 2"/></a>
+							<a href="images/work/" ><img src="images/tasker-thumb.jpg" alt="love image 2"/></a>
 							
-							<a href="images/work/" ><img src="images/beach.jpg" alt="love image 3"/></a>
+							<a href="images/work/" ><img src="images/mantissaSynth-thumb.jpg" alt="love image 3"/></a>
 							
-							<a href="images/work/" ><img src="images/synth-thumb.jpg" alt="love image 4"/></a>
+							<a href="images/work/" ><img src="images/tipcalc-thumb.jpg" alt="love image 4"/></a>
 							
-							<a href="images/work/" ><img src="images/wine-thumb.jpg" alt="love image 5"/></a>
+							<a href="images/work/" ><img src="images/weatherApp-thumb.jpg" alt="love image 5"/></a>
 						</div><!-- /.love-img-container-->
 
-						<h3>Print</h3>
+						<h3>Print / Graphic Design</h3>
 						<div class="img-container last">
-							<a href="images/work/" ><img src="images/design-thumb.jpg" alt="love image 1"/></a>
+							<a href="images/work/" ><img src="images/aubert-thumb.jpg" alt="love image 1"/></a>
 							
-							<a href="images/work/" ><img src="images/code-thumb.jpg" alt="love image 2"/></a>
+							<a href="images/work/" ><img src="images/orbits-thumb.jpg" alt="love image 2"/></a>
 							
-							<a href="images/work/" ><img src="images/beach.jpg" alt="love image 3"/></a>
+							<a href="images/work/" ><img src="images/stzosima-thumb.jpg" alt="love image 3"/></a>
 							
-							<a href="images/work/" ><img src="images/synth-thumb.jpg" alt="love image 4"/></a>
+							<a href="images/work/" ><img src="images/meditrinaBiz-thumb.jpg" alt="love image 4"/></a>
 							
-							<a href="images/work/" ><img src="images/wine-thumb.jpg" alt="love image 5"/></a>
+							<a href="images/work/" ><img src="images/uiLogo-thumb.jpg" alt="love image 5"/></a>
 						</div><!-- /.love-img-container-->
 
 						<p class="quote" >“Patience, persistence and perspiration make an unbeatable combination for success.” - Napoleon Hill</p>
@@ -150,7 +159,7 @@
 					<div class="page-inner">
 						<h1 class="red">Contact me...</h1>
 
-						<p>if you’re interested in hiring or working with me, or having me manage your next project. I'm not against contract work either.</p>
+						<p>if you’re interested in hiring me, working with me, or having me manage your next project. I'm not against contract work either.</p>
 
 					</div><!-- /.page-inner-->
 					
@@ -159,7 +168,7 @@
 						</div><!-- /#map-canvas _ -->
 						
 					<div class="page-inner">
-						<div class="contact-body">
+						<div class="contact-body" id="contact">
 							<div class="contact-form">
 								<form action="?action=submit-form" method="post"> 
 									<input type="text" name="name" placeholder="FULL NAME"/>
@@ -177,7 +186,7 @@
 
 							<div class="contact-content">
 							
-							<p><span class="red">I’m interested in relocating to the Virginia Beach, VA area.</span> I am also not against relocating to another part of the country or overseas if the opportunity is right. <span class="dark-gray">Please feel free to contact me</span> via the form at left, or by telephone or email, even if it's just to say hi. <span class="red">&#9786;</span></p>
+							<p><span class="red">I’m interested in relocating to the Virginia Beach, VA area.</span>  But, if the opportunity is right, feel free to pay me loads of money and fly me around the world. <span class="dark-gray">Go ahead. Contact me</span> via the form at left, or by rotary phone or email, even if it's just to say hi. <span class="red">&#9786;</span></p>
 
 							<p class="info"><span class="red">Adam Shields Gedney</span>
 								adam@adamgedney.com
@@ -188,11 +197,11 @@
 								
 								<a class="no-tran" target="_blank" href="http://forrst.com"><img class="forrst-icon" src="images/forrst-icon.png" alt="forrst icon" /></a>
 								
-								<a class="no-tran" target="_blank" href="http://linkedin.adamgedney.com"><img class="linkedin-icon" src="images/linkedin-icon.png" alt="linkedin icon" /></a>
-								
 								<a class="no-tran" target="_blank" href="http://dribbble.com/adamgedney"><img class="dribbble-icon" src="images/dribbble-icon.png" alt="dribbble icon" /></a>
 								
 								<a class="no-tran" target="_blank" href="http://facebook.com/shieldsadam"><img class="fb-icon" src="images/fb-icon.png" alt="facebook icon" /></a>
+
+								<a class="no-tran" target="_blank" href="http://linkedin.adamgedney.com"><img class="linkedin-icon" src="images/linkedin-icon.png" alt="linkedin icon" /></a>
 							</div><!-- /.contact-icons-->
 						
 							</div><!-- /.contact-content-->
@@ -205,6 +214,7 @@
 		<p><span class="red">&copy;2013</span> adamgedney.com</p>
 		</footer>
 
+		<!-- Scripts -->
 		<script src="js/jquery-1.7.1.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>

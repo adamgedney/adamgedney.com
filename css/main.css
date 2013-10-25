@@ -370,7 +370,8 @@ nav ul li {
 
 .description h4, .details-sidebar h4 {
   font-size: 2.1em;
-  font-weight: 100; }
+  font-weight: 100;
+  width: 100%; }
 
 .details {
   overflow: hidden;
@@ -389,7 +390,7 @@ nav ul li {
 
 .details-sidebar {
   max-width: 570px;
-  float: right;
+  float: left;
   padding-top: 10px; }
 
 .details-sidebar h4 {

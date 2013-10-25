@@ -293,7 +293,7 @@ body.projects {
   background: #f6feff; }
 
 .projects header {
-  height: 50px;
+  height: 54px;
   background: #252525;
   font-family: "Ubuntu", "Helvetica Neue Light", Helvetica, Arial, sans-serif; }
 
@@ -306,14 +306,15 @@ body.projects {
   color: #cccccc;
   font-size: 1.6em;
   display: inline;
-  line-height: 50px; }
+  line-height: 54px; }
 
 nav {
   overflow: hidden;
   display: inline; }
 
 nav ul {
-  float: right; }
+  float: right;
+  margin-bottom: 0; }
 
 nav ul a {
   color: #cccccc; }
@@ -322,18 +323,91 @@ nav ul li {
   display: inline-block;
   font-size: .8em;
   padding-left: 18px;
-  line-height: 50px; }
+  line-height: 54px; }
 
 .featured {
-  height: 800px;
-  width: 100%; }
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
+
+.featured h2 {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  bottom: 25%;
+  right: 20%;
+  z-index: 200;
+  font-size: 18em;
+  /*fallback for vw font size*/
+  font-size: 12.5vw;
+  /*when combined with above %based positions, the text floats center and resizes with div*/
+  font-family: "Tangerine", cursive;
+  color: #d93330;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); }
 
 .featured img {
-  height: 800px;
   width: 100%; }
 
-footer.projects-footer {
-  margin-top: 36px; }
+.project-inner {
+  width: 1140px;
+  margin: 0 auto; }
+
+.description {
+  text-align: center;
+  padding: 87px 0 88px;
+  /*keeps height fluid -no height defined on div*/
+  border-bottom: 1px solid #cccccc; }
+
+.description h3 {
+  font-size: 5.8em;
+  font-family: "Tangerine", cursive; }
+
+.description h4, .details-sidebar h4 {
+  font-size: 2.1em;
+  font-weight: 100; }
+
+.details {
+  overflow: hidden;
+  padding: 88px 0 0;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 108px; }
+
+.details-desc {
+  width: 570px;
+  padding-right: 18px;
+  float: left; }
+
+.details-desc h3 {
+  font-weight: 100;
+  margin-bottom: 9px;
+  color: #d93330; }
+
+.details-desc p {
+  margin-bottom: 162px; }
+
+.details-sidebar {
+  width: 570px;
+  float: right;
+  padding-top: 10px; }
+
+.details-sidebar h4 {
+  margin-bottom: 9px;
+  color: #d93330;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #cccccc; }
+
+.details-sidebar p {
+  margin-bottom: 39px; }
+
+.details-sidebar ul {
+  list-style-type: disc;
+  padding-left: 16px; }
+
+.github-link {
+  display: block;
+  font-size: 1.4em;
+  margin-bottom: 9px; }
 
 /*---------------------------------------------footer------------------------------------------------*/
 footer {

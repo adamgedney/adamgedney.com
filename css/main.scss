@@ -445,6 +445,12 @@ nav ul li{
 	width: 100%;
 }
 
+.projects h3{
+	font-weight: 100;
+	margin-bottom: 9px;
+	color: $red;
+}
+
 .project-inner{
 	max-width: 1140px;
 	margin: 0 auto;
@@ -478,12 +484,6 @@ nav ul li{
 	padding-right: 3.157895%;/*18px*/
 	float: left;
 	// margin-bottom: 162px; /*18x9*/
-}
-
-.details-desc h3, .shots h3{
-	font-weight: 100;
-	margin-bottom: 9px;
-	color: $red;
 }
 
 .details-desc p{
@@ -541,6 +541,22 @@ nav ul li{
 
 }
 
+.project-contact h3{
+	text-align: center;
+	border-bottom: 1px solid $icon-gray;
+}
+
+.project-contact .contact-icons{
+	margin: 0 auto 88px;
+	width: 1140px;
+	text-align: center;
+	border-bottom: 1px solid $icon-gray;
+}
+
+.project-contact .contact-icons a{
+	display: inline-block;
+	padding: 36px;
+}
 
 footer.projects-footer{
 

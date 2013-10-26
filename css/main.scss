@@ -26,6 +26,10 @@ $dark-gray: #252525;
 $red: #d93330;
 $blue: #5d95ba;
 
+@mixin duration($time: .7s){
+		transition-duration: .7s;
+-webkit-transition-duration: .7s;
+}
 
 /*--------------------------------------Start CSS Reset---------------------------------------------*/
 
@@ -98,8 +102,7 @@ a, input[type="submit"]{
 text-decoration: none;
 color: $blue;
 opacity: 1;
-transition-duration: .7s;
--webkit-transition-duration: .7s;
+@include duration;
 outline: none;
 }
 
@@ -109,8 +112,7 @@ a:visited{
 
 a:hover, input[type="submit"]:hover{
 opacity: .5;
-transition-duration: .7s;
--webkit-transition-duration: .7s;
+@include duration;
 }
 
 a.no-tran:hover{
@@ -145,6 +147,10 @@ img{
 
 .red{
 	color: $red;
+}
+
+.light-gray{
+	color: $icon-gray;
 }
 
 .text-gray{
@@ -191,26 +197,35 @@ header{
 	font-weight: 100;
 }
 
-.page p{
-	width: 504px; /*28x18*/
-	margin: 0 auto;
-	font-weight: 100;
+.page{
+	p{
+		width: 504px; /*28x18*/
+		margin: 0 auto;
+		font-weight: 100;
+	}
+
+	p.quote{
+		width: 100%;
+		font-size: 3.6em;
+		font-family: 'Tangerine', cursive;
+	}
 }
 
 .img-container{
 	overflow: hidden;
 	margin-top: 36px;
+
+		a{
+			// padding: 5px;
+			// margin-right: 9px;
+			float: left;
+			display: block;
+			width: 20%; /*210px*/
+			height: 210px;
+			// background: $icon-gray;
+		}
 }
 
-.img-container a{
-	// padding: 5px;
-	// margin-right: 9px;
-	float: left;
-	display: block;
-	width: 20%; /*210px*/
-	height: 210px;
-	// background: $icon-gray;
-}
 
 
 /*--------------------------------------------Landing----------------------------------------------*/
@@ -240,27 +255,28 @@ header{
 .like .img-container{
 	height: 378px;/*18x21*/
 	overflow: hidden;
+
+		a.zig-zag{
+			margin-top: 36px;
+		}
+
+		a.zig-zag-1{
+			margin-top: 166px;
+		}
+
+		a.zig-zag-2{
+			margin-top: 90px;
+		}
+
+		a.zig-zag-3{
+			margin-top: 162px;
+		}
+
+		a.zig-zag-4{
+			margin-top: 108px;
+		}
 }
 
-.like .img-container a.zig-zag{
-	margin-top: 36px;
-}
-
-.like .img-container a.zig-zag-1{
-	margin-top: 166px;
-}
-
-.like .img-container a.zig-zag-2{
-	margin-top: 90px;
-}
-
-.like .img-container a.zig-zag-3{
-	margin-top: 162px;
-}
-
-.like .img-container a.zig-zag-4{
-	margin-top: 108px;
-}
 
 /*---------------------------------------------"I Love" Page------------------------------------------------*/
 
@@ -280,26 +296,22 @@ a.resume{
 	color: $icon-gray;
 	margin:36px 0 72px;
 	display: block;
+
+		img{
+			height: 40px;
+			margin-right: 18px;
+		}
 }
 
-a.resume img{
-	height: 40px;
-	margin-right: 18px;
-}
+.work{
+	.img-container{
+		margin: 18px 0 126px;
+	}
 
-.work .img-container{
-	margin: 18px 0 126px;
-}
-
-.work h3{
-	color: $red;
-	text-align: left;
-}
-
-.page p.quote{
-	width: 100%;
-	font-size: 3.6em;
-	font-family: 'Tangerine', cursive;
+	h3{
+		color: $red;
+		text-align: left;
+	}
 }
 
 
@@ -328,42 +340,42 @@ a.resume img{
 	width: 366px;
 	float: left;
 	margin: 9px 36px 0 0;
-}
 
-.contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="submit"], .contact-form textarea{
-	width: 366px;
-	height: 54px;
-	border-radius: 2px;
-	border: 1px solid $text-gray;
-	margin-bottom: 9px;
-	padding: 9px;
-	font-family: 'Droid Serif', "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
-	font-size: 1.8em;
-	color: $icon-gray;
-}
+	input[type="text"], input[type="email"], input[type="submit"], textarea{
+		width: 366px;
+		height: 54px;
+		border-radius: 2px;
+		border: 1px solid $text-gray;
+		margin-bottom: 9px;
+		padding: 9px;
+		font-family: 'Droid Serif', "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+		font-size: 1.8em;
+		color: $icon-gray;
+	}
 
-.contact-form textarea{
-	height: 198px;
-}
+	textarea{
+		height: 198px;
+	}
 
-.contact-form input[type="submit"]{
-	background: $red;
-	border: none;
-	font-family: 'Ubuntu', "Helvetica Neue Light", Helvetica, Arial, sans-serif;
-	font-weight: 100;
-	color: $white;
+	input[type="submit"]{
+		background: $red;
+		border: none;
+		font-family: 'Ubuntu', "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+		font-weight: 100;
+		color: $white;
+	}
 }
 
 .contact-content{
 	width: 400px;
 	float: left;
-}
 
-.contact-content p{
-	width: 400px;
-	text-align: left;
-	color: $text-gray;
-	font-weight: 100;
+	p{
+		width: 400px;
+		text-align: left;
+		color: $text-gray;
+		font-weight: 100;
+	}
 }
 
 p.info{
@@ -379,76 +391,82 @@ body.projects{
 	background: $white;
 }
 
-.projects header{
-	height: 54px;
-	background: #252525;
-	font-family: 'Ubuntu', "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+.projects{
+	header{
+		position: fixed;
+		z-index: 500;
+		width: 100%;
+		height: 54px;
+		background: #252525;
+		opacity: .8;
+		font-family: 'Ubuntu', "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+	}
+
+	header h1{
+		color: $icon-gray;
+		font-size: 1.6em;
+		display: inline;
+		line-height: 54px;
+	}
+
+	h3{
+		font-weight: 100;
+		margin-bottom: 9px;
+		color: $red;
+	}
 }
 
 .header-inner{
-	width: 1140px;
+	max-width: 1140px;
 	margin: 0 auto;
+	padding: 0 36px;
 	font-weight: 100;
-}
-
-.projects header h1{
-	color: $icon-gray;
-	font-size: 1.6em;
-	display: inline;
-	line-height: 54px;
 }
 
 nav{
 	overflow: hidden;
 	display: inline;
-}
 
-nav ul{
-	float: right;
-	margin-bottom: 0;
-}
+	ul{
+		float: right;
+		margin-bottom: 0;
 
-nav ul a{
-	color: $icon-gray;
-}
+		a{
+			color: $icon-gray;
+		}
 
-nav ul li{
-	display: inline-block;
-	font-size: .8em;
-	padding-left: 18px;
-	line-height: 54px;
-}
+		li{
+			display: inline-block;
+			font-size: .8em;
+			padding-left: 18px;
+			line-height: 54px;
+		}
+	}
+} 
 
 .featured{
-	height: 600px;
+	height: 654px;
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-}
 
+	h2{
+		position: absolute;
+		top: 25%;
+		left: 20%;
+		bottom: 25%;
+		right: 20%;
+		z-index: 200;
+		font-size: 18em;/*fallback for vw font size*/
+		font-size: 12.5vw; /*when combined with above %based positions, the text floats center and resizes with div*/
+		font-family: 'Tangerine', cursive;
+		color: $red;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	}
 
-.featured h2{
-	position: absolute;
-	top: 25%;
-	left: 20%;
-	bottom: 25%;
-	right: 20%;
-	z-index: 200;
-	font-size: 18em;/*fallback for vw font size*/
-	font-size: 12.5vw; /*when combined with above %based positions, the text floats center and resizes with div*/
-	font-family: 'Tangerine', cursive;
-	color: $red;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.featured img{
-	width: 100%;
-}
-
-.projects h3{
-	font-weight: 100;
-	margin-bottom: 9px;
-	color: $red;
+	img{
+		width: 100%;
+	}
 }
 
 .project-inner{
@@ -460,11 +478,11 @@ nav ul li{
 	text-align: center;
 	padding: 87px 0 88px; /*keeps height fluid -no height defined on div*/
 	border-bottom: 1px solid $icon-gray;
-}
 
-.description h3{
-	font-size: 5.8em;
-	font-family: 'Tangerine', cursive;
+	h3{
+		font-size: 5.8em;
+		font-family: 'Tangerine', cursive;
+	}
 }
 
 .description h4, .details-sidebar h4{
@@ -484,33 +502,32 @@ nav ul li{
 	max-width: 570px;
 	padding-right: 3.157895%;/*18px*/
 	float: left;
-	// margin-bottom: 162px; /*18x9*/
-}
 
-.details-desc p{
-	margin-bottom: 162px;
+	p{
+		margin-bottom: 162px;
+	}
 }
 
 .details-sidebar{
 	max-width: 570px;
 	float: left;
 	padding-top: 10px;
-}
 
-.details-sidebar h4{
-	margin-bottom: 9px;
-	color: $red;
-	padding-bottom: 9px;
-	border-bottom: 1px solid $icon-gray;
-}
+	h4{
+		margin-bottom: 9px;
+		color: $red;
+		padding-bottom: 9px;
+		border-bottom: 1px solid $icon-gray;
+	}
 
-.details-sidebar p{
-	margin-bottom: 39px;
-}
+	p{
+		margin-bottom: 39px;
+	}
 
-.details-sidebar ul{
-	list-style-type: disc;
-	padding-left: 16px;
+	ul{
+		list-style-type: disc;
+		padding-left: 16px;
+	}
 }
 
 .github-link{
@@ -522,12 +539,14 @@ nav ul li{
 .shots{
 	overflow: hidden;
 	margin-bottom: 88px;
+
+		img{
+			display: block;
+			margin-bottom: 36px;
+		}
 }
 
-.shots img{
-	display: block;
-	margin-bottom: 36px;
-}
+
 
 .shot-left-col{
 	float: left;
@@ -538,29 +557,29 @@ nav ul li{
 	float: left;
 }
 
+.lb-caption{/*overrides lightbox caption font settings*/
+	font-family: 'Ubuntu', "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	color: $icon-gray;
+}
+
 .project-contact{
+	h3{
+		text-align: center;
+		border-bottom: 1px solid $icon-gray;
+	}
 
-}
+	.contact-icons{
+		margin: 0 auto 88px;
+		width: 1140px;
+		text-align: center;
+		border-bottom: 1px solid $icon-gray;
 
-.project-contact h3{
-	text-align: center;
-	border-bottom: 1px solid $icon-gray;
-}
-
-.project-contact .contact-icons{
-	margin: 0 auto 88px;
-	width: 1140px;
-	text-align: center;
-	border-bottom: 1px solid $icon-gray;
-}
-
-.project-contact .contact-icons a{
-	display: inline-block;
-	padding: 36px;
-}
-
-footer.projects-footer{
-
+		a{
+			display: inline-block;
+			padding: 36px;
+		}
+	}
 }
 
 
@@ -571,9 +590,10 @@ footer{
 	background: $dark-gray;
 	height: 144px; /*18x8*/
 	padding-top: 70px;
+
+	p{
+		width: 220px;
+		margin: 0 auto;
+	}
 }
 
-footer p{
-	width: 220px;
-	margin: 0 auto;
-}

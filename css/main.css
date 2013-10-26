@@ -117,6 +117,9 @@ img {
 .red {
   color: #d93330; }
 
+.light-gray {
+  color: #cccccc; }
+
 .text-gray {
   color: #5d5d5d; }
 
@@ -153,17 +156,20 @@ header {
   /*28x18*/
   margin: 0 auto;
   font-weight: 100; }
+.page p.quote {
+  width: 100%;
+  font-size: 3.6em;
+  font-family: "Tangerine", cursive; }
 
 .img-container {
   overflow: hidden;
   margin-top: 36px; }
-
-.img-container a {
-  float: left;
-  display: block;
-  width: 20%;
-  /*210px*/
-  height: 210px; }
+  .img-container a {
+    float: left;
+    display: block;
+    width: 20%;
+    /*210px*/
+    height: 210px; }
 
 /*--------------------------------------------Landing----------------------------------------------*/
 .page.landing {
@@ -185,21 +191,16 @@ header {
   height: 378px;
   /*18x21*/
   overflow: hidden; }
-
-.like .img-container a.zig-zag {
-  margin-top: 36px; }
-
-.like .img-container a.zig-zag-1 {
-  margin-top: 166px; }
-
-.like .img-container a.zig-zag-2 {
-  margin-top: 90px; }
-
-.like .img-container a.zig-zag-3 {
-  margin-top: 162px; }
-
-.like .img-container a.zig-zag-4 {
-  margin-top: 108px; }
+  .like .img-container a.zig-zag {
+    margin-top: 36px; }
+  .like .img-container a.zig-zag-1 {
+    margin-top: 166px; }
+  .like .img-container a.zig-zag-2 {
+    margin-top: 90px; }
+  .like .img-container a.zig-zag-3 {
+    margin-top: 162px; }
+  .like .img-container a.zig-zag-4 {
+    margin-top: 108px; }
 
 /*---------------------------------------------"I Love" Page------------------------------------------------*/
 img.web-logos {
@@ -212,22 +213,15 @@ a.resume {
   color: #cccccc;
   margin: 36px 0 72px;
   display: block; }
-
-a.resume img {
-  height: 40px;
-  margin-right: 18px; }
+  a.resume img {
+    height: 40px;
+    margin-right: 18px; }
 
 .work .img-container {
   margin: 18px 0 126px; }
-
 .work h3 {
   color: #d93330;
   text-align: left; }
-
-.page p.quote {
-  width: 100%;
-  font-size: 3.6em;
-  font-family: "Tangerine", cursive; }
 
 /*---------------------------------------------Contact Page------------------------------------------------*/
 .contact {
@@ -251,37 +245,33 @@ a.resume img {
   width: 366px;
   float: left;
   margin: 9px 36px 0 0; }
-
-.contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="submit"], .contact-form textarea {
-  width: 366px;
-  height: 54px;
-  border-radius: 2px;
-  border: 1px solid #5d5d5d;
-  margin-bottom: 9px;
-  padding: 9px;
-  font-family: "Droid Serif", "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
-  font-size: 1.8em;
-  color: #cccccc; }
-
-.contact-form textarea {
-  height: 198px; }
-
-.contact-form input[type="submit"] {
-  background: #d93330;
-  border: none;
-  font-family: "Ubuntu", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
-  font-weight: 100;
-  color: #f6feff; }
+  .contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="submit"], .contact-form textarea {
+    width: 366px;
+    height: 54px;
+    border-radius: 2px;
+    border: 1px solid #5d5d5d;
+    margin-bottom: 9px;
+    padding: 9px;
+    font-family: "Droid Serif", "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+    font-size: 1.8em;
+    color: #cccccc; }
+  .contact-form textarea {
+    height: 198px; }
+  .contact-form input[type="submit"] {
+    background: #d93330;
+    border: none;
+    font-family: "Ubuntu", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    color: #f6feff; }
 
 .contact-content {
   width: 400px;
   float: left; }
-
-.contact-content p {
-  width: 400px;
-  text-align: left;
-  color: #5d5d5d;
-  font-weight: 100; }
+  .contact-content p {
+    width: 400px;
+    text-align: left;
+    color: #5d5d5d;
+    font-weight: 100; }
 
 p.info {
   margin: 81px auto;
@@ -293,66 +283,64 @@ body.projects {
   background: #f6feff; }
 
 .projects header {
+  position: fixed;
+  z-index: 500;
+  width: 100%;
   height: 54px;
   background: #252525;
+  opacity: .8;
   font-family: "Ubuntu", "Helvetica Neue Light", Helvetica, Arial, sans-serif; }
-
-.header-inner {
-  width: 1140px;
-  margin: 0 auto;
-  font-weight: 100; }
-
 .projects header h1 {
   color: #cccccc;
   font-size: 1.6em;
   display: inline;
   line-height: 54px; }
-
-nav {
-  overflow: hidden;
-  display: inline; }
-
-nav ul {
-  float: right;
-  margin-bottom: 0; }
-
-nav ul a {
-  color: #cccccc; }
-
-nav ul li {
-  display: inline-block;
-  font-size: .8em;
-  padding-left: 18px;
-  line-height: 54px; }
-
-.featured {
-  height: 600px;
-  width: 100%;
-  overflow: hidden;
-  position: relative; }
-
-.featured h2 {
-  position: absolute;
-  top: 25%;
-  left: 20%;
-  bottom: 25%;
-  right: 20%;
-  z-index: 200;
-  font-size: 18em;
-  /*fallback for vw font size*/
-  font-size: 12.5vw;
-  /*when combined with above %based positions, the text floats center and resizes with div*/
-  font-family: "Tangerine", cursive;
-  color: #d93330;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); }
-
-.featured img {
-  width: 100%; }
-
 .projects h3 {
   font-weight: 100;
   margin-bottom: 9px;
   color: #d93330; }
+
+.header-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 36px;
+  font-weight: 100; }
+
+nav {
+  overflow: hidden;
+  display: inline; }
+  nav ul {
+    float: right;
+    margin-bottom: 0; }
+    nav ul a {
+      color: #cccccc; }
+    nav ul li {
+      display: inline-block;
+      font-size: .8em;
+      padding-left: 18px;
+      line-height: 54px; }
+
+.featured {
+  height: 654px;
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
+  .featured h2 {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    bottom: 25%;
+    right: 20%;
+    z-index: 200;
+    font-size: 18em;
+    /*fallback for vw font size*/
+    font-size: 12.5vw;
+    /*when combined with above %based positions, the text floats center and resizes with div*/
+    font-family: "Tangerine", cursive;
+    color: #d93330;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); }
+  .featured img {
+    width: 100%; }
 
 .project-inner {
   max-width: 1140px;
@@ -363,10 +351,9 @@ nav ul li {
   padding: 87px 0 88px;
   /*keeps height fluid -no height defined on div*/
   border-bottom: 1px solid #cccccc; }
-
-.description h3 {
-  font-size: 5.8em;
-  font-family: "Tangerine", cursive; }
+  .description h3 {
+    font-size: 5.8em;
+    font-family: "Tangerine", cursive; }
 
 .description h4, .details-sidebar h4 {
   font-size: 2.1em;
@@ -384,27 +371,23 @@ nav ul li {
   padding-right: 3.157895%;
   /*18px*/
   float: left; }
-
-.details-desc p {
-  margin-bottom: 162px; }
+  .details-desc p {
+    margin-bottom: 162px; }
 
 .details-sidebar {
   max-width: 570px;
   float: left;
   padding-top: 10px; }
-
-.details-sidebar h4 {
-  margin-bottom: 9px;
-  color: #d93330;
-  padding-bottom: 9px;
-  border-bottom: 1px solid #cccccc; }
-
-.details-sidebar p {
-  margin-bottom: 39px; }
-
-.details-sidebar ul {
-  list-style-type: disc;
-  padding-left: 16px; }
+  .details-sidebar h4 {
+    margin-bottom: 9px;
+    color: #d93330;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #cccccc; }
+  .details-sidebar p {
+    margin-bottom: 39px; }
+  .details-sidebar ul {
+    list-style-type: disc;
+    padding-left: 16px; }
 
 .github-link {
   display: block;
@@ -414,10 +397,9 @@ nav ul li {
 .shots {
   overflow: hidden;
   margin-bottom: 88px; }
-
-.shots img {
-  display: block;
-  margin-bottom: 36px; }
+  .shots img {
+    display: block;
+    margin-bottom: 36px; }
 
 .shot-left-col {
   float: left;
@@ -426,19 +408,23 @@ nav ul li {
 .shot-right-col {
   float: left; }
 
+.lb-caption {
+  /*overrides lightbox caption font settings*/
+  font-family: "Ubuntu", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  color: #cccccc; }
+
 .project-contact h3 {
   text-align: center;
   border-bottom: 1px solid #cccccc; }
-
 .project-contact .contact-icons {
   margin: 0 auto 88px;
   width: 1140px;
   text-align: center;
   border-bottom: 1px solid #cccccc; }
-
-.project-contact .contact-icons a {
-  display: inline-block;
-  padding: 36px; }
+  .project-contact .contact-icons a {
+    display: inline-block;
+    padding: 36px; }
 
 /*---------------------------------------------footer------------------------------------------------*/
 footer {
@@ -446,7 +432,6 @@ footer {
   height: 144px;
   /*18x8*/
   padding-top: 70px; }
-
-footer p {
-  width: 220px;
-  margin: 0 auto; }
+  footer p {
+    width: 220px;
+    margin: 0 auto; }

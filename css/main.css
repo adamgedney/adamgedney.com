@@ -79,8 +79,8 @@ a, input[type="submit"] {
   text-decoration: none;
   color: #5d95ba;
   opacity: 1;
-  transition-duration: .7s;
-  -webkit-transition-duration: .7s;
+  transition-duration: 0.7s;
+  -webkit-transition-duration: 0.7s;
   outline: none; }
 
 a:visited {
@@ -88,8 +88,8 @@ a:visited {
 
 a:hover, input[type="submit"]:hover {
   opacity: .5;
-  transition-duration: .7s;
-  -webkit-transition-duration: .7s; }
+  transition-duration: 0.7s;
+  -webkit-transition-duration: 0.7s; }
 
 a.no-tran:hover {
   opacity: 1; }

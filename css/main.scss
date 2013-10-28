@@ -27,8 +27,8 @@ $red: #d93330;
 $blue: #5d95ba;
 
 @mixin duration($time: .7s){
-		transition-duration: .7s;
--webkit-transition-duration: .7s;
+		transition-duration: $time;
+-webkit-transition-duration: $time;
 }
 
 /*--------------------------------------Start CSS Reset---------------------------------------------*/

@@ -34,7 +34,7 @@ $(function(){
 		icon: companyLogo,
 		title:"Right here!"
 	});
-	};// /initialize()
+	}// /initialize()
 	
 	initialize();
 
@@ -103,7 +103,39 @@ $(function(){
 	});
 	function removeSwing(){
 		$('img.profile-pic').removeClass('animated swing');
-	};
+	}
+
+
+
+	//-------------------------------------Contact form validation--------------------------
+
+
+	$(document).on('click', '#contact-submit-button', function(e){
+
+		var email = $('#email').val();
+		var phone = $('#phone').val();
+
+		var emailPat = /^\w+[\w-\.]*\@\w+((-\w+)|(\w*))\.[a-z]{2,3}$/; // standard email validation
+		var phonePat = /^[2-9]\d{2}-\d{3}-\d{4}$/; //555-555-5555
+
+		// if(!emailPat.test(email)){
+		// 	e.preventDefault();
+		// 	$('.email-error').css('opacity', '1').html("Oops! Email address format is invalid.");
+		// 	window.location = 'index.php#contact';
+		// }
+		if(!phonePat.test(phone)){
+			e.preventDefault();
+			$('.phone-error').css('opacity', '1').html("Oops! Please type your digits like this 555-555-5555");
+			window.location = 'index.php#contact';
+		}else{
+			$('.email-error').css('opacity', '0').html("");
+			$('.phone-error').css('opacity', '0').html(""); 
+
+			return true;
+		} 
+
+	});
+
 
 });// function
 

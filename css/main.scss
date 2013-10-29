@@ -25,6 +25,7 @@ $text-gray: #5d5d5d;
 $dark-gray: #252525;
 $red: #d93330;
 $blue: #5d95ba;
+$green: #479648;
 
 @mixin duration($time: .7s){
 		transition-duration: $time;
@@ -123,7 +124,21 @@ img{
 	max-width: 100%;
 }
 
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: $icon-gray;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $icon-gray;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $icon-gray;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: $icon-gray;
+}
+
 /*--------------------------------------End General / Start Objects------------------------------------*/
+
 
 .hide-text{
 	text-indent: 200%;
@@ -170,9 +185,6 @@ img{
 }
 
 
-
-
-
 /*--------------------------------------End Objects / Start Main------------------------------------*/
 
 header{
@@ -209,6 +221,25 @@ header{
 		font-size: 3.6em;
 		font-family: 'Tangerine', cursive;
 	}
+
+	p.error{
+		color: $white;
+		font-size: .9em;
+		text-align: left;
+		width: 366px;
+		position: absolute;
+		z-index: 99999;
+		top: 25%;
+		left: 0;
+		padding-left: 3%;
+		background: $red;
+		opacity: 0;
+		@include duration;
+	}
+
+	p.error.phone-error{
+			top: 39%;
+		}
 }
 
 .img-container{
@@ -340,6 +371,7 @@ a.resume{
 	width: 366px;
 	float: left;
 	margin: 9px 36px 0 0;
+	position: relative;/*required for error message absolute positioning*/
 
 	input[type="text"], input[type="email"], input[type="submit"], textarea{
 		width: 366px;
@@ -350,7 +382,7 @@ a.resume{
 		padding: 9px;
 		font-family: 'Droid Serif', "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 		font-size: 1.8em;
-		color: $icon-gray;
+		color: $text-gray;
 	}
 
 	textarea{
@@ -358,7 +390,7 @@ a.resume{
 	}
 
 	input[type="submit"]{
-		background: $red;
+		background: $green;
 		border: none;
 		font-family: 'Ubuntu', "Helvetica Neue Light", Helvetica, Arial, sans-serif;
 		font-weight: 100;

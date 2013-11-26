@@ -85,7 +85,9 @@
 					<div class="page-inner">
 						<h1 class="red">I l<span class="heart">&hearts;</span>ve...</h1>
 
-						<p><span class="red">design & {code},</span> troubleshooting difficult problems, beaches,  synthesizers, Julie, close friends, & wine.</p>
+						<p><span class="red">design & {code},</span> UX, troubleshooting difficult problems, beaches,  synthesizers, Julie, close friends, & wine.</p>
+
+						<p class="red subtext">These are the languages & frameworks I know.</p>
 
 						<img class="web-logos" src="images/logos.png" alt="web logos"/>
 

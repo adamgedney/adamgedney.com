@@ -142,47 +142,47 @@ $(function(){
 
 	$(document).scrollsnap({
         snaps: '.snap',
-        proximity: 400,
-        easing: 'easeOutBack'
+        proximity: 200,
+        easing: 'easeOutBounce'
         });
 
 //-------------------AJAX call test----------------------------------------
 
-$(document).on('click','#test-button',function(e){
-e.preventDefault();
+// $(document).on('click','#test-button',function(e){
+// e.preventDefault();
 
-var key = '/58c712713bda048ac50e20e99ed9111c';
-var app_id = '/df91512a';
-var url = 'http://localhost:8887';
-	url += '/api_request/validate_client';
-	url += key;
-	url += app_id;
+// var key = '/58c712713bda048ac50e20e99ed9111c';
+// var app_id = '/df91512a';
+// var url = 'http://localhost:8887';
+// 	url += '/api_request/validate_client';
+// 	url += key;
+// 	url += app_id;
 
-console.log(url);
+// console.log(url);
 
 
- $.ajax({
-      url: url,
-      type: 'GET',
-      dataType: 'json',
-      success: function(response){
-console.log(response);
-        // if(response.error){
-        //   console.log('failed');
-        // }else{
-        //   console.log('success');
+//  $.ajax({
+//       url: url,
+//       type: 'GET',
+//       dataType: 'json',
+//       success: function(response){
+// console.log(response);
+//         // if(response.error){
+//         //   console.log('failed');
+//         // }else{
+//         //   console.log('success');
 
 
 
        
-      },
-      error: function(response){
-        console.log(response);
-      }
-    });
+//       },
+//       error: function(response){
+//         console.log(response);
+//       }
+//     });
 
 
-});
+// });
 
 });// function
 

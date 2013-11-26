@@ -484,15 +484,16 @@ nav{
 
 	h2{
 		position: absolute;
-		top: 25%;
-		left: 20%;
-		bottom: 25%;
-		right: 20%;
+		top: 34%;
+		left: 22%;
+		bottom: 34%;
+		right: 22%;
 		z-index: 200;
 		font-size: 18em;/*fallback for vw font size*/
-		font-size: 12.5vw; /*when combined with above %based positions, the text floats center and resizes with div*/
+		font-size: 8.5vw; /*when combined with above %based positions, the text floats center and resizes with div*/
 		font-family: 'Tangerine', cursive;
 		color: $red;
+		text-align: center;
 		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 	}
 
@@ -528,6 +529,7 @@ nav{
 	padding: 88px 0 0;
 	border-bottom: 1px solid $icon-gray;
 	margin-bottom: 108px;
+	position: relative;
 }
 
 .details-desc{
@@ -566,6 +568,8 @@ nav{
 	display: block;
 	font-size: 1.4em;
 	margin-bottom: 9px;
+	position: absolute;
+	bottom: 0;
 }
 
 .shots{

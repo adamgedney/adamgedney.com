@@ -38,7 +38,7 @@
 	<script src="js/html5shiv.js"></script>
 	<![endif]-->
 </head>
-	<body class="animated fadeIn">
+	<body>
 
 		<header>
 			<h1 class="hide-text">Adam Gedney's Front-End Developer Portfolio</h1>
@@ -63,7 +63,7 @@
 
 				<div class="page like">
 					<div class="page-inner">
-						<h1 class="red snap">I like...</h1>
+						<h1 class="red">I like...</h1>
 
 						<p>designing websites, logos & print collateral, <span class="red">being silly,</span> writing music & books. I build things, google things, think, read, & sometimes I update my <a class="underline light-gray" target="_blank" href="http://usabilityintelligence.com" >blog</a> too.</p>
 
@@ -83,13 +83,13 @@
 
 				<div class="page love">
 					<div class="page-inner">
-						<h1 class="red snap">I l<span class="heart">&hearts;</span>ve...</h1>
+						<h1 class="red">I l<span class="heart">&hearts;</span>ve...</h1>
 
 						<p><span class="red">design & {code},</span> troubleshooting difficult problems, beaches,  synthesizers, Julie, close friends, & wine.</p>
 
 						<img class="web-logos" src="images/logos.png" alt="web logos"/>
 
-						<div class="img-container">
+						<!-- <div class="img-container">
 							<a href="#" ><img src="images/design-thumb.jpg" alt="love image 1"/></a>
 							
 							<a href="#" ><img src="images/code-thumb.jpg" alt="love image 2"/></a>
@@ -99,13 +99,13 @@
 							<a href="#" ><img src="images/synth-thumb.jpg" alt="love image 4"/></a>
 							
 							<a href="#" ><img src="images/wine-thumb.jpg" alt="love image 5"/></a>
-						</div><!-- /.love-img-container-->
+						</div><!-- /.love-img-container--> 
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->
 
 				<div class="page double work" id="work">
 					<div class="page-inner">
-						<h1 class="red snap">I work...</h1>
+						<h1 class="red">I work...</h1>
 
 						<p>hard. Trained by old school Italian construction workers at an early age, I have a strong work ethic & a love for diverse projects that <span class="red">challenge my creativity.</span></p>
 
@@ -157,7 +157,7 @@
 
 				<div class="page double contact" id="contact-jump">
 					<div class="page-inner">
-						<h1 class="red snap">Contact me...</h1>
+						<h1 class="red">Contact me...</h1>
 
 						<p>if you’re interested in hiring me, working with me, or having me manage your next project. I'm not against contract work either.</p>
 
@@ -213,14 +213,14 @@
 			</div><!-- /.container-->	
 
 		<footer>
-		<p><span class="red">&copy;2013</span> adamgedney.com<  |  <a id="test-button" href="?controller=request">login with</a></p>
+		<p><span class="red">&copy;2013</span> adamgedney.com</p>
 		</footer>
 
 		<!-- Scripts -->
 		<script src="js/jquery-1.10.2.min.js"></script>
 		<script src="js/jquery.event.special.js"></script>
   		<script src="js/jquery.easing.min.js"></script>
-  		<script src="js/jquery.scrollsnap.js"></script>
+  		<script src="js/jquery.scrol.js"></script>
 		<script src="js/main-ck.js"></script>
 	</body>
 </html>

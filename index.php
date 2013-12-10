@@ -222,7 +222,7 @@
 		<script src="js/jquery-1.10.2.min.js"></script>
 		<script src="js/jquery.event.special.js"></script>
   		<script src="js/jquery.easing.min.js"></script>
-  		<script src="js/jquery.scrol.js"></script>
-		<script src="js/main-ck.js"></script>
+  		<script src="js/jquery.scrollsnap.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>

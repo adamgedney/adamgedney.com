@@ -21,7 +21,7 @@
     /* SITE */
     Last update: 10/21/2013
     Standards: HTML5, CSS3, SASS, JS, JQuery..
-    Software: GitHub, Sublime Text 2, Fetch
+    Software: GitHub, Firefox, Firebug, Sublime Text 2, CodeKit, Fetch
 
 
                     

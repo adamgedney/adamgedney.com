@@ -1,8 +1,8 @@
+/* 
+	Thanks for checking out my code!!
 
 
-
-
-/* 	Copyright Adam Gedney 10/21/13
+	Copyright Adam Gedney 10/21/13
 	contact: adam.gedney@gmail.com
 	http://adamgedney.com
 
@@ -25,7 +25,12 @@ $text-gray: #5d5d5d;
 $dark-gray: #252525;
 $red: #d93330;
 $blue: #5d95ba;
+$green: #479648;
 
+@mixin duration($time: .7s){
+		transition-duration: $time;
+-webkit-transition-duration: $time;
+}
 
 /*--------------------------------------Start CSS Reset---------------------------------------------*/
 
@@ -98,9 +103,9 @@ a, input[type="submit"]{
 text-decoration: none;
 color: $blue;
 opacity: 1;
-transition-duration: .7s;
--webkit-transition-duration: .7s;
+@include duration;
 outline: none;
+-webkit-appearance: none;/*overrides safari mobile default styling*/
 }
 
 a:visited{
@@ -109,15 +114,32 @@ a:visited{
 
 a:hover, input[type="submit"]:hover{
 opacity: .5;
-transition-duration: .7s;
--webkit-transition-duration: .7s;
+@include duration;
+}
+
+a.no-tran:hover{
+	opacity: 1;
 }
 
 img{
 	max-width: 100%;
 }
 
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: $icon-gray;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $icon-gray;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $icon-gray;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: $icon-gray;
+}
+
 /*--------------------------------------End General / Start Objects------------------------------------*/
+
 
 .hide-text{
 	text-indent: 200%;
@@ -143,6 +165,10 @@ img{
 	color: $red;
 }
 
+.light-gray{
+	color: $icon-gray;
+}
+
 .text-gray{
 	color: $text-gray;
 }
@@ -158,9 +184,6 @@ img{
 .heart{
 	font-size: .85em;
 }
-
-
-
 
 
 /*--------------------------------------End Objects / Start Main------------------------------------*/
@@ -187,26 +210,55 @@ header{
 	font-weight: 100;
 }
 
-.page p{
-	width: 504px; /*28x18*/
-	margin: 0 auto;
-	font-weight: 100;
+.page{
+	p{
+		width: 504px; /*28x18*/
+		margin: 0 auto;
+		font-weight: 100;
+	}
+
+	p.quote{
+		width: 100%;
+		font-size: 3.6em;
+		font-family: 'Tangerine', cursive;
+	}
+
+	p.error{
+		color: $white;
+		font-size: .9em;
+		text-align: left;
+		width: 366px;
+		position: absolute;
+		z-index: 99999;
+		top: 25%;
+		left: 0;
+		padding-left: 3%;
+		background: $red;
+		opacity: 0;
+		@include duration;
+	}
+
+	p.error.phone-error{
+			top: 39%;
+		}
 }
 
 .img-container{
 	overflow: hidden;
 	margin-top: 36px;
+
+		a{
+			// padding: 5px;
+			// margin-right: 9px;
+			float: left;
+			display: block;
+			width: 20%; /*210px*/
+			height: 210px;
+			// background: $icon-gray;
+		}
 }
 
-.img-container a{
-	padding: 5px;
-	margin-right: 9px;
-	float: left;
-	display: block;
-	width: 210px;
-	height: 210px;
-	background: $icon-gray;
-}
+
 
 /*--------------------------------------------Landing----------------------------------------------*/
 
@@ -235,26 +287,31 @@ header{
 .like .img-container{
 	height: 378px;/*18x21*/
 	overflow: hidden;
+
+		a.zig-zag{
+			margin-top: 36px;
+		}
+
+		a.zig-zag-1{
+			margin-top: 166px;
+		}
+
+		a.zig-zag-2{
+			margin-top: 90px;
+		}
+
+		a.zig-zag-3{
+			margin-top: 162px;
+		}
+
+		a.zig-zag-4{
+			margin-top: 108px;
+		}
 }
 
-.like .img-container a.zig-zag{
-	margin-top: 36px;
-}
-
-.like .img-container a.zig-zag-1{
-	margin-top: 166px;
-}
-
-.like .img-container a.zig-zag-2{
-	margin-top: 90px;
-}
-
-.like .img-container a.zig-zag-3{
-	margin-top: 162px;
-}
-
-.like .img-container a.zig-zag-4{
-	margin-top: 108px;
+p.subtext{
+	margin: 36px auto;
+	font-size: 2.1em;
 }
 
 /*---------------------------------------------"I Love" Page------------------------------------------------*/
@@ -275,26 +332,22 @@ a.resume{
 	color: $icon-gray;
 	margin:36px 0 72px;
 	display: block;
+
+		img{
+			height: 40px;
+			margin-right: 18px;
+		}
 }
 
-a.resume img{
-	height: 40px;
-	margin-right: 18px;
-}
+.work{
+	.img-container{
+		margin: 18px 0 126px;
+	}
 
-.work .img-container{
-	margin: 18px 0 126px;
-}
-
-.work h3{
-	color: $red;
-	text-align: left;
-}
-
-.page p.quote{
-	width: 100%;
-	font-size: 3.6em;
-	font-family: 'Tangerine', cursive;
+	h3{
+		color: $red;
+		text-align: left;
+	}
 }
 
 
@@ -323,48 +376,251 @@ a.resume img{
 	width: 366px;
 	float: left;
 	margin: 9px 36px 0 0;
-}
+	position: relative;/*required for error message absolute positioning*/
 
-.contact-form input[type="text"], .contact-form input[type="submit"], .contact-form textarea{
-	width: 366px;
-	height: 54px;
-	border-radius: 2px;
-	border: 1px solid $text-gray;
-	margin-bottom: 9px;
-	padding: 9px;
-	font-family: 'Droid Serif', "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
-	font-size: 1.8em;
-	color: $icon-gray;
-}
+	input[type="text"], input[type="email"], input[type="submit"], textarea{
+		width: 366px;
+		height: 54px;
+		border-radius: 2px;
+		border: 1px solid $text-gray;
+		margin-bottom: 9px;
+		padding: 9px;
+		font-family: 'Droid Serif', "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+		font-size: 1.8em;
+		color: $text-gray;
+	}
 
-.contact-form textarea{
-	height: 198px;
-}
+	textarea{
+		height: 198px;
+	}
 
-.contact-form input[type="submit"]{
-	background: $red;
-	border: none;
-	font-family: 'Ubuntu', "Helvetica Neue Light", Helvetica, Arial, sans-serif;
-	font-weight: 100;
-	color: $white;
+	input[type="submit"]{
+		background: $green;
+		border: none;
+		font-family: 'Ubuntu', "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+		font-weight: 100;
+		color: $white;
+	}
 }
 
 .contact-content{
 	width: 400px;
 	float: left;
-}
 
-.contact-content p{
-	width: 400px;
-	text-align: left;
-	color: $text-gray;
-	font-weight: 100;
+	p{
+		width: 400px;
+		text-align: left;
+		color: $text-gray;
+		font-weight: 100;
+	}
 }
 
 p.info{
 	margin: 81px auto;
 	text-align: center;
 	width: 200px;
+}
+
+
+/*----------------------------------------------Project Page Template--------------------------------*/
+
+body.projects{
+	background: $white;
+}
+
+.projects{
+	header{
+		position: fixed;
+		z-index: 500;
+		width: 100%;
+		height: 54px;
+		background: #252525;
+		opacity: .8;
+		font-family: 'Ubuntu', "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+	}
+
+	header h1{
+		color: $icon-gray;
+		font-size: 1.6em;
+		display: inline;
+		line-height: 54px;
+	}
+
+	h3{
+		font-weight: 100;
+		margin-bottom: 9px;
+		color: $red;
+	}
+}
+
+.header-inner{
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 36px;
+	font-weight: 100;
+}
+
+nav{
+	overflow: hidden;
+	display: inline;
+
+	ul{
+		float: right;
+		margin-bottom: 0;
+
+		a{
+			color: $icon-gray;
+		}
+
+		li{
+			display: inline-block;
+			font-size: .8em;
+			padding-left: 18px;
+			line-height: 54px;
+		}
+	}
+} 
+
+.featured{
+	height: 654px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+
+	h2{
+		position: absolute;
+		top: 34%;
+		left: 22%;
+		bottom: 34%;
+		right: 22%;
+		z-index: 200;
+		font-size: 18em;/*fallback for vw font size*/
+		font-size: 8.5vw; /*when combined with above %based positions, the text floats center and resizes with div*/
+		font-family: 'Tangerine', cursive;
+		color: $red;
+		text-align: center;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	}
+
+	img{
+		width: 100%;
+	}
+}
+
+.project-inner{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.description{
+	text-align: center;
+	padding: 87px 0 88px; /*keeps height fluid -no height defined on div*/
+	border-bottom: 1px solid $icon-gray;
+
+	h3{
+		font-size: 5.8em;
+		font-family: 'Tangerine', cursive;
+	}
+}
+
+.description h4, .details-sidebar h4{
+	font-size: 2.1em;
+	font-weight: 100;
+	width: 100%;
+}
+
+.details{
+	overflow: hidden;
+	padding: 88px 0 0;
+	border-bottom: 1px solid $icon-gray;
+	margin-bottom: 108px;
+	position: relative;
+}
+
+.details-desc{
+	max-width: 570px;
+	padding-right: 3.157895%;/*18px*/
+	float: left;
+
+	p{
+		margin-bottom: 162px;
+	}
+}
+
+.details-sidebar{
+	max-width: 570px;
+	float: left;
+	padding-top: 10px;
+
+	h4{
+		margin-bottom: 9px;
+		color: $red;
+		padding-bottom: 9px;
+		border-bottom: 1px solid $icon-gray;
+	}
+
+	p{
+		margin-bottom: 39px;
+	}
+
+	ul{
+		list-style-type: disc;
+		padding-left: 16px;
+	}
+}
+
+.github-link{
+	display: block;
+	font-size: 1.4em;
+	margin-bottom: 9px;
+	position: absolute;
+	bottom: 0;
+}
+
+.shots{
+	overflow: hidden;
+	margin-bottom: 88px;
+
+		img{
+			display: block;
+			margin-bottom: 36px;
+		}
+}
+
+
+
+.shot-left-col{
+	float: left;
+	margin-right: 36px;
+}
+
+.shot-right-col{
+	float: left;
+}
+
+.lb-caption{/*overrides lightbox caption font settings*/
+	font-family: 'Ubuntu', "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	color: $icon-gray;
+}
+
+.project-contact{
+	h3{
+		text-align: center;
+		border-bottom: 1px solid $icon-gray;
+	}
+
+	.contact-icons{
+		margin: 0 auto 88px;
+		width: 1140px;
+		text-align: center;
+		border-bottom: 1px solid $icon-gray;
+
+		a{
+			display: inline-block;
+			padding: 36px;
+		}
+	}
 }
 
 
@@ -375,9 +631,10 @@ footer{
 	background: $dark-gray;
 	height: 144px; /*18x8*/
 	padding-top: 70px;
+
+	p{
+		width: 220px;
+		margin: 0 auto;
+	}
 }
 
-footer p{
-	width: 220px;
-	margin: 0 auto;
-}

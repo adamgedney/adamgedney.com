@@ -1,0 +1,326 @@
+/*
+░░░░░░███████ ]▄▄▄▄▄▄▄▄         
+▂▄▅█████████▅▄▃▂           ☻/   
+Il███████████████████].   /▌    
+  ◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙◤..       /\ 
+
+
+ 	Copyright Adam Gedney 3/31/13
+	contact: adam.gedney@gmail.com
+	http://adamgedney.com
+
+"Good UI design is humble.” – Jono DiCarlo
+*/
+/*----SASS Color Palette----*/
+
+$white: #fefefe;
+$light-grey: #a5a5a5;
+$dark-grey: #252525;
+
+$red: #F14C4A;
+$orange: #FDAA02;
+$green: #20AE4A;
+$dark-green: #13672c;
+$blue: #0785BF;
+$purple: #A785C1;
+
+
+/*--------------------------------------Start CSS Reset---------------------------------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, cite, code,del, img, strike, strong, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+
+ul {
+list-style: none;
+}
+
+
+
+
+
+
+
+/*--------------------------------------End CSS Reset / Start General-------------------------------*/
+
+/* 	SET ALL ELEMENTS BOX-SIZING TO BORDER-BOX
+	If you need support for IE7 and lower use polyfill: https://github.com/Schepp/box-sizing-polyfill 
+	--Borrowed from responsive.gs*/
+* { -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; }
+
+	
+body{
+background: url(../images/page/concrete_wall.png) #fafafa;
+background-attachment: fixed;
+color: $white;
+font: 62.5% Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+h1, h2, h3, h4, p, ul, li{
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3{
+	font-family: 'Pacifico', cursive;
+}
+
+h1{
+font-size: 6em;
+line-height: 1.1em;
+}
+
+h2{
+font-size: 3.6em;
+line-height: 1.14em;
+}
+
+h3{
+font-size: 2.7em;
+line-height: 1.8em;
+}
+
+p, ul, dl{
+font-size: 1.8em;
+line-height: 1.6;
+margin-bottom: 20px;
+}
+
+ul{
+line-height: 1.3em;
+}
+
+a{
+text-decoration: none;
+color: $blue;
+outline: none;
+}
+
+a:hover{
+	opacity: .6;
+}
+
+xmp{
+	// display: block;
+	overflow: scroll;
+	text-align: left;
+	color: $dark-grey;
+	font-size: 2.1em;
+}
+
+img{
+	max-width: 100%;
+}
+
+.small{
+	font-size: .5em;
+}
+
+.medium{
+	font-size: .6em;
+}
+
+.bold{
+	font-weight: 700;
+}
+
+
+
+.center{
+	text-align: center;
+}
+
+.red{
+	color: $red;
+}
+
+.orange{
+	color: $orange;
+}
+
+.green{
+	color: $green;
+}
+
+.blue{
+	color: $blue;
+}
+
+.purple{
+	color: $purple;
+}
+
+/*--------------------------------------End General / Start Main------------------------------------*/
+
+
+.fork-me{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.landing{
+	h1{
+		text-align: center;
+		margin-top: 230px;
+		text-shadow: 1px 1px 1px rgba(255,255,255,0.4);
+	}
+
+	p{
+		font-size: 2.4em;
+		max-width: 570px;
+		margin: 36px auto 0;
+	}
+	height: 600px;
+}
+
+.button{
+	display: block;
+	width: 175px;
+	height: 40px;
+	color: $white;
+	background: $green;
+	font-size: 1.8em;
+	line-height: 40px;
+	text-align: center;
+	margin: 36px auto 0;
+	border: 1px solid $dark-green;
+	border-radius: 2px;
+}
+
+.scroll{
+	display: block;
+	width: 60px;
+	margin: 0 auto;
+}
+
+.page{
+	background: $white;
+	min-height: 600px;
+}
+
+.showcase{
+	background: $dark-grey;
+	padding-bottom: 72px;
+	min-height: 790px;
+
+	-webkit-box-shadow: 1px -5px 5px 0px rgba(37,37,37,0.57);
+	   -moz-box-shadow: 1px -5px 5px 0px rgba(37,37,37,0.57);
+			box-shadow: 1px -5px 5px 0px rgba(37,37,37,0.57);
+
+	h2{
+		text-align: center;
+		padding: 108px 0 36px;
+	}
+
+	h3{
+		text-align: center;
+		padding: 36px 0 36px;
+	}
+}
+
+.instructions{
+	background: $white;
+	padding-bottom: 72px;
+
+	h2{
+		color: $dark-grey;
+		text-align: center;
+		padding: 108px 0 36px;
+	}
+
+	p{
+		color: $dark-grey;
+	}
+}
+
+.page-inner{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+
+
+
+

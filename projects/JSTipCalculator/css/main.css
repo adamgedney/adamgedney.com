@@ -1,0 +1,269 @@
+
+
+
+
+/* 	Copyright Adam Gedney 3/31/13
+	contact: adam.gedney@gmail.com
+	http://adamgedney.com
+
+"Good UI design is humble.” – Jono DiCarlo
+*/
+/*
+blue text: #73949b
+
+*/
+
+
+
+/*--------------------------------------Start CSS Reset---------------------------------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, cite, code,del, em, img, strike, strong, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+
+ul {
+list-style: none;
+}
+
+
+
+
+
+
+
+/*--------------------------------------End CSS Reset / Start General-------------------------------*/
+
+
+@font-face {
+	font-family: 'Flat-UI-Icons-24';
+	src:url('../fonts/Flat-UI-Icons-24.eot');
+	src:url('../fonts/Flat-UI-Icons-24.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Flat-UI-Icons-24.woff') format('woff'),
+		url('../fonts/Flat-UI-Icons-24.ttf') format('truetype'),
+		url('../fonts/Flat-UI-Icons-24.svg#Flat-UI-Icons-24') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icn{
+	font: 1.9em 'Flat-UI-Icons-24';
+	margin-right: 3px;
+	height: 17px;
+	display: inline-block;
+}
+
+body{
+background: url(../images/navy_blue.png) #252525;
+color: #f3f8ed;
+font: 62.5% 'Exo', sans-serif;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+h1, h2, h3, h4{
+	font-weight: 100;
+	color: #f3f8ed;
+}
+
+h1{
+	font-size: 2.7em;
+	line-height: 1.1em;
+}
+
+h2{
+	font-size: 1.8em;
+	line-height: 1.14em;
+}
+
+h3{
+	font-size: 1.6em;
+	line-height: 1.8em;
+}
+
+p, ul, dl{
+	font-size: 1.4em;
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+
+ul{
+	line-height: 1.3em;
+}
+
+a{
+	text-decoration: none;
+	color: #08298A;
+}
+
+label, input, button{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.4em;
+	font-weight: 100;
+}
+
+input{
+	color: #f3f8ed;
+}
+
+::-webkit-input-placeholder {
+   color: #B3AEB4;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #B3AEB4; 
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #B3AEB4;  
+}
+:-ms-input-placeholder {  
+   color: #B3AEB4;  
+}
+/*--------------------------------------End General / Start Main------------------------------------*/
+
+
+#container{
+	width: 310px;
+	height: 450px;
+	margin: 72px auto 18px;
+	background: url(../images/blurBg.jpg) #e1e1e1 no-repeat;
+	padding: 18px;
+	border-radius: 5px;
+
+	-webkit-box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.3);
+	   -moz-box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.3);
+			box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.3);
+}
+
+.wrapper{
+	width: 400px;
+	margin-top: 36px;
+}
+
+header{
+	margin-top: 27px;
+}
+
+.bill{
+	margin-top: 51px;
+}
+
+.bill h2, .radio h2, .total h2{
+	margin-bottom: 9px;
+}
+
+.bill label{
+	height: 17px;
+}
+
+.bill input{
+	border-radius: 5px;
+	background: none;
+	border: 1px solid #f3f8ed;
+	width: 140px;
+	height: 17px;
+	font-size: 1.6em;
+	padding: 5px;
+	margin-right: 1px;
+	vertical-align: top;
+}
+
+.bill button{
+	width: 70px;
+	height: 29px;
+	border-radius: 5px;
+	vertical-align: top;
+	background: none;
+	border: 1px solid #f3f8ed;
+	color: #f3f8ed;
+	font-size: 1.4em;
+	font-weight: 100;
+	opacity: .9;
+}
+
+.bill button:hover{
+	opacity: .4;
+	transition-duration: .5s;
+}
+
+#error{
+	color: #F07241;
+	margin-top: 3px;
+	position: absolute;
+	font-size: 1em;
+}
+
+.radio{
+	margin-top: 45px;
+}
+
+.radio h2{
+	display: inline-block;
+}
+
+.radio fieldset{
+	/*margin-left: 27px;*/
+	border: 0;
+	width: 230px;
+}
+
+.radio input{
+	margin-bottom: 9px;
+}
+
+.radio label{
+	padding-right: 18px;
+}
+
+.radio input:nth-child(3){
+	margin-left: 13px;
+}
+
+.total{
+	margin-top: 45px;
+	height: 72px;
+}
+
+.total p.icn{
+	color: #f3f8ed;
+}
+
+.total p + p, #tipAmount{
+	display: inline;
+	font-weight: 100;
+	margin-left: 12px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.total p + p{
+	font-size: 2.1em;
+	color: #c9d9b5;
+}
+
+.AIR-anchor{
+	display: block;
+	width: 180px;
+	margin: 0 auto;
+	color: #efefef;
+	font-size: 1.4em;
+	text-decoration: underline;
+}
+
+.AIR-anchor:hover{
+	opacity: .5;
+	transition-duration: .7s;
+}

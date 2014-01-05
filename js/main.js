@@ -5,6 +5,7 @@ $(function(){
 // Google maps
 	function initialize() {
 		// Source: http://stiern.com/tutorials/adding-custom-google-maps-to-your-website/
+		//
 		var latlng = new google.maps.LatLng(26.7153, -80.0534);
 		
 		var settings = {

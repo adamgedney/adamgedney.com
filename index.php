@@ -223,6 +223,6 @@
 		<script src="js/jquery.event.special.js"></script>
   		<script src="js/jquery.easing.min.js"></script>
   		<script src="js/jquery.scrollsnap.js"></script>
-		<script src="js/main.js"></script>
+		<script src="js/main.js"></script> 
 	</body>
 </html>

@@ -14,7 +14,7 @@
 
 	<!-- meta -->
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
 
 	<!-- favicon & humans.txt -->
 	<link type="text/plain" rel="author" href="/humans.txt" />
@@ -190,7 +190,7 @@
 
 							<div class="contact-content">
 							
-							<p><span class="red">I’m interested in relocating to the Virginia Beach, VA area.</span>  But, if the opportunity is right, feel free to pay me loads of money and fly me around the world. <span class="dark-gray">Go ahead. Contact me</span> via the form at left, by phone or email, even if it's just to say hi. <span class="red">&#9786;</span></p>
+							<p><span class="red">I’m interested in working in the West Palm Beach to Miami area.</span>  But, if the opportunity is right, feel free to pay me loads of money and fly me around the world. <span class="dark-gray">Go ahead. Contact me</span> via the form at left, by phone or email, even if it's just to say hi. <span class="red">&#9786;</span></p>
 
 							<p class="info"><span class="red">Adam Shields Gedney</span>
 								adam@adamgedney.com

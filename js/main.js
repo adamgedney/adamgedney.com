@@ -5,10 +5,10 @@ $(function(){
 // Google maps
 	function initialize() {
 		// Source: http://stiern.com/tutorials/adding-custom-google-maps-to-your-website/
-		var latlng = new google.maps.LatLng(36.698638, -74.804601);
+		var latlng = new google.maps.LatLng(26.7153, -80.0534);
 		
 		var settings = {
-			zoom: 6,
+			zoom: 8,
 			scrollwheel: false,
 			center: latlng,
 			mapTypeControl: true,
@@ -26,7 +26,7 @@ $(function(){
 		new google.maps.Point(0,118)
 	);
 
-	var companyPos = new google.maps.LatLng(36.8506, -76);
+	var companyPos = new google.maps.LatLng(26.7153, -80.0534);
 	
 	var companyMarker = new google.maps.Marker({
 		position: companyPos,
@@ -37,6 +37,16 @@ $(function(){
 	}// /initialize()
 	
 	initialize();
+
+
+
+
+
+
+
+
+
+
 
 	//contact icon hover states
 	//on mouse over
@@ -59,6 +69,11 @@ $(function(){
 	$(document).on('mouseover', 'img.fb-icon', function(){
 		$(".fb-icon").attr('src', 'images/fb-icon-hover.png');
 	});
+
+
+
+
+
 
 
 	//contact icon hover states
@@ -84,6 +99,16 @@ $(function(){
 	});
 
 
+
+
+
+
+
+
+
+
+
+
 	//--------------------------------animate.css hover animations----------------------
 	$(document).on('mouseover', '.img-container a', function(){
 		$(this).addClass('animated pulse');
@@ -104,6 +129,16 @@ $(function(){
 	function removeSwing(){
 		$('img.profile-pic').removeClass('animated swing');
 	}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -137,6 +172,16 @@ $(function(){
 	});
 
 
+
+
+
+
+
+
+
+
+
+
 	//-------------------------------------------Scrollsnap.js-----------------------------------
 	//https://github.com/benoitpointet/jquery-scrollsnap-plugin/blob/master/index.html
 
@@ -145,6 +190,16 @@ $(function(){
         proximity: 200,
         easing: 'easeOutBounce'
         });
+
+
+
+
+
+
+
+
+
+
 
 //-------------------AJAX call test----------------------------------------
 

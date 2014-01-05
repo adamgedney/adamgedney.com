@@ -105,6 +105,7 @@ color: $blue;
 opacity: 1;
 @include duration;
 outline: none;
+-webkit-appearance: none;/*overrides safari mobile default styling*/
 }
 
 a:visited{

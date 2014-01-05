@@ -1,0 +1,312 @@
+
+
+
+
+/* 	Copyright Adam Gedney 7/18/13
+contact: adam.gedney@gmail.com
+http://adamgedney.com
+
+"Good UI design is humble.” – Jono DiCarlo
+*/
+
+
+/*
+Yellow - #e9cc02
+Purple -442f52
+off white  -#c7c0b6
+white -#faf9f3
+brown -#1f1f1d
+grey -#969696
+light grey -bcbcbc
+dark grey -686868
+red -#bf767e
+*/
+/*--------------------------------------Start CSS Reset---------------------------------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, cite, code,del, em, img, strike, strong, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ul {
+	list-style: none;
+}
+
+
+
+
+
+
+
+/*--------------------------------------End CSS Reset / Start General-------------------------------*/
+
+
+body{
+	background: url("../images/crdbd.png")#faf9f3;
+	color: #c7c0b6;
+	font: 62.5% "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+}
+
+#arrow{
+	display: block;
+	margin-left: 160px;
+}
+
+h1{
+	font-size: 3.9em;
+	line-height: 1.1em;
+	margin-top: 30px;
+}
+
+h2{
+	font-size: 2.6em;
+	line-height: 1.14em;
+}
+
+h3{
+	font-size: 1.6em;
+	line-height: 1.8em;
+}
+
+p, ul, dl{
+	font-size: 1.6em;
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+
+ul{
+	line-height: 1.3em;
+}
+
+a{
+	text-decoration: none;
+	color: #08298A;
+}
+
+object:focus { outline:none; }
+
+.bold{
+	font-weight: 700;
+}
+
+.red-highlight{
+	color:#bf767e;
+}
+
+
+
+/*--------------------------------------End General / Start Main------------------------------------*/
+
+.featured-img{
+	background: url("../images/girl.jpg") repeat-x #efefef;
+	width: 100%;
+}
+
+header{
+	opacity: .7;
+	background: url("../images/crdbd.png")#faf9f3;
+	padding: 0 40px;
+	height: 70px;
+	border-bottom: solid 1px #442f52;
+}
+
+.logo{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.row:nth-child(1){
+ margin-bottom: 0;
+}
+
+.landing{
+	max-width: 1140px;
+	margin: 0 auto;
+	height: 575px;
+	padding-top: 28px;
+}
+
+.content{
+	font-weight: 100;
+	text-align: center;
+	margin: 130px 0 0;
+	padding-left: 40px;
+	
+}
+
+.content h1{
+	margin-bottom: 50px;
+	font-weight: 100;
+}
+
+.tip{
+	margin-top:45px;
+	float:right;
+}
+
+.tip2{
+	display: none;
+}
+
+#wrapper {
+	float: left;
+	max-width:525px;
+	height:525px;
+	margin-left: 10%;
+}
+
+img.accent{
+	display: block;
+	max-width: 400px;
+	margin: 10px auto 60px;
+
+}
+.body-copy{
+	color: #686868;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 5%;
+
+}
+.body-copy h2{
+	color: #686868;
+	margin-bottom: 8px;
+}
+
+a.button{
+	display: block;
+	width: 175px;
+	height: 50px;
+	margin: 34px auto 200px;
+	background: #bf767e; 
+	line-height: 2.2em;
+	padding-left: 17px;
+	font-size: 2.4em;
+	font-weight: 100;
+	color: #efefef;
+}
+
+a.button:hover{
+	opacity: .6;
+	color: #fff;
+}
+
+footer{
+	height: 50px;
+}
+
+.copyright{
+	width: 170px;
+	margin: 30px auto 30px;
+}
+
+.copyright p{
+	font-weight: 100;
+	color: #969696;
+}
+
+@media (max-width: 1065px){
+
+#wrapper {
+float: left;
+margin: 0 auto;
+}
+
+}
+
+@media (max-width: 897px){
+
+.content{
+	width: 95%;
+}
+
+#wrapper {
+	margin: 160px 20% 80px;
+}
+
+.tip{
+	display: none;
+}
+
+.tip2{
+	display: block;
+	width: 200px;
+	margin-top:45px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a.button{
+	margin-bottom: 60px;
+}
+
+}
+
+@media (max-width: 766px){
+
+.tip2{
+	display: none;
+}
+
+
+#wrapper{
+	margin: 140px 5% 0;
+	height: auto;
+}
+
+#movie{
+	margin-left: 25%;
+}
+
+img.altFlash{
+	max-width: 70%;
+}
+
+.body-copy{
+	width: 96%;
+	margin: 0 2%;
+
+}
+
+.accent{
+	width: 200px;
+	height: 38px;
+}
+
+a.button{
+	display: block;
+	margin-bottom: 60px;
+	width: 175px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

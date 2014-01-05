@@ -1,0 +1,20 @@
+<music>
+	<track>
+		<name>The Wave</name>
+		<artist>Adam Shields</artist>
+		<cover>theWaveCover.jpg</cover>
+		<song>The_Wave_Adam_Shields.mp3</song>
+	</track>
+	<track>
+		<name>Tellurian (Original Mix)</name>
+		<artist>Adam Shields</artist>
+		<cover>tellurianCover.jpg</cover>
+		<song>Tellurian_Adam_Shields.mp3</song>
+	</track>
+	<track>
+		<name>Slippery</name>
+		<artist>Adam Shields</artist>
+		<cover>slipperyCover.jpg</cover>
+		<song>Slippery_Adam_Shields.mp3</song>
+	</track>
+</music>

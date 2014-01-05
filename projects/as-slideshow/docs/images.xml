@@ -1,0 +1,20 @@
+<images path="pics/">
+	
+		<pic>
+			<file>butter1.jpg</file>
+			<caption>I kinda like butter</caption>
+		</pic>
+		<pic>
+			<file>butter2.jpg</file>
+			<caption>Isn't butter the greatest?</caption>
+		</pic>
+		<pic>
+			<file>butter3.jpg</file>
+			<caption>Butter me silly!</caption>
+		</pic>
+		<pic>
+			<file>butter4.jpg</file>
+			<caption>But butter builds better bodies!</caption>
+		</pic>
+	
+</images>

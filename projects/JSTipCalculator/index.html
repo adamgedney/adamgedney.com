@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<!-- Copyright 2013 Adam Gedney | adam.gedney@gmail.com
+If you're reading this, feel free to contact me with employment opportunities ;)-->
+<head>
+    <title>Tip Calculator</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Exo:400,100,100italic,200,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+    <div id="container">
+    	<header>
+    		<h1>Tip Calculator</h1>
+    	</header>
+        
+	    <div class="wrapper">
+	    	<div class="bill">
+		    <h2>Bill</h2>
+				<label for="bill"><span class="icn">&#xe005</span></label>
+			    <input name="bill" placeholder="TOTAL BILL AMT" id="bill-input" autofocus="autofocus"/>
+			    <button type="submit" id="submit-button">Submit</button>
+			    <p id="error"><p>
+			</div><!-- /.bill-->
+
+			<div class="radio">
+		    <h2>Tip Amount</h2><p id="tipAmount"></p>
+		    <fieldset>
+			    
+			    <input name="tipGroup" id="5pct" type="radio" value="5">
+			    <label for="5pct">5%</label>
+
+			    <input name="tipGroup" id="10pct" type="radio" value="10">
+			    <label for="10pct">10%</label>
+			    
+			    <input name="tipGroup" id="15pct" type="radio" value="15">
+			    <label for="15pct">15%</label>
+			    
+			    <input name="tipGroup" id="20pct" type="radio" value="20">
+			    <label for="20pct">20%</label>
+			    
+			    <input name="tipGroup" id="25pct" type="radio" value="25">
+			    <label for="25pct">25%</label>
+
+			    <input name="tipGroup" id="30pct" type="radio" value="30">
+			    <label for="30pct">30%</label>
+
+			</fieldset>
+			</div><!-- /.radio -->
+
+			<div class="total">
+		    <h2>Total Bill + Tip</h2>
+		    	<p class="icn">&#xe010</p><p id="totalBill"></p>
+		    </div><!-- /.total -->
+
+		</div><!-- /.wrapper -->
+    </div><!-- /container -->
+    
+    <a class="AIR-anchor" href="downloads/TipCalculator.air">Download the AIR app</a>
+    
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

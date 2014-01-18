@@ -136,7 +136,7 @@
 							
 							<a href="work/madserv.html" ><img src="images/madserv-thumb.jpg" alt="love image 5"/></a>
 
-							<a href="work/tip-calculator.html" ><img src="images/tipcalc-thumb.jpg" alt="love image 4"/></a>
+							<a href="work/suprvideo.html" ><img src="images/suprvideo-thumb.jpg" alt="love image 4"/></a>
 						
 						</div><!-- /.love-img-container-->
 

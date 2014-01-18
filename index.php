@@ -130,7 +130,7 @@
 						<div class="img-container">
 							<a href="work/bloggity-cms.html" ><img src="images/bloggityMac-thumb.jpg" alt="love image 1"/></a>
 							
-							<a href="work/tasker-manager.html" ><img src="images/tasker-thumb.jpg" alt="love image 2"/></a>
+							<a href="work/simple-picasa.html" ><img src="images/picasa-thumb.jpg" alt="love image 2"/></a>
 							
 							<a href="work/mantissa-synth.html" ><img src="images/mantissaSynth-thumb.jpg" alt="love image 3"/></a>
 							

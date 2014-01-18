@@ -115,7 +115,7 @@
 
 						<h3>Front-end</h3>
 						<div class="img-container">
-							<a href="work/synergy-industries.html" ><img src="images/synergy-thumb.jpg" alt="love image 1"/></a>
+							<a href="work/sgwebmarketing.html" ><img src="images/sgweb-thumb.jpg" alt="love image 1"/></a>
 							
 							<a href="work/mantissa-web.html" ><img src="images/mantissa-thumb.jpg" alt="love image 4"/></a>
 

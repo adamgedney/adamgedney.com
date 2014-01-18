@@ -134,9 +134,10 @@
 							
 							<a href="work/mantissa-synth.html" ><img src="images/mantissaSynth-thumb.jpg" alt="love image 3"/></a>
 							
+							<a href="work/madserv.html" ><img src="images/madserv-thumb.jpg" alt="love image 5"/></a>
+
 							<a href="work/tip-calculator.html" ><img src="images/tipcalc-thumb.jpg" alt="love image 4"/></a>
-							
-							<a href="work/weather-app.html" ><img src="images/weatherApp-thumb.jpg" alt="love image 5"/></a>
+						
 						</div><!-- /.love-img-container-->
 
 						<h3>Print / Graphic Design</h3>

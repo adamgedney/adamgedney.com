@@ -215,6 +215,8 @@ header{
 }
 
 .page{
+	overflow-x: hidden;
+	
 	p{
 		width: 504px; /*28x18*/
 		margin: 0 auto;

@@ -141,8 +141,18 @@
 						</div><!-- /.love-img-container-->
 
 						<h3>Print / Graphic Design</h3>
-						<div class="img-container last">
-							<a href="work/aubert-form.html" ><img src="images/aubert-thumb.jpg" alt="love image 1"/></a>
+						<div class="img-container print_thumbs last">
+							<img src="images/aubert-thumb.jpg" alt="love image 1"/>
+							
+							<img src="images/orbits-thumb.jpg" alt="love image 2"/>
+							
+							<img src="images/stzosima-thumb.jpg" alt="love image 3"/>
+							
+							<img src="images/meditrinaBiz-thumb.jpg" alt="love image 4"/>
+							
+							<img src="images/uiLogo-thumb.jpg" alt="love image 5"/>
+
+							<!-- <a href="work/aubert-form.html" ><img src="images/aubert-thumb.jpg" alt="love image 1"/></a>
 							
 							<a href="work/orbitz-class-ad.html" ><img src="images/orbits-thumb.jpg" alt="love image 2"/></a>
 							
@@ -150,7 +160,7 @@
 							
 							<a href="work/meditrina-business-cards.html" ><img src="images/meditrinaBiz-thumb.jpg" alt="love image 4"/></a>
 							
-							<a href="work/ui-logo.html" ><img src="images/uiLogo-thumb.jpg" alt="love image 5"/></a>
+							<a href="work/ui-logo.html" ><img src="images/uiLogo-thumb.jpg" alt="love image 5"/></a> -->
 						</div><!-- /.love-img-container-->
 
 						<p class="quote" >“Patience, persistence and perspiration make an unbeatable combination for success.” - Napoleon Hill</p>

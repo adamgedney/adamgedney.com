@@ -318,6 +318,21 @@ p.subtext{
 	font-size: 2.1em;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*---------------------------------------------"I Love" Page------------------------------------------------*/
 
 
@@ -325,6 +340,18 @@ img.web-logos{
 	text-align: center;
 	margin-top: 18px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -353,6 +380,37 @@ a.resume{
 		text-align: left;
 	}
 }
+
+.print_thumbs{
+	img{
+		// padding: 5px;
+		// margin-right: 9px;
+		float: left;
+		display: block;
+		width: 18%; /*210px was 20% changed to 18%*/
+		margin-left: 18px;
+		height: 200px;
+		// background: $icon-gray;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*---------------------------------------------Contact Page------------------------------------------------*/
@@ -424,6 +482,19 @@ p.info{
 	text-align: center;
 	width: 200px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*----------------------------------------------Project Page Template--------------------------------*/

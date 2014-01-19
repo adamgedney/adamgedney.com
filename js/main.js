@@ -183,16 +183,14 @@ $(function(){
 
 
 
-	//-------------------------------------------Scrollsnap.js-----------------------------------
-	//https://github.com/benoitpointet/jquery-scrollsnap-plugin/blob/master/index.html
+//-------------------------------------------Scrollsnap.js-----------------------------------
+//https://github.com/benoitpointet/jquery-scrollsnap-plugin/blob/master/index.html
 
-	$(document).scrollsnap({
-        snaps: '.snap',
-        proximity: 200,
-        easing: 'easeOutBounce'
-        });
-
-
+$(document).scrollsnap({
+    snaps: '.snap',
+    proximity: 200,
+    easing: 'easeOutBounce'
+    });
 
 
 
@@ -202,43 +200,19 @@ $(function(){
 
 
 
-//-------------------AJAX call test----------------------------------------
-
-// $(document).on('click','#test-button',function(e){
-// e.preventDefault();
-
-// var key = '/58c712713bda048ac50e20e99ed9111c';
-// var app_id = '/df91512a';
-// var url = 'http://localhost:8887';
-// 	url += '/api_request/validate_client';
-// 	url += key;
-// 	url += app_id;
-
-// console.log(url);
-
-
-//  $.ajax({
-//       url: url,
-//       type: 'GET',
-//       dataType: 'json',
-//       success: function(response){
-// console.log(response);
-//         // if(response.error){
-//         //   console.log('failed');
-//         // }else{
-//         //   console.log('success');
 
 
 
-       
-//       },
-//       error: function(response){
-//         console.log(response);
-//       }
-//     });
 
 
-// });
+
+
+
+
+
+
+
+
 
 });// function
 

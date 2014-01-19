@@ -336,11 +336,120 @@ p.subtext{
 /*---------------------------------------------"I Love" Page------------------------------------------------*/
 
 
-img.web-logos{
-	text-align: center;
-	margin-top: 18px;
+.logo_cloud{
+	position: relative;
+	width: 1050px;
+	height: 440px;
+
+	img{
+		position: absolute;
+	}
 }
 
+.air_l{
+	top: 52px;
+	left: 866px;
+}
+
+.as_l{
+	top: 147px;
+	left: 799px;
+}
+
+.cf_l{
+	top: 239px;
+	left: 68px;
+}
+
+.codeigniter_l{
+	top: 216px;
+	left: 925px;
+}
+
+.css_l{
+	top: 105px;
+	left: 353px;
+}
+
+.drupal_l{
+	top: 156px;
+	left: 991px;
+}
+
+.ejs_l{
+	top: 168px;
+	left: 711px;
+}
+
+.express_l{
+	top: 222px;
+	left: 237px;
+}
+
+.ffmpeg_l{
+	top: 327px;
+	left: 583px;
+}
+
+.github_l{
+	top: 262px;
+	left: 488px;
+}
+
+.handle_l{
+	top: 269px;
+	left: 685px;
+}
+
+.html_l{
+	top: 23px;
+	left: 466px;
+}
+
+.jquery_l{
+	top: 29px;
+	left: 653px;
+}
+
+.js_l{
+	top: 105px;
+	left: 581px;
+}
+
+.mongo_l{
+	top: 271px;
+	left: 162px;
+}
+
+.mysql_l{
+	top: 114px;
+	left: 40px;
+}
+
+.node_l{
+	top: 321px;
+	left: 369px;
+}
+
+.php_l{
+	top: 21px;
+	left: 205px;
+}
+
+.sass_l{
+	top: 168px;
+	left: 480px;
+}	
+
+.terminal_l{
+	top: 383px;
+	left: 486px;
+}
+
+.wp_l{
+	top: 45px;
+	left: 40px;
+}
 
 
 

@@ -89,19 +89,31 @@
 
 						<p class="red subtext">These are the languages & frameworks I know.</p>
 
-						<img class="web-logos" src="images/logos.png" alt="web logos"/>
-
-						<!-- <div class="img-container">
-							<a href="#" ><img src="images/design-thumb.jpg" alt="love image 1"/></a>
-							
-							<a href="#" ><img src="images/code-thumb.jpg" alt="love image 2"/></a>
-							
-							<a href="#" ><img src="images/beach.jpg" alt="love image 3"/></a>
-							
-							<a href="#" ><img src="images/synth-thumb.jpg" alt="love image 4"/></a>
-							
-							<a href="#" ><img src="images/wine-thumb.jpg" alt="love image 5"/></a>
-						</div><!-- /.love-img-container--> 
+						<!-- <img class="web-logos" src="images/logos.png" alt="web logos"/> -->
+						<div class="logo_cloud">
+							<img class="air_l" src="images/logos/air.png" alt="web logos"/>
+							<img class="as_l" src="images/logos/as.png" alt="web logos"/>
+							<img class="cf_l" src="images/logos/cf.png" alt="web logos"/>
+							<img class="codeigniter_l" src="images/logos/codeigniter.png" alt="web logos"/>
+							<img class="css_l" src="images/logos/css.png" alt="web logos"/>
+							<img class="drupal_l" src="images/logos/drupal.png" alt="web logos"/>
+							<img class="ejs_l" src="images/logos/ejs.png" alt="web logos"/>
+							<img class="express_l" src="images/logos/express.png" alt="web logos"/>
+							<img class="ffmpeg_l" src="images/logos/ffmpeg.png" alt="web logos"/>
+							<img class="github_l" src="images/logos/github.png" alt="web logos"/>
+							<img class="handle_l" src="images/logos/handle.png" alt="web logos"/>
+							<img class="html_l" src="images/logos/html.png" alt="web logos"/>
+							<img class="jquery_l" src="images/logos/jquery.png" alt="web logos"/>
+							<img class="js_l" src="images/logos/js.png" alt="web logos"/>
+							<img class="mongo_l" src="images/logos/mongo.png" alt="web logos"/>
+							<img class="mysql_l" src="images/logos/mysql.png" alt="web logos"/>
+							<img class="node_l" src="images/logos/node.png" alt="web logos"/>
+							<img class="php_l" src="images/logos/php.png" alt="web logos"/>
+							<img class="sass_l" src="images/logos/sass.png" alt="web logos"/>
+							<img class="terminal_l" src="images/logos/terminal.png" alt="web logos"/>
+							<img class="wp_l" src="images/logos/wp.png" alt="web logos"/>
+						</div><!-- /.logo_cloud-->
+						
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->
 

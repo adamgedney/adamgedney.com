@@ -222,7 +222,7 @@ $(function(){
 	$(document).on('scroll', function(e){
 console.log($(window).scrollTop());
 
-		if($(window).scrollTop() <= 350){
+		if($(window).scrollTop() <= 300){
 
 			//removes primary animation class to anchor holding image
 			$('.zig-zag').removeClass('fadeInUpBig');
@@ -236,7 +236,7 @@ console.log($(window).scrollTop());
 			$('.zig-zag-4').removeClass('fadeInLeftBig');
 			$('.zig-zag-4').addClass('fadeOutLeftBig');
 		
-		}else if($(window).scrollTop() >= 350 && $(window).scrollTop() <= 949){
+		}else if($(window).scrollTop() >= 300 && $(window).scrollTop() <= 924){
 
 			//adds primary animation class to anchor holding image
 			$('.zig-zag').removeClass('fadeOutUpBig')
@@ -252,7 +252,7 @@ console.log($(window).scrollTop());
 		
 		}
 
-		if($(window).scrollTop() >= 950){
+		if($(window).scrollTop() >= 925){
 
 			//removes primary animation class to anchor holding image
 			$('.zig-zag').removeClass('fadeInUpBig');
@@ -274,6 +274,37 @@ console.log($(window).scrollTop());
 
 
 
+
+
+
+
+
+
+
+
+
+//--------------------------------------logo cloud----------------------------------
+// .air_l
+// .as_l
+// .cf_l
+// .codeigniter_l
+// .css_l
+// .drupal_l
+// .ejs_l
+// .express_l
+// .ffmpeg_l
+// .github_l
+// .handle_l
+// .html_l
+// .jquery_l
+// .js_l
+// .mongo_l
+// .mysql_l
+// .node_l
+// .php_l
+// .sass_l
+// .terminal_l
+// .wp_l
 
 
 

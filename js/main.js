@@ -1,6 +1,7 @@
 $(function(){
 
-
+//globals
+var logo_cloud_frame = false;
 
 // Google maps
 	function initialize() {
@@ -119,17 +120,17 @@ $(function(){
 	// 	$(this).removeClass('animated pulse');
 	// });
 
-	// // profile pic swing
-	// $(document).on('mouseover', 'img.profile-pic', function(){
-	// 	$(this).addClass('animated swing');
-	// });
-	// //remove swing
-	// $(document).on('mouseout', 'img.profile-pic', function(){
-	// 	setTimeout(removeSwing,2500);		
-	// });
-	// function removeSwing(){
-	// 	$('img.profile-pic').removeClass('animated swing');
-	// }
+	// profile pic swing
+	$(document).on('mouseover', 'img.profile-pic', function(){
+		$(this).addClass('animated swing');
+	});
+	//remove swing
+	$(document).on('mouseout', 'img.profile-pic', function(){
+		setTimeout(removeSwing,2500);		
+	});
+	function removeSwing(){
+		$('img.profile-pic').removeClass('animated swing');
+	}
 
 
 
@@ -217,10 +218,10 @@ $(function(){
 	$('.zig-zag-3').addClass('fadeOutDownBig');
 	$('.zig-zag-4').removeClass('fadeInLeftBig');
 	$('.zig-zag-4').addClass('fadeOutLeftBig');
-	
+	remove_classes();
+
 	//on scroll
 	$(document).on('scroll', function(e){
-console.log($(window).scrollTop());
 
 		if($(window).scrollTop() <= 300){
 
@@ -267,6 +268,33 @@ console.log($(window).scrollTop());
 			$('.zig-zag-4').addClass('fadeOutLeftBig');
 		}
 
+		//logo cloud animations
+		if($(window).scrollTop() <= 1199){
+			
+			if(logo_cloud_frame == true){
+				animate_cloud_out();
+				logo_cloud_frame = false;
+			};
+		};
+
+		if($(window).scrollTop() >= 1200 && $(window).scrollTop() <= 1800){
+
+			if(logo_cloud_frame == false){
+
+				animate_cloud_in();
+				logo_cloud_frame = true;
+			};
+			
+		};
+		
+		if($(window).scrollTop() >= 1801){
+			
+			if(logo_cloud_frame == true){
+				animate_cloud_out();
+				logo_cloud_frame = false;
+			};
+		};
+		
 
 
 	});// on scroll
@@ -305,6 +333,67 @@ console.log($(window).scrollTop());
 // .sass_l
 // .terminal_l
 // .wp_l
+
+	function remove_classes(){
+
+		var logos = $('.logo_cloud img');
+		var max = logos.length;
+
+		var an_in = ["fadeInRightBig", "fadeInLeftBig", "fadeInDownBig", "fadeInUpBig", "bounceInLeft", "bounceInRight", "bounceInUp", "bounceInDown" ];
+		var an_out = ["fadeOutRightBig", "fadeOutLeftBig", "fadeOutDownBig", "fadeOutUpBig", "bounceOutLeft", "bounceOutRight", "bounceOutUp", "bounceOutDown" ];
+
+		$.each(logos, function(e){
+			for(var j=0; j<an_in.length; j++){
+				$(this).removeClass(an_out[j]);
+				$(this).removeClass(an_in[j]);
+			}
+		});
+	};
+
+
+
+
+
+
+	function animate_cloud_in(){
+
+		remove_classes();
+
+		var logos = $('.logo_cloud img');
+		var max = logos.length;
+
+		var an_in = ["fadeInRightBig", "fadeInLeftBig", "fadeInDownBig", "fadeInUpBig", "bounceInLeft", "bounceInRight", "bounceInUp", "bounceInDown" ];
+
+
+			$.each(logos, function(e){
+				var i = Math.floor(Math.random() * an_in.length);
+				$(this).addClass(an_in[i]);
+			});
+	}//animate_cloud_in()
+
+
+
+
+
+
+	function animate_cloud_out(){
+
+		remove_classes();
+
+		var logos = $('.logo_cloud img');
+		var max = logos.length;
+
+		var an_out = ["fadeOutRightBig", "fadeOutLeftBig", "fadeOutDownBig", "fadeOutUpBig", "bounceOutLeft", "bounceOutRight", "bounceOutUp", "bounceOutDown" ];
+
+
+
+			$.each(logos, function(e){
+				var i = Math.floor(Math.random() * an_out.length);
+				$(this).addClass(an_out[i]);
+			});
+
+	}//animate_cloud_out()
+
 
 
 

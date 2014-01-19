@@ -125,7 +125,7 @@
 
 						<a class="resume" target="_blank" href="resume/adamGedneyResume.pdf"><img src="images/pdf-icon.png" alt="download pdf icon"/>View my <span class="blue">Résumé.</span></a>
 
-						<h3>Front-end</h3>
+						<h3>Front-end Projects</h3>
 						<div class="img-container">
 							<a href="work/sgwebmarketing.html" ><img src="images/sgweb-thumb.jpg" alt="love image 1"/></a>
 							
@@ -138,7 +138,7 @@
 							<a href="work/jericho-vineyard.html" ><img src="images/jericho-thumb.jpg" alt="love image 5"/></a>
 						</div><!-- /.love-img-container-->
 
-						<h3>Development</h3>
+						<h3>Development Projects</h3>
 						<div class="img-container">
 							<a href="work/bloggity-cms.html" ><img src="images/bloggityMac-thumb.jpg" alt="love image 1"/></a>
 							
@@ -152,7 +152,7 @@
 						
 						</div><!-- /.love-img-container-->
 
-						<h3>Print / Graphic Design</h3>
+						<h3>Print / Graphic Design Projects</h3>
 						<div class="img-container print_thumbs last">
 							<img src="images/aubert-thumb.jpg" alt="love image 1"/>
 							

@@ -277,7 +277,7 @@ var logo_cloud_frame = false;
 			};
 		};
 
-		if($(window).scrollTop() >= 1200 && $(window).scrollTop() <= 1800){
+		if($(window).scrollTop() >= 1200 && $(window).scrollTop() <= 2000){
 
 			if(logo_cloud_frame == false){
 
@@ -287,7 +287,7 @@ var logo_cloud_frame = false;
 			
 		};
 		
-		if($(window).scrollTop() >= 1801){
+		if($(window).scrollTop() >= 1999){
 			
 			if(logo_cloud_frame == true){
 				animate_cloud_out();

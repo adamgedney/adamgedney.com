@@ -201,7 +201,7 @@
 
 							<div class="contact-content">
 							
-							<p><span class="red">I’m interested in working in the West Palm Beach to Miami area.</span>  But, if the opportunity is right, feel free to pay me loads of money and fly me around the world. <span class="dark-gray">Go ahead. Contact me</span> via the form at left, by phone or email, even if it's just to say hi. <span class="red">&#9786;</span></p>
+							<p><span class="red">I’m interested in working in the West Palm Beach to Miami area.</span>  But, if the opportunity is right, feel free to fly me around the world. <span class="dark-gray">Contact me</span> via the form at left, by phone or email, even if it's just to say hi. <!-- <span class="red">&#9786;</span> --></p>
 
 							<p class="info"><span class="red">Adam Shields Gedney</span>
 								adam@adamgedney.com

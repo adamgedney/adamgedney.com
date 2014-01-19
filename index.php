@@ -68,15 +68,15 @@
 						<p>designing websites, logos & print collateral, <span class="red">being silly,</span> writing music & books. I build things, google things, think, read, & sometimes I update my <a class="underline light-gray" target="_blank" href="http://usabilityintelligence.com" >blog</a> too.</p>
 
 						<div class="img-container">
-							<a class="zig-zag" target="_blank" href="#"><img src="images/angelfire-thumb.jpg" alt="likes image 1"/></a>
+							<a class="zig-zag animated" target="_blank" href="#"><img src="images/angelfire-thumb.jpg" alt="likes image 1"/></a>
 							
-							<a class="zig-zag-1" target="_blank" href="#"><img src="images/pangea-thumb.jpg" alt="likes image 2"/></a>
+							<a class="zig-zag-1 animated" target="_blank" href="#"><img src="images/pangea-thumb.jpg" alt="likes image 2"/></a>
 							
-							<a class="zig-zag-2" target="_blank" href="#"><img src="images/silly-thumb.jpg" alt="likes image 3"/></a>
+							<a class="zig-zag-2 animated" target="_blank" href="#"><img src="images/silly-thumb.jpg" alt="likes image 3"/></a>
 							
-							<a class="zig-zag-3" target="_blank" href="https://itunes.apple.com/us/artist/adam-shields/id637020445"><img src="images/itunes-thumb.jpg" alt="likes image 4"/></a>
+							<a class="zig-zag-3 animated" target="_blank" href="https://itunes.apple.com/us/artist/adam-shields/id637020445"><img src="images/itunes-thumb.jpg" alt="likes image 4"/></a>
 							
-							<a class="zig-zag-4" target="_blank" href="http://usabilityintelligence.com"><img src="images/ui-thumb.jpg" alt="likes image 5"/></a>
+							<a class="zig-zag-4 animated" target="_blank" href="http://usabilityintelligence.com"><img src="images/ui-thumb.jpg" alt="likes image 5"/></a>
 						</div><!-- /.like-img-container-->
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->

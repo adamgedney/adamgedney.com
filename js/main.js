@@ -111,25 +111,25 @@ $(function(){
 
 
 	//--------------------------------animate.css hover animations----------------------
-	$(document).on('mouseover', '.img-container a', function(){
-		$(this).addClass('animated pulse');
-	});
+	// $(document).on('mouseover', '.img-container a', function(){
+	// 	$(this).addClass('animated pulse');
+	// });
 
-	$(document).on('mouseout', '.img-container a', function(){
-		$(this).removeClass('animated pulse');
-	});
+	// $(document).on('mouseout', '.img-container a', function(){
+	// 	$(this).removeClass('animated pulse');
+	// });
 
-	// profile pic swing
-	$(document).on('mouseover', 'img.profile-pic', function(){
-		$(this).addClass('animated swing');
-	});
-	//remove swing
-	$(document).on('mouseout', 'img.profile-pic', function(){
-		setTimeout(removeSwing,2500);		
-	});
-	function removeSwing(){
-		$('img.profile-pic').removeClass('animated swing');
-	}
+	// // profile pic swing
+	// $(document).on('mouseover', 'img.profile-pic', function(){
+	// 	$(this).addClass('animated swing');
+	// });
+	// //remove swing
+	// $(document).on('mouseout', 'img.profile-pic', function(){
+	// 	setTimeout(removeSwing,2500);		
+	// });
+	// function removeSwing(){
+	// 	$('img.profile-pic').removeClass('animated swing');
+	// }
 
 
 
@@ -183,16 +183,14 @@ $(function(){
 
 
 
-//-------------------------------------------Scrollsnap.js-----------------------------------
-//https://github.com/benoitpointet/jquery-scrollsnap-plugin/blob/master/index.html
+	//-------------------------------------------Scrollsnap.js-----------------------------------
+	//https://github.com/benoitpointet/jquery-scrollsnap-plugin/blob/master/index.html
 
-$(document).scrollsnap({
-    snaps: '.snap',
-    proximity: 200,
-    easing: 'easeOutBounce'
-    });
-
-
+	$(document).scrollsnap({
+	    snaps: '.snap',
+	    proximity: 200,
+	    easing: 'easeOutBounce'
+	    });
 
 
 
@@ -207,6 +205,71 @@ $(document).scrollsnap({
 
 
 
+	//------------------------------------ScrollTop animations------------------------------------
+	//removes primary animation class to anchor holding image
+	$('.zig-zag').removeClass('fadeInUpBig');
+	$('.zig-zag').addClass('fadeOutUpBig');
+	$('.zig-zag-1').removeClass('fadeInRightBig');
+	$('.zig-zag-1').addClass('fadeOutRightBig');
+	$('.zig-zag-2').removeClass('fadeInLeftBig');
+	$('.zig-zag-2').addClass('fadeOutLeftBig');
+	$('.zig-zag-3').removeClass('fadeInDownBig');
+	$('.zig-zag-3').addClass('fadeOutDownBig');
+	$('.zig-zag-4').removeClass('fadeInLeftBig');
+	$('.zig-zag-4').addClass('fadeOutLeftBig');
+	
+	//on scroll
+	$(document).on('scroll', function(e){
+console.log($(window).scrollTop());
+
+		if($(window).scrollTop() <= 350){
+
+			//removes primary animation class to anchor holding image
+			$('.zig-zag').removeClass('fadeInUpBig');
+			$('.zig-zag').addClass('fadeOutUpBig');
+			$('.zig-zag-1').removeClass('fadeInRightBig');
+			$('.zig-zag-1').addClass('fadeOutRightBig');
+			$('.zig-zag-2').removeClass('fadeInLeftBig');
+			$('.zig-zag-2').addClass('fadeOutLeftBig');
+			$('.zig-zag-3').removeClass('fadeInDownBig');
+			$('.zig-zag-3').addClass('fadeOutDownBig');
+			$('.zig-zag-4').removeClass('fadeInLeftBig');
+			$('.zig-zag-4').addClass('fadeOutLeftBig');
+		
+		}else if($(window).scrollTop() >= 350 && $(window).scrollTop() <= 949){
+
+			//adds primary animation class to anchor holding image
+			$('.zig-zag').removeClass('fadeOutUpBig')
+			$('.zig-zag').addClass('fadeInUpBig');
+			$('.zig-zag-1').removeClass('fadeOutRightBig')
+			$('.zig-zag-1').addClass('fadeInRightBig');
+			$('.zig-zag-2').removeClass('fadeOutLeftBig')
+			$('.zig-zag-2').addClass('fadeInLeftBig');
+			$('.zig-zag-3').removeClass('fadeOutDownBig')
+			$('.zig-zag-3').addClass('fadeInDownBig');
+			$('.zig-zag-4').removeClass('fadeOutLeftBig')
+			$('.zig-zag-4').addClass('fadeInLeftBig');
+		
+		}
+
+		if($(window).scrollTop() >= 950){
+
+			//removes primary animation class to anchor holding image
+			$('.zig-zag').removeClass('fadeInUpBig');
+			$('.zig-zag').addClass('fadeOutUpBig');
+			$('.zig-zag-1').removeClass('fadeInRightBig');
+			$('.zig-zag-1').addClass('fadeOutRightBig');
+			$('.zig-zag-2').removeClass('fadeInLeftBig');
+			$('.zig-zag-2').addClass('fadeOutLeftBig');
+			$('.zig-zag-3').removeClass('fadeInDownBig');
+			$('.zig-zag-3').addClass('fadeOutDownBig');
+			$('.zig-zag-4').removeClass('fadeInLeftBig');
+			$('.zig-zag-4').addClass('fadeOutLeftBig');
+		}
+
+
+
+	});// on scroll
 
 
 

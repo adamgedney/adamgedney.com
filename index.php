@@ -111,13 +111,13 @@
 
 						<p>hard. Trained by old school Italian construction workers at an early age, I have a strong work ethic & a love for diverse projects that <span class="red">challenge my creativity.</span></p>
 
-						<a class="resume" target="_blank" href="resume/adamGedneyResume.pdf"><img src="images/pdf-icon.png" alt="download pdf icon"/>View my <span class="red">Résumé.</span></a>
+						<a class="resume" target="_blank" href="resume/adamGedneyResume.pdf"><img src="images/pdf-icon.png" alt="download pdf icon"/>View my <span class="blue">Résumé.</span></a>
 
 						<h3>Front-end</h3>
 						<div class="img-container">
 							<a href="work/sgwebmarketing.html" ><img src="images/sgweb-thumb.jpg" alt="love image 1"/></a>
 							
-							<a href="work/mantissa-web.html" ><img src="images/mantissa-thumb.jpg" alt="love image 4"/></a>
+							<a href="work/gimmesauce.html" ><img src="images/gimme-thumb.jpg" alt="love image 4"/></a>
 
 							<a href="work/maceoplexmix.html" ><img src="images/maceo-thumb.jpg" alt="love image 2"/></a>
 
@@ -216,7 +216,7 @@
 			</div><!-- /.container-->	
 
 		<footer>
-		<p><span class="red">&copy;2013</span> adamgedney.com</p>
+		<p><span class="red">&copy;2014</span> adamgedney.com</p>
 		</footer>
 
 		<!-- Scripts -->

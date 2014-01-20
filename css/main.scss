@@ -114,6 +114,12 @@ list-style: none;
 
 /*--------------------------------------End CSS Reset / Start General-------------------------------*/
 
+//border box borrowed from responsive.gs
+* { -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
 
 body{
 background: url('../images/bg.jpg') no-repeat $white;
@@ -121,6 +127,7 @@ background-size: cover;
 background-attachment: fixed;
 color: $text-gray;
 font: 62.5% 'Droid Serif', "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+-webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4{
@@ -398,6 +405,7 @@ p.subtext{
 .logo_cloud{
 	position: relative;
 	// width: 1050px;
+	// width: 91.6666666%;
 	@include col(11);
 	height: 440px;//height required to hold container around positioned elements
 	margin: 0 4.1666667%;
@@ -407,109 +415,110 @@ p.subtext{
 	}
 }
 
+//target=.*_l/context=1050px
 .air_l{
 	top: 52px;
-	left: 866px;
+	left: 82.47619%; //866px;
 }
 
 .as_l{
 	top: 147px;
-	left: 799px;
+	left: 76.095238%; //799px;
 }
 
 .cf_l{
 	top: 239px;
-	left: 68px;
+	left: 06.47619%; //68px;
 }
 
 .codeigniter_l{
 	top: 216px;
-	left: 925px;
+	left: 88.095238%; //925px;
 }
 
 .css_l{
 	top: 105px;
-	left: 353px;
+	left: 33.619048%; //353px;
 }
 
 .drupal_l{
 	top: 156px;
-	left: 991px;
+	left: 94.380952%; //991px;
 }
 
 .ejs_l{
 	top: 168px;
-	left: 711px;
+	left: 67.714286%; //711px;
 }
 
 .express_l{
 	top: 222px;
-	left: 237px;
+	left: 22.571429%; //237px;
 }
 
 .ffmpeg_l{
 	top: 327px;
-	left: 583px;
+	left: 55.52381%; //583px;
 }
 
 .github_l{
 	top: 262px;
-	left: 488px;
+	left: 46.47619%; //488px;
 }
 
 .handle_l{
 	top: 269px;
-	left: 685px;
+	left: 65.238095%; //685px;
 }
 
 .html_l{
 	top: 23px;
-	left: 466px;
+	left: 44.380952%; //466px;
 }
 
 .jquery_l{
 	top: 29px;
-	left: 653px;
+	left: 62.190476%; //653px;
 }
 
 .js_l{
 	top: 105px;
-	left: 581px;
+	left: 55.333333%; //581px;
 }
 
 .mongo_l{
 	top: 271px;
-	left: 162px;
+	left: 15.428571%; //162px;
 }
 
 .mysql_l{
 	top: 114px;
-	left: 40px;
+	left: 03.809524%; //40px;
 }
 
 .node_l{
 	top: 321px;
-	left: 369px;
+	left: 35.142857%; //369px;
 }
 
 .php_l{
 	top: 21px;
-	left: 205px;
+	left: 19.52381%; //205px;
 }
 
 .sass_l{
 	top: 168px;
-	left: 480px;
+	left: 45.714286%; //480px;
 }	
 
 .terminal_l{
 	top: 383px;
-	left: 486px;
+	left: 46.285714%; //486px;
 }
 
 .wp_l{
 	top: 45px;
-	left: 40px;
+	left: 03.809524%; //40px;
 }
 
 
@@ -674,6 +683,9 @@ p.info{
 
 
 
+
+
+
 /*----------------------------------------------Project Page Template--------------------------------*/
 
 body.projects{
@@ -684,7 +696,8 @@ body.projects{
 	header{
 		position: fixed;
 		z-index: 500;
-		width: 100%;
+		// width: 100%;
+		@include col(12);
 		height: 54px;
 		background: #252525;
 		opacity: .8;
@@ -706,7 +719,8 @@ body.projects{
 }
 
 .header-inner{
-	max-width: 1140px;
+	// max-width: 1140px;
+	@include col(11);
 	margin: 0 auto;
 	padding: 0 36px;
 	font-weight: 100;
@@ -735,7 +749,8 @@ nav{
 
 .featured{
 	height: 654px;
-	width: 100%;
+	// width: 100%;
+	@include col(12);
 	overflow: hidden;
 	position: relative;
 
@@ -755,12 +770,14 @@ nav{
 	}
 
 	img{
-		width: 100%;
+		// width: 100%;
+		@include col(12);
 	}
 }
 
 .project-inner{
-	max-width: 1140px;
+	// max-width: 1140px;
+	@include col(11);
 	margin: 0 auto;
 }
 
@@ -778,7 +795,8 @@ nav{
 .description h4, .details-sidebar h4{
 	font-size: 2.1em;
 	font-weight: 100;
-	width: 100%;
+	// width: 100%;
+	@include col(12);
 }
 
 .details{
@@ -790,7 +808,8 @@ nav{
 }
 
 .details-desc{
-	max-width: 570px;
+	// max-width: 570px;
+	@include col(6);
 	padding-right: 3.157895%;/*18px*/
 	float: left;
 
@@ -800,7 +819,8 @@ nav{
 }
 
 .details-sidebar{
-	max-width: 570px;
+	// max-width: 570px;
+	@include col(6);
 	float: left;
 	padding-top: 10px;
 
@@ -864,7 +884,8 @@ nav{
 
 	.contact-icons{
 		margin: 0 auto 88px;
-		width: 1140px;
+		// width: 1140px;
+		@include col(11);
 		text-align: center;
 		border-bottom: 1px solid $icon-gray;
 

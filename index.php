@@ -27,8 +27,6 @@
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/animate.css" />
-	<link rel="stylesheet" href="css/responsive-gs-12col.css" /><!-- resopnsive.gs grid system -->
-	<link rel="stylesheet" href="css/ie.css" /><!-- resopnsive.gs grid system -->
 	<link rel="stylesheet" href="css/main.css" />
 
 	<!-- Google maps -->

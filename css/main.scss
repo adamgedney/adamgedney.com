@@ -213,7 +213,7 @@ img{
 }
 
 .double{
-	height: 1680px;
+	min-height: 1680px;
 }
 
 .red{
@@ -402,7 +402,7 @@ p.subtext{
 /*---------------------------------------------"I Love" Page------------------------------------------------*/
 
 .love{
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .logo_cloud{

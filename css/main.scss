@@ -335,7 +335,7 @@ header{
 
 .page.landing{
 	background: $white;
-	height: 535px;/* 18x7=126 -> 831-126 -170 for landing-arrow */
+	min-height: 535px;/* 18x7=126 -> 831-126 -170 for landing-arrow */
 	color: $dark-gray;
 }
 
@@ -401,17 +401,19 @@ p.subtext{
 
 /*---------------------------------------------"I Love" Page------------------------------------------------*/
 
+.love{
+	overflow-x: hidden;
+}
 
 .logo_cloud{
 	position: relative;
 	// width: 1050px;
-	// width: 91.6666666%;
 	@include col(11);
 	height: 440px;//height required to hold container around positioned elements
 	margin: 0 4.1666667%;
 
 	img{
-		position: absolute;
+		position: absolute;;
 	}
 }
 
@@ -562,14 +564,9 @@ a.resume{
 
 .print_thumbs{
 	img{
-		// padding: 5px;
-		// margin-right: 9px;
 		float: left;
 		display: block;
-		width: 18%; /*210px was 20% changed to 18%*/
-		margin-left: 18px;
-		height: 200px;
-		// background: $icon-gray;
+		width: 20%; /*210px*/
 	}
 }
 

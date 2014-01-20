@@ -163,7 +163,7 @@ var logo_cloud_frame = false;
 		if(!phonePat.test(phone)){
 			e.preventDefault();
 			$('.phone-error').css('opacity', '1').html("Oops! Please type your digits like this 555-555-5555");
-			window.location = 'index.php#contact';
+			// window.location = 'index.php#contact';
 		}else{
 			$('.email-error').css('opacity', '0').html("");
 			$('.phone-error').css('opacity', '0').html(""); 

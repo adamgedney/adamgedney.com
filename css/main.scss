@@ -270,13 +270,15 @@ header{
 	padding-bottom: 72px;
 
 	p{
-		width: 504px; /*28x18*/
+		// width: 504px; /*28x18*/
+		@include col(6);
 		margin: 0 auto;
 		font-weight: 100;
 	}
 
 	p.quote{
-		width: 100%;
+		// width: 100%;
+		@include col(12);
 		font-size: 3.6em;
 		font-family: 'Tangerine', cursive;
 	}
@@ -285,11 +287,12 @@ header{
 		color: $white;
 		font-size: .9em;
 		text-align: left;
-		width: 366px;
+		// width: 366px;
+		@include col(11);
 		position: absolute;
 		z-index: 99999;
 		top: 25%;
-		left: 0;
+		left: 4%;
 		padding-left: 3%;
 		background: $red;
 		opacity: 0;
@@ -311,6 +314,7 @@ header{
 			float: left;
 			display: block;
 			width: 20%; /*210px*/
+			// @include col(2);
 			height: 210px;
 			// background: $icon-gray;
 		}
@@ -330,7 +334,8 @@ header{
 
 .arrow-container{
 	overflow: hidden;
-	width: 100%;
+	// width: 100%;
+	@include col(12);
 	margin: -10px auto 90px;
 }
 
@@ -392,9 +397,10 @@ p.subtext{
 
 .logo_cloud{
 	position: relative;
-	width: 1050px;
-	height: 440px;
-	margin: 0 auto;
+	// width: 1050px;
+	@include col(11);
+	height: 440px;//height required to hold container around positioned elements
+	margin: 0 4.1666667%;
 
 	img{
 		position: absolute;
@@ -584,7 +590,8 @@ a.resume{
 }
 
 #map-canvas{
-	width: 100%;
+	// width: 100%;
+	@include col(12);
 	height: 530px;
 	margin-top: 72px;
 -webkit-box-shadow: 0px 0px 9px rgba(50, 50, 50, 0.76);
@@ -594,18 +601,21 @@ a.resume{
 
 .contact-body{
 	overflow: hidden;
-	width: 802px;
-	margin: 63px auto 0;
+	// width: 802px;
+	@include col(11);
+	margin: 63px 4.1666667% 0;
 }
 
 .contact-form{
-	width: 366px;
+	// width: 366px;
+	@include col(5);
 	float: left;
 	margin: 9px 36px 0 0;
 	position: relative;/*required for error message absolute positioning*/
 
 	input[type="text"], input[type="email"], input[type="submit"], textarea{
-		width: 366px;
+		// width: 366px;
+		@include col(11);
 		height: 54px;
 		border-radius: 2px;
 		border: 1px solid $text-gray;
@@ -630,11 +640,13 @@ a.resume{
 }
 
 .contact-content{
-	width: 400px;
+	// width: 400px;
+	@include col(6);
 	float: left;
 
 	p{
-		width: 400px;
+		// width: 400px;
+		@include col(12);
 		text-align: left;
 		color: $text-gray;
 		font-weight: 100;
@@ -644,7 +656,8 @@ a.resume{
 p.info{
 	margin: 81px auto;
 	text-align: center;
-	width: 200px;
+	// width: 200px;
+	@include col(6);
 }
 
 
@@ -872,8 +885,10 @@ footer{
 	padding-top: 70px;
 
 	p{
-		width: 220px;
-		margin: 0 auto;
+		// width: 220px;
+		@include col(12);
+		text-align: center;
+		// margin: 0 auto;
 	}
 }
 

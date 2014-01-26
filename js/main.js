@@ -110,6 +110,29 @@ var logo_cloud_frame = false;
 
 
 
+	//image rollover effect
+	$(document).on('mouseover', '.img-container a', function(){
+		var that = $(this);
+		var title = $(this).attr('data-proj');
+
+		that.addClass('img_roll');
+		that.find('img').css('opacity', '0');
+		that.find('span').html(title);
+	});
+
+	$(document).on('mouseout', '.img-container a', function(){
+		var that = $(this);
+
+		that.removeClass('img_roll');
+		that.find('img').css('opacity', '1');
+		that.find('span').empty();
+	});
+
+
+
+
+
+
 
 	//--------------------------------animate.css hover animations----------------------
 	// $(document).on('mouseover', '.img-container a', function(){

@@ -23,6 +23,7 @@ $icon-gray: #ccc;
 $light-gray: #5c5c5c;
 $text-gray: #5d5d5d;
 $dark-gray: #252525;
+$black: #000;
 $red: #d93330;
 $blue: #5d95ba;
 $green: #479648;
@@ -76,9 +77,9 @@ $green: #479648;
 
 // @include col(12);
 
-@mixin vertical-align {
+@mixin vertical-align($top_num:50%){
   position: relative;
-  top: 50%;
+  top: $top_num;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -o-transform: translateY(-50%);
@@ -571,8 +572,24 @@ a.resume{
 // }
 
 
+.img_roll{
+	background: $black;
+	color: $blue;
+	max-height: 200px;
+
+	span{
+		@include vertical-align(45%);
+		font-family: 'Ubuntu', "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+		font-size: 1.8em;
+		font-weight: 400;
+	}
+}
 
 
+
+
+
+/*----------------Block flip transitions------------------*/
 
 
 

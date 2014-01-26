@@ -125,28 +125,29 @@
 
 						<h3>Front-end Projects</h3>
 						<div class="img-container">
-							<a href="work/sgwebmarketing.html" ><img src="images/sgweb-thumb.jpg" alt="love image 1"/></a>
-							
-							<a href="work/gimmesauce.html" ><img src="images/gimme-thumb.jpg" alt="love image 4"/></a>
+								<a data-proj="SGWebMarketing.com" href="work/sgwebmarketing.html" ><span></span><img src="images/sgweb-thumb.jpg" alt="love image 1"/></a>
+						
+								<a data-proj="Gimmesauce.com" href="work/gimmesauce.html" ><span></span><img src="images/gimme-thumb.jpg" alt="love image 4"/></a>
 
-							<a href="work/maceoplexmix.html" ><img src="images/maceo-thumb.jpg" alt="love image 2"/></a>
+								<a data-proj="Maceoplexmix.com" href="work/maceoplexmix.html" ><span></span><img src="images/maceo-thumb.jpg" alt="love image 2"/></a>
 
-							<a href="work/angelfire-redesign.html" ><img src="images/angelfireMobile-thumb.jpg" alt="love image 3"/></a>
+								<a data-proj="Angelfire.com redesign" href="work/angelfire-redesign.html" ><span></span><img src="images/angelfireMobile-thumb.jpg" alt="love image 3"/></a>
+								
+								<a data-proj="Jericho Canyon Vineyard" href="work/jericho-vineyard.html" ><span></span><img src="images/jericho-thumb.jpg" alt="love image 5"/></a>
 							
-							<a href="work/jericho-vineyard.html" ><img src="images/jericho-thumb.jpg" alt="love image 5"/></a>
 						</div><!-- /.love-img-container-->
 
 						<h3>Development Projects</h3>
 						<div class="img-container">
-							<a href="work/bloggity-cms.html" ><img src="images/bloggityMac-thumb.jpg" alt="love image 1"/></a>
+							<a data-proj="Bloggity.org" href="work/bloggity-cms.html" ><span></span><img src="images/bloggityMac-thumb.jpg" alt="love image 1"/></a>
 							
-							<a href="work/simple-picasa.html" ><img src="images/picasa-thumb.jpg" alt="love image 2"/></a>
+							<a data-proj="Picasa JQuery Plugin" href="work/simple-picasa.html" ><span></span><img src="images/picasa-thumb.jpg" alt="love image 2"/></a>
 							
-							<a href="work/mantissa-synth.html" ><img src="images/mantissaSynth-thumb.jpg" alt="love image 3"/></a>
+							<a data-proj="Mantissa Soft Synth" href="work/mantissa-synth.html" ><span></span><img src="images/mantissaSynth-thumb.jpg" alt="love image 3"/></a>
 							
-							<a href="work/madserv.html" ><img src="images/madserv-thumb.jpg" alt="love image 5"/></a>
+							<a data-proj="Madserv.us Auth API" href="work/madserv.html" ><span></span><img src="images/madserv-thumb.jpg" alt="love image 5"/></a>
 
-							<a href="work/suprvideo.html" ><img src="images/suprvideo-thumb.jpg" alt="love image 4"/></a>
+							<a data-proj="Suprvideo.com Converter" href="work/suprvideo.html" ><span></span><img src="images/suprvideo-thumb.jpg" alt="love image 4"/></a>
 						
 						</div><!-- /.love-img-container-->
 
@@ -162,15 +163,15 @@
 							
 							<img src="images/uiLogo-thumb.jpg" alt="love image 5"/> -->
 
-							<a href="work/aubert-form.html" ><img src="images/aubert-thumb.jpg" alt="love image 1"/></a>
+							<a data-proj="Marketing Collateral" href="work/aubert-form.html" ><span></span><img src="images/aubert-thumb.jpg" alt="love image 1"/></a>
 							
-							<a href="work/orbitz-class-ad.html" ><img src="images/orbits-thumb.jpg" alt="love image 2"/></a>
+							<a data-proj="Advertising" href="work/orbitz-class-ad.html" ><span></span><img src="images/orbits-thumb.jpg" alt="love image 2"/></a>
 							
-							<a href="work/zosima-cards.html" ><img src="images/stzosima-thumb.jpg" alt="love image 3"/></a>
+							<a data-proj="Postcard Marketing" href="work/zosima-cards.html" ><span></span><img src="images/stzosima-thumb.jpg" alt="love image 3"/></a>
 							
-							<a href="work/meditrina-business-cards.html" ><img src="images/meditrinaBiz-thumb.jpg" alt="love image 4"/></a>
+							<a data-proj="Business Cards" href="work/meditrina-business-cards.html" ><span></span><img src="images/meditrinaBiz-thumb.jpg" alt="love image 4"/></a>
 							
-							<a href="work/ui-logo.html" ><img src="images/uiLogo-thumb.jpg" alt="love image 5"/></a>
+							<a data-proj="Logos" href="work/ui-logo.html" ><span></span><img src="images/uiLogo-thumb.jpg" alt="love image 5"/></a>
 						</div><!-- /.love-img-container-->
 
 						<p class="quote" >“Patience, persistence and perspiration make an unbeatable combination for success.” - Napoleon Hill</p>

@@ -114,9 +114,11 @@ var logo_cloud_frame = false;
 	$(document).on('mouseover', '.img-container a', function(){
 		var that = $(this);
 		var title = $(this).attr('data-proj');
+		var img_height = that.find('img').height();
 
 		that.addClass('img_roll');
 		that.find('img').css('opacity', '0');
+		that.css('maxHeight', img_height);//controls black box height on responsive images
 		that.find('span').html(title);
 	});
 

@@ -174,7 +174,7 @@
 							<a data-proj="Logos" href="work/ui-logo.html" ><span></span><img src="images/uiLogo-thumb.jpg" alt="love image 5"/></a>
 						</div><!-- /.love-img-container-->
 
-						<p class="quote" >“Patience, persistence and perspiration make an unbeatable combination for success.” - Napoleon Hill</p>
+						<p class="quote" >“Patience, persistence and perspiration make an unbeatable combination for success.” <br> -Napoleon Hill</p>
 
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->
@@ -193,26 +193,11 @@
 						
 					<div class="page-inner">
 						<div class="contact-body" id="contact">
-							<div class="contact-form">
-								<form action="?controller=form" method="post"> 
-									<input type="text" name="name" placeholder="FULL NAME"/>
-									
-									<input id="email" type="email" name="email" placeholder="EMAIL ADDRESS" />
-									<p class="error email-error"></p>
-
-									<input id="phone" type="text" name="phone" placeholder="PHONE NUMBER" />
-									<p class="error phone-error"></p>
-
-									<textarea name="message" placeholder="MESSAGE"></textarea>
-
-									<input id="contact-submit-button" type="submit" value="CONTACT ME"/>
-								</form>
-						
-							</div><!-- /.contact-form-->
+							
 
 							<div class="contact-content">
 							
-							<p><span class="red">I’m interested in working in the West Palm Beach to Miami area.</span>  But, if the opportunity is right, feel free to fly me around the world. <span class="dark-gray">Contact me</span> via the form at left, by phone or email, even if it's just to say hi. <!-- <span class="red">&#9786;</span> --></p>
+							<p><span class="red">I’m interested in working in the West Palm Beach to Miami area.</span>  But, if the opportunity is right, feel free to fly me around the world. <span class="dark-gray">Contact me</span> via this form, by phone, or email, even if it's just to say hi. <!-- <span class="red">&#9786;</span> --></p>
 
 							<p class="info"><span class="red">Adam Shields Gedney</span>
 								adam@adamgedney.com
@@ -231,6 +216,23 @@
 							</div><!-- /.contact-icons-->
 						
 							</div><!-- /.contact-content-->
+
+							<div class="contact-form">
+								<form action="?controller=form" method="post"> 
+									<input type="text" name="name" placeholder="FULL NAME"/>
+									
+									<input id="email" type="email" name="email" placeholder="EMAIL ADDRESS" />
+									<p class="error email-error"></p>
+
+									<input id="phone" type="text" name="phone" placeholder="PHONE NUMBER" />
+									<p class="error phone-error"></p>
+
+									<textarea name="message" placeholder="MESSAGE"></textarea>
+
+									<input id="contact-submit-button" type="submit" value="CONTACT ME"/>
+								</form>
+						
+							</div><!-- /.contact-form-->
 						</div><!-- /.contact-body-->
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->	

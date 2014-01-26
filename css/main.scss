@@ -50,7 +50,7 @@ $green: #479648;
 		width: 33.3333333%;
 		}
 	@if $num_col == 5 {
-		width: 41.6666666%;
+		width: 41.6666666%;//margin center 29.1666667% 
 		}
 	@if $num_col == 6 {
 		width: 50%;
@@ -59,16 +59,16 @@ $green: #479648;
 		width: 58.3333333%;
 		}
 	@if $num_col == 8 {
-		width: 66.6666666%;
+		width: 66.6666666%;// margin center 16.6666667%
 		}
 	@if $num_col == 9 {
 		width: 75%;
 		}
 	@if $num_col == 10{
-		width: 83.3333333%;
+		width: 83.3333333%;//margin center 8.33333335%
 		}
 	@if $num_col == 11 {
-		width: 91.6666666%;
+		width: 91.6666666%;//margin center 4.1666667%
 		}
 	@if $num_col == 12 {
 		width: 100%;
@@ -123,9 +123,6 @@ list-style: none;
 
 
 body{
-background: url('../images/bg.jpg') no-repeat $white;
-background-size: cover;
-background-attachment: fixed;
 color: $text-gray;
 font: 62.5% 'Droid Serif', "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 -webkit-font-smoothing: antialiased;
@@ -201,6 +198,7 @@ img{
 }
 
 /*--------------------------------------End General / Start Objects------------------------------------*/
+
 
 
 .hide-text{
@@ -285,9 +283,6 @@ header{
 	}
 
 	p.quote{
-		// width: 100%;
-		@include col(12);
-		font-size: 3.6em;
 		font-family: 'Tangerine', cursive;
 	}
 
@@ -336,7 +331,6 @@ header{
 
 .page.landing{
 	background: $white;
-	min-height: 535px;/* 18x7=126 -> 831-126 -170 for landing-arrow */
 	color: $dark-gray;
 }
 
@@ -356,28 +350,7 @@ header{
 /*--------------------------------------------"I Like" Page----------------------------------------------*/
 
 .like .img-container{
-	height: 378px;/*18x21*/
 	overflow: hidden;
-
-		a.zig-zag{
-			margin-top: 36px;
-		}
-
-		a.zig-zag-1{
-			margin-top: 166px;
-		}
-
-		a.zig-zag-2{
-			margin-top: 90px;
-		}
-
-		a.zig-zag-3{
-			margin-top: 162px;
-		}
-
-		a.zig-zag-4{
-			margin-top: 108px;
-		}
 }
 
 p.subtext{
@@ -940,22 +913,147 @@ footer{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*--------------------------------Media Queries------------------------*/
-
-
-
-
+//
+/*--------------------------------Media Queries------------------------*/
 
 /* Smartphones  ----------- */
 @media only screen 
-and (min-width : 480px) {
+and (min-width : 200px){
+	body{
+		background: $white;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	.page, .page-inner{
+		@include col(12);
+	}
+
+	.page{
+
+		p{
+			@include col(11);
+		}
+	}
+	
+	h1{
+		font-size: 3em;
+	}
+
+	h2{
+		font-size: 2.7em;
+	}
+
+	h3{
+		font-size: 1.8em;
+	}
+
+	p{
+		font-size: 1.6em;
+	}
+
+	.img-container{
+		@include col(12);
+		// margin: 18px 4.1666667%;
+
+		a{
+			float: left;
+			@include col(5);
+			margin: 18px 9px 0 18px;
+		}
+	}
+
+	.work{
+		h3{
+			text-align: center;
+			font-size: 2.1em;
+		}
+	}
+
+	.logo_cloud{
+		@include col(10);
+		//height: 250px; //need to adjust logo top position to %
+		img{
+			max-width: 50px;
+			max-height: 70px;
+		}
+	}
+
+	#map-canvas{
+		height: 400px;
+	}
+
+	.contact{
+		height: 0;
+		min-height: 1700px;
+	}
+
+	.contact-body{
+		@include col(12);
+		margin: 0;
+	}
+
+	.contact-form{
+		@include col(10);
+		margin: 9px 8.33333335% 0;
+
+		input[type="text"], input[type="email"], input[type="submit"], textarea{
+			@include col(12);
+			height: 45px;
+		}
+
+		textarea{
+			height: 162px;
+		}
+	}
+
+	.contact-content{
+		@include col(10);
+		margin: 9px 8.33333335% 0;
+		float: left;
+
+		p{
+			@include col(12);
+		}
+	}
+
+	p.info{
+		@include col(7);
+		margin: 36px auto;
+	}
+
+	.contact-icons{
+		margin-bottom: 36px;
+
+		img{
+			max-width: 45px;
+		}
+	}
+
+	p.quote{
+		@include col(11);
+		font-size: 3.1em;
+	}
 
 }
 
 
-//adjusts header nav after JS removes slide in menu
 @media only screen 
-and (max-width : 769px) {
+and (min-width : 480px) {
 
 	h1{
 		font-size: 5.4em;
@@ -973,15 +1071,9 @@ and (max-width : 769px) {
 		font-size: 1.6em;
 	}
 
-	.page{
-
-		p{
-			@include col(10);
-		}
-	}
 
 	.page-inner{
-		@include col(11);
+		@include col(12);
 	}
 
 	.logo_cloud{
@@ -997,19 +1089,23 @@ and (max-width : 769px) {
 		min-height: 300px;
 	}
 
+
 	.contact{
 		height: 0;
-		min-height: 1350px;
+		min-height: 1450px;
+		overflow: hidden;
 	}
 
 	.contact-body{
 		@include col(12);
 		margin: 63px 0 0;
+		float: left;
 	}
 
 	.contact-form{
-		@include col(6);
+		@include col(5);
 		margin: 9px 18px 0 0;
+		float: right;
 
 		input[type="text"], input[type="email"], input[type="submit"], textarea{
 			@include col(12);
@@ -1023,6 +1119,7 @@ and (max-width : 769px) {
 
 	.contact-content{
 		@include col(5);
+		margin: 9px 18px 0;
 		float: left;
 
 		p{
@@ -1041,24 +1138,75 @@ and (max-width : 769px) {
 		}
 	}
 
+
+
 }
 
 
 @media only screen 
-and (max-width : 959px) {
+and (min-width : 767px) {
+	body{
+		background: url('../images/bg.jpg') no-repeat $white;
+		background-size: cover;
+		background-attachment: fixed;
+	}
 
+	.page.landing{
+		min-height: 535px;/* 18x7=126 -> 831-126 -170 for landing-arrow */
+	}
 
+	.img-container{
+		overflow: hidden;
+		margin-top: 36px;
+
+			a{
+				// padding: 5px;
+				// margin-right: 9px;
+				float: left;
+				display: block;
+				width: 20%; /*210px*/
+				// @include col(2);
+				height: 210px;
+				// background: $icon-gray;
+			}
+	}
+
+	.like .img-container{
+		min-height: 378px;/*18x21*/
+
+			a.zig-zag{
+				margin-top: 36px;
+			}
+
+			a.zig-zag-1{
+				margin-top: 166px;
+			}
+
+			a.zig-zag-2{
+				margin-top: 90px;
+			}
+
+			a.zig-zag-3{
+				margin-top: 162px;
+			}
+
+			a.zig-zag-4{
+				margin-top: 108px;
+			}
+	}
+
+	p.quote{
+		@include col(12);
+		font-size: 3.6em;
+	}
 }
+
+
 
 
 /* Desktops ---------------------- */
 @media only screen 
-and (max-width : 1201px) {
-	.logo_cloud{
-		@include col(12);
-		// height: 440px;//height required to hold container around positioned elements
-		margin: 0;
-	}
+and (min-width : 959px) {
 }
 
 

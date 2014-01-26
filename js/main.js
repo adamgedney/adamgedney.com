@@ -248,50 +248,52 @@ var logo_cloud_frame = false;
 	//on scroll
 	$(document).on('scroll', function(e){
 
-		if($(window).scrollTop() <= 300){
+		if($(window).width() > 767 )
+			if($(window).scrollTop() <= 300){
 
-			//removes primary animation class to anchor holding image
-			$('.zig-zag').removeClass('fadeInUpBig');
-			$('.zig-zag').addClass('fadeOutUpBig');
-			$('.zig-zag-1').removeClass('fadeInRightBig');
-			$('.zig-zag-1').addClass('fadeOutRightBig');
-			$('.zig-zag-2').removeClass('fadeInLeftBig');
-			$('.zig-zag-2').addClass('fadeOutLeftBig');
-			$('.zig-zag-3').removeClass('fadeInDownBig');
-			$('.zig-zag-3').addClass('fadeOutDownBig');
-			$('.zig-zag-4').removeClass('fadeInLeftBig');
-			$('.zig-zag-4').addClass('fadeOutLeftBig');
-		
-		}else if($(window).scrollTop() >= 300 && $(window).scrollTop() <= 924){
+				//removes primary animation class to anchor holding image
+				$('.zig-zag').removeClass('fadeInUpBig');
+				$('.zig-zag').addClass('fadeOutUpBig');
+				$('.zig-zag-1').removeClass('fadeInRightBig');
+				$('.zig-zag-1').addClass('fadeOutRightBig');
+				$('.zig-zag-2').removeClass('fadeInLeftBig');
+				$('.zig-zag-2').addClass('fadeOutLeftBig');
+				$('.zig-zag-3').removeClass('fadeInDownBig');
+				$('.zig-zag-3').addClass('fadeOutDownBig');
+				$('.zig-zag-4').removeClass('fadeInLeftBig');
+				$('.zig-zag-4').addClass('fadeOutLeftBig');
+			
+			}else if($(window).scrollTop() >= 300 && $(window).scrollTop() <= 924){
 
-			//adds primary animation class to anchor holding image
-			$('.zig-zag').removeClass('fadeOutUpBig')
-			$('.zig-zag').addClass('fadeInUpBig');
-			$('.zig-zag-1').removeClass('fadeOutRightBig')
-			$('.zig-zag-1').addClass('fadeInRightBig');
-			$('.zig-zag-2').removeClass('fadeOutLeftBig')
-			$('.zig-zag-2').addClass('fadeInLeftBig');
-			$('.zig-zag-3').removeClass('fadeOutDownBig')
-			$('.zig-zag-3').addClass('fadeInDownBig');
-			$('.zig-zag-4').removeClass('fadeOutLeftBig')
-			$('.zig-zag-4').addClass('fadeInLeftBig');
-		
-		}
+				//adds primary animation class to anchor holding image
+				$('.zig-zag').removeClass('fadeOutUpBig')
+				$('.zig-zag').addClass('fadeInUpBig');
+				$('.zig-zag-1').removeClass('fadeOutRightBig')
+				$('.zig-zag-1').addClass('fadeInRightBig');
+				$('.zig-zag-2').removeClass('fadeOutLeftBig')
+				$('.zig-zag-2').addClass('fadeInLeftBig');
+				$('.zig-zag-3').removeClass('fadeOutDownBig')
+				$('.zig-zag-3').addClass('fadeInDownBig');
+				$('.zig-zag-4').removeClass('fadeOutLeftBig')
+				$('.zig-zag-4').addClass('fadeInLeftBig');
+			
+			}
 
-		if($(window).scrollTop() >= 925){
+			if($(window).scrollTop() >= 925){
 
-			//removes primary animation class to anchor holding image
-			$('.zig-zag').removeClass('fadeInUpBig');
-			$('.zig-zag').addClass('fadeOutUpBig');
-			$('.zig-zag-1').removeClass('fadeInRightBig');
-			$('.zig-zag-1').addClass('fadeOutRightBig');
-			$('.zig-zag-2').removeClass('fadeInLeftBig');
-			$('.zig-zag-2').addClass('fadeOutLeftBig');
-			$('.zig-zag-3').removeClass('fadeInDownBig');
-			$('.zig-zag-3').addClass('fadeOutDownBig');
-			$('.zig-zag-4').removeClass('fadeInLeftBig');
-			$('.zig-zag-4').addClass('fadeOutLeftBig');
-		}
+				//removes primary animation class to anchor holding image
+				$('.zig-zag').removeClass('fadeInUpBig');
+				$('.zig-zag').addClass('fadeOutUpBig');
+				$('.zig-zag-1').removeClass('fadeInRightBig');
+				$('.zig-zag-1').addClass('fadeOutRightBig');
+				$('.zig-zag-2').removeClass('fadeInLeftBig');
+				$('.zig-zag-2').addClass('fadeOutLeftBig');
+				$('.zig-zag-3').removeClass('fadeInDownBig');
+				$('.zig-zag-3').addClass('fadeOutDownBig');
+				$('.zig-zag-4').removeClass('fadeInLeftBig');
+				$('.zig-zag-4').addClass('fadeOutLeftBig');
+			}
+		}// if > 767
 
 		//logo cloud animations
 		if($(window).scrollTop() <= 1199){

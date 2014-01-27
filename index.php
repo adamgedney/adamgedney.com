@@ -46,7 +46,7 @@
 				<div class="page landing">
 					<div class="page-inner">
 						<img class="profile-pic" src="images/profile.png" alt="Adam Gedney Profile Image" />
-						<h1>My name is <span class="red">Adam Gedney.</span></h1>
+						<h1>My name is <span class="red">Adam <span class="hide-name">Gedney</span>.</span></h1>
 							<h2>I'm a front-end developer.</h2>
 						<h3 class="text-gray">(I also write & do <span class="underline">lots</span> of other things)</h3>
 					</div><!-- /.page-inner-->
@@ -66,15 +66,15 @@
 						<p>designing websites, logos & print collateral, <span class="red">being silly,</span> writing music & books. I build things, google things, think, read, & sometimes I update my <a class="underline light-gray" target="_blank" href="http://usabilityintelligence.com" >blog</a> too.</p>
 
 						<div class="img-container">
-							<a class="zig-zag animated" target="_blank" href="#"><img src="images/angelfire-thumb.jpg" alt="likes image 1"/></a>
+							<a data-proj="I build websites & stuff" class="zig-zag animated" target="_blank" href="#"><span></span><img src="images/angelfire-thumb.jpg" title="My rendition of angelfire.com. Check it in my work section below." alt="likes image 1"/></a>
 							
-							<a class="zig-zag-1 animated" target="_blank" href="#"><img src="images/pangea-thumb.jpg" alt="likes image 2"/></a>
+							<a data-proj="I like designing stuff" class="zig-zag-1 animated" target="_blank" href="#"><span></span><img src="images/pangea-thumb.jpg" title="Graphic design, & just design in general, are a passion of mine." alt="likes image 2"/></a>
 							
-							<a class="zig-zag-2 animated" target="_blank" href="#"><img src="images/silly-thumb.jpg" alt="likes image 3"/></a>
+							<a data-proj="This is Julie, my wife & stuff" class="zig-zag-2 animated" target="_blank" href="#"><span></span><img src="images/silly-thumb.jpg" title="I finally found the woman of my dreams. I couldn't be luckier. <3" alt="likes image 3"/></a>
 							
-							<a class="zig-zag-3 animated" target="_blank" href="https://itunes.apple.com/us/artist/adam-shields/id637020445"><img src="images/itunes-thumb.jpg" alt="likes image 4"/></a>
+							<a data-proj="Check out the music I've released & stuff" class="zig-zag-3 animated" target="_blank" href="https://itunes.apple.com/us/artist/adam-shields/id637020445"><span></span><img src="images/itunes-thumb.jpg" title="I've been writing electronic music for 20 years now. Ugh. I'm getting old!" alt="likes image 4"/></a>
 							
-							<a class="zig-zag-4 animated" target="_blank" href="http://usabilityintelligence.com"><img src="images/ui-thumb.jpg" alt="likes image 5"/></a>
+							<a data-proj="This is my blog & stuff" class="zig-zag-4 animated" target="_blank" href="http://usabilityintelligence.com"><span></span><img src="images/ui-thumb.jpg" title="That's my blog, but you can find my book here: http://lifestyling.adamgedney.com" alt="likes image 5"/></a>
 						</div><!-- /.like-img-container-->
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->
@@ -89,27 +89,27 @@
 
 						<!-- <img class="web-logos" src="images/logos.png" alt="web logos"/> -->
 						<div class="logo_cloud">
-							<img class="air_l animated" src="images/logos/air.png" alt="web logos"/>
-							<img class="as_l animated" src="images/logos/as.png" alt="web logos"/>
-							<img class="cf_l animated" src="images/logos/cf.png" alt="web logos"/>
-							<img class="codeigniter_l animated" src="images/logos/codeigniter.png" alt="web logos"/>
-							<img class="css_l animated" src="images/logos/css.png" alt="web logos"/>
-							<img class="drupal_l animated" src="images/logos/drupal.png" alt="web logos"/>
-							<img class="ejs_l animated" src="images/logos/ejs.png" alt="web logos"/>
-							<img class="express_l animated" src="images/logos/express.png" alt="web logos"/>
-							<img class="ffmpeg_l animated" src="images/logos/ffmpeg.png" alt="web logos"/>
-							<img class="github_l animated" src="images/logos/github.png" alt="web logos"/>
-							<img class="handle_l animated" src="images/logos/handle.png" alt="web logos"/>
-							<img class="html_l animated" src="images/logos/html.png" alt="web logos"/>
-							<img class="jquery_l animated" src="images/logos/jquery.png" alt="web logos"/>
-							<img class="js_l animated" src="images/logos/js.png" alt="web logos"/>
-							<img class="mongo_l animated" src="images/logos/mongo.png" alt="web logos"/>
-							<img class="mysql_l animated" src="images/logos/mysql.png" alt="web logos"/>
-							<img class="node_l animated" src="images/logos/node.png" alt="web logos"/>
-							<img class="php_l animated" src="images/logos/php.png" alt="web logos"/>
-							<img class="sass_l animated" src="images/logos/sass.png" alt="web logos"/>
-							<img class="terminal_l animated" src="images/logos/terminal.png" alt="web logos"/>
-							<img class="wp_l animated" src="images/logos/wp.png" alt="web logos"/>
+							<img class="air_l animated" src="images/logos/air.png" title="Adobe AIR" alt="web logos"/>
+							<img class="as_l animated" src="images/logos/as.png" title="Actionscript, baby!" alt="web logos"/>
+							<img class="cf_l animated" src="images/logos/cf.png" title="Coldfusion" alt="web logos"/>
+							<img class="codeigniter_l animated" src="images/logos/codeigniter.png" title="Codeigniter" alt="web logos"/>
+							<img class="css_l animated" src="images/logos/css.png" title="CSS 3" alt="web logos"/>
+							<img class="drupal_l animated" src="images/logos/drupal.png" title="A little bit of Drupal" alt="web logos"/>
+							<img class="ejs_l animated" src="images/logos/ejs.png" title="EJS templating in node.js is sweet" alt="web logos"/>
+							<img class="express_l animated" src="images/logos/express.png" title="Express framework for node.js is rad" alt="web logos"/>
+							<img class="ffmpeg_l animated" src="images/logos/ffmpeg.png" title="My new love, ffmpeg media converter" alt="web logos"/>
+							<img class="github_l animated" src="images/logos/github.png" title="Can't live without git!" alt="web logos"/>
+							<img class="handle_l animated" src="images/logos/handle.png" title="Handlebars templating for js is pretty hip" alt="web logos"/>
+							<img class="html_l animated" src="images/logos/html.png" title="I eat HTML" alt="web logos"/>
+							<img class="jquery_l animated" src="images/logos/jquery.png" title="JQuery is a dream" alt="web logos"/>
+							<img class="js_l animated" src="images/logos/js.png" title="Javascript makes the world go round" alt="web logos"/>
+							<img class="mongo_l animated" src="images/logos/mongo.png" title="Mongo DB is amazing" alt="web logos"/>
+							<img class="mysql_l animated" src="images/logos/mysql.png" title="MySQL is an old dog we love dearly" alt="web logos"/>
+							<img class="node_l animated" src="images/logos/node.png" title="node.js can do some wonderful things" alt="web logos"/>
+							<img class="php_l animated" src="images/logos/php.png" title="PHP is the web" alt="web logos"/>
+							<img class="sass_l animated" src="images/logos/sass.png" title="Can't live without my SASS CSS preprocessor" alt="web logos"/>
+							<img class="terminal_l animated" src="images/logos/terminal.png" title="Terminal is for nerds. Unix Shell all the way!" alt="web logos"/>
+							<img class="wp_l animated" src="images/logos/wp.png" title="Wordpress. We love your bloat. ;)" alt="web logos"/>
 						</div><!-- /.logo_cloud-->
 						
 					</div><!-- /.page-inner-->

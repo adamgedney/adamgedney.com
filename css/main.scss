@@ -61,7 +61,7 @@ $green: #479648;
 	@if $num_col == 8 {
 		width: 66.6666666%;// margin center 16.6666667%
 		}
-	@if $num_col == 9 {
+	@if $num_col == 9 {//margin center 12.5%
 		width: 75%;
 		}
 	@if $num_col == 10{
@@ -133,26 +133,27 @@ font-family: 'Ubuntu', "Helvetica Neue Light", Helvetica, Arial, sans-serif;
 }
 
 h1{
-font-size: 7.2em; /*18x4*/
+font-size: 3.6em; /*18x4*/
 line-height: 1.5;
 }
 
 h2{
-font-size: 5.4em;/*18x3*/
+font-size: 2.4em;/*18x3*/
 line-height: 1.5;
 }
 
 h3{
-font-size: 3em;/*18x2 - 6*/
+font-size: 1.6em;/*18x2 - 6*/
 line-height: 1.5;
 }
 
 p, ul, dl{
-font-size: 1.8em;
+font-size: 1.6em;
 font-weight: 100;
 line-height: 1.5;
 margin-bottom: 20px;
 }
+
 
 ul{
 line-height: 1.5;
@@ -199,7 +200,9 @@ img{
 
 /*--------------------------------------End General / Start Objects------------------------------------*/
 
-
+.hide-name{
+	display: none;
+}
 
 .hide-text{
 	text-indent: 200%;
@@ -312,14 +315,9 @@ header{
 	margin-top: 36px;
 
 		a{
-			// padding: 5px;
-			// margin-right: 9px;
 			float: left;
 			display: block;
 			width: 20%; /*210px*/
-			// @include col(2);
-			height: 210px;
-			// background: $icon-gray;
 		}
 }
 
@@ -536,18 +534,11 @@ a.resume{
 	}
 }
 
-// .print_thumbs{
-// 	img{
-// 		float: left;
-// 		display: block;
-// 		width: 20%; /*210px*/
-// 	}
-// }
-
 /*work image hover effect*/
 .img_roll{
 	background: $black;
 	color: $blue;
+	padding: 3px;
 	// max-height: 200px;
 
 	span{
@@ -581,13 +572,13 @@ a.resume{
 /*---------------------------------------------Contact Page------------------------------------------------*/
 
 .contact{
-	height: 1584px; /*18x88*/
+	// height: 1584px; /*18x88*/
 }
 
 #map-canvas{
 	// width: 100%;
 	@include col(12);
-	height: 530px;
+	// height: 530px;
 	margin-top: 72px;
 -webkit-box-shadow: 0px 0px 9px rgba(50, 50, 50, 0.76);
    -moz-box-shadow: 0px 0px 9px rgba(50, 50, 50, 0.76);
@@ -597,13 +588,13 @@ a.resume{
 .contact-body{
 	overflow: hidden;
 	// width: 802px;
-	@include col(11);
-	margin: 63px 4.1666667% 0;
+	// @include col(11);
+	// margin: 63px 4.1666667% 0;
 }
 
 .contact-form{
 	// width: 366px;
-	@include col(5);
+	// @include col(5);
 	float: left;
 	margin: 9px 36px 0 0;
 	position: relative;/*required for error message absolute positioning*/
@@ -622,7 +613,7 @@ a.resume{
 	}
 
 	textarea{
-		height: 198px;
+		// height: 198px;
 	}
 
 	input[type="submit"]{
@@ -636,12 +627,12 @@ a.resume{
 
 .contact-content{
 	// width: 400px;
-	@include col(6);
+	// @include col(6);
 	float: left;
 
 	p{
 		// width: 400px;
-		@include col(12);
+		// @include col(12);
 		text-align: left;
 		color: $text-gray;
 		font-weight: 100;
@@ -651,8 +642,6 @@ a.resume{
 p.info{
 	margin: 81px auto;
 	text-align: center;
-	// width: 200px;
-	@include col(6);
 }
 
 
@@ -926,7 +915,7 @@ footer{
 
 
 
-/*--------------------------------Media Queries------------------------*/
+/*Media Queries====================*/
 //
 /*--------------------------------Media Queries------------------------*/
 
@@ -950,21 +939,6 @@ and (min-width : 200px){
 		}
 	}
 	
-	h1{
-		font-size: 3em;
-	}
-
-	h2{
-		font-size: 2.7em;
-	}
-
-	h3{
-		font-size: 1.8em;
-	}
-
-	p{
-		font-size: 1.6em;
-	}
 
 	.img-container{
 		@include col(12);
@@ -973,7 +947,14 @@ and (min-width : 200px){
 		a{
 			float: left;
 			@include col(5);
-			margin: 18px 9px 0 18px;
+			margin: 18px 9px 0 12px;
+		}
+	}
+
+	.img_roll{
+		span{
+			@include vertical-align(38%);
+			font-size: 1.2em;
 		}
 	}
 
@@ -1032,7 +1013,7 @@ and (min-width : 200px){
 	}
 
 	p.info{
-		@include col(7);
+		@include col(8);
 		margin: 36px auto;
 	}
 
@@ -1046,12 +1027,17 @@ and (min-width : 200px){
 
 	p.quote{
 		@include col(11);
-		font-size: 3.1em;
+		font-size: 2.9em;
 	}
 
 }
 
 
+
+
+
+
+//--------------------------min-width 480------------------------------------
 @media only screen 
 and (min-width : 480px) {
 
@@ -1074,14 +1060,34 @@ and (min-width : 480px) {
 
 	.page-inner{
 		@include col(12);
+		padding: 18px;
 	}
 
-	.logo_cloud{
+	.img-container{
+		@include col(12);
+		// margin: 18px 4.1666667%;
 
+		a{
+			float: left;
+			@include col(2);
+			margin: 18px 9px 0 9px;
+		}
+	}
+	
+	.logo_cloud{
+		@include col(10);
+		margin: 0 8.33333335%;
 		//height: 250px; //need to adjust logo top position to %
 		img{
 			max-width: 90px;
 			max-height: 80px;
+		}
+	}
+
+	.work{
+		h3{
+			text-align: left;
+			font-size: 2.1em;
 		}
 	}
 
@@ -1092,7 +1098,7 @@ and (min-width : 480px) {
 
 	.contact{
 		height: 0;
-		min-height: 1450px;
+		min-height: 1250px;
 		overflow: hidden;
 	}
 
@@ -1128,11 +1134,10 @@ and (min-width : 480px) {
 	}
 
 	p.info{
-		margin: 51px auto;
+		margin: 46px auto;
 	}
 
 	.contact-icons{
-
 		img{
 			max-width: 45px;
 		}
@@ -1143,12 +1148,61 @@ and (min-width : 480px) {
 }
 
 
+
+
+
+
+
+
+
+
+
+//tweak name display
+@media only screen 
+and (min-width : 667px) {
+	.hide-name{
+		display: inline;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+//--------------------------min-width 767------------------------------------
 @media only screen 
 and (min-width : 767px) {
 	body{
 		background: url('../images/bg.jpg') no-repeat $white;
 		background-size: cover;
 		background-attachment: fixed;
+	}
+
+	h1{
+		font-size: 6em;
+	}
+
+	h2{
+		font-size: 5.1em;
+	}
+
+	h3{
+		font-size: 2.7em;
+	}
+
+	p{
+		font-size: 1.8em;
+	}
+
+	.page{
+		p{
+			@include col(8);
+		}
 	}
 
 	.page.landing{
@@ -1158,17 +1212,22 @@ and (min-width : 767px) {
 	.img-container{
 		overflow: hidden;
 		margin-top: 36px;
+		@include col(12);
 
 			a{
-				// padding: 5px;
-				// margin-right: 9px;
 				float: left;
 				display: block;
-				width: 20%; /*210px*/
-				// @include col(2);
+				@include col(2);
+				margin: 18px 9px 0 9px;
 				height: 210px;
-				// background: $icon-gray;
 			}
+	}
+
+	.img_roll{
+		span{
+			@include vertical-align(40%);
+			// font-size: 1.8em;
+		}
 	}
 
 	.like .img-container{
@@ -1199,6 +1258,41 @@ and (min-width : 767px) {
 		@include col(12);
 		font-size: 3.6em;
 	}
+
+	.contact{
+		min-height: 1250px;
+	}
+
+	.contact-body{
+		@include col(12);
+		margin: 63px 0 0;
+		float: left;
+	}
+
+	.contact-form{
+		@include col(5);
+		margin: 9px 18px 0 0;
+		float: right;
+
+		input[type="text"], input[type="email"], input[type="submit"], textarea{
+			@include col(12);
+			height: 45px;
+		}
+
+		textarea{
+			height: 162px;
+		}
+	}
+
+	.contact-content{
+		@include col(5);
+		margin: 9px 18px 0;
+		float: left;
+
+		p{
+			@include col(12);
+		}
+	}
 }
 
 
@@ -1206,23 +1300,129 @@ and (min-width : 767px) {
 
 /* Desktops ---------------------- */
 @media only screen 
-and (min-width : 959px) {
+and (min-width : 980px) {
+
+	h1{
+		font-size: 7.2em;
+	}
+
+	h2{
+		font-size: 5.4em;
+	}
+
+	h3{
+		font-size: 3em;
+	}
+
+	.page{
+		p{
+			@include col(6);
+		}
+	}
+
+	.contact{
+		height: 1484px; /*18x88*/
+	}
+
+	#map-canvas{
+		height: 530px;
+	}
+
+	.contact-body{
+		@include col(11);
+		margin: 63px 4.1666667% 0;
+	}
+
+	.contact-form{
+		@include col(5);
+
+		input[type="text"], input[type="email"], input[type="submit"], textarea{
+			@include col(11);
+			height: 54px;
+		}
+
+		textarea{
+			height: 198px;
+		}
+	}
+
+	.contact-content{
+		@include col(6);
+
+		p{
+			@include col(12);
+		}
+	}
+
+	p.info{
+		margin: 81px auto;
+		text-align: center;
+		@include col(6);
+	}
+
+	.contact-icons{
+
+		img{
+			max-width: 100%;
+		}
+	}
+
+	p.quote{
+		@include col(10);
+	}
+
 }
+
+
+
+
+
+
+
+
+
 
 
 
 /* Large screens ----------- */
 @media only screen 
-and (min-width : 1824px) {
-/* Styles */
+and (min-width : 1220px) {
+
+	.contact-body{
+		@include col(9);
+		margin: 63px 12.5% 0;
+	}
+
+	.contact-form{
+		@include col(5);
+	}
+
+	.contact-content{
+		@include col(5);
+	}
+
+	p.info{
+		@include col(6);
+	}
 }
 
 
 
 
+@media only screen 
+and (min-width : 1800px) {
+	.page-inner{
+		@include col(10);
+	}
+}
 
 
-
+@media only screen 
+and (min-width : 2000px) {
+	.page-inner{
+		@include col(8);
+	}
+}
 
 
 

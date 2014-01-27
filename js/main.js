@@ -12,6 +12,7 @@ var logo_cloud_frame = false;
 		var settings = {
 			zoom: 8,
 			scrollwheel: false,
+			draggable: false,
 			center: latlng,
 			mapTypeControl: true,
 			mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
@@ -21,8 +22,14 @@ var logo_cloud_frame = false;
     		};
 
     	var map = new google.maps.Map(document.getElementById("map-canvas"), settings);
+    	
+    	//changes pin based on screen size
+    	var pin_path = "images/pin.png";
+    	if($(window).width() < 850 ){
+    		pin_path = "images/pin_small.png";
+    	}
 
-	var companyLogo = new google.maps.MarkerImage('images/pin.png',
+	var companyLogo = new google.maps.MarkerImage(pin_path,
 		new google.maps.Size(451,118),
 		new google.maps.Point(0,0),
 		new google.maps.Point(0,118)
@@ -232,97 +239,79 @@ var logo_cloud_frame = false;
 
 
 	//------------------------------------ScrollTop animations------------------------------------
+	//doc ready animation hide hack
+	$(document).ready(function(){
+		if($(window).width() > 770 ){
+			$('.logo_cloud img').hide();
+		};
+	});
+
+	
+
 	//removes primary animation class to anchor holding image
-	$('.zig-zag').removeClass('fadeInUpBig');
-	$('.zig-zag').addClass('fadeOutUpBig');
-	$('.zig-zag-1').removeClass('fadeInRightBig');
-	$('.zig-zag-1').addClass('fadeOutRightBig');
-	$('.zig-zag-2').removeClass('fadeInLeftBig');
-	$('.zig-zag-2').addClass('fadeOutLeftBig');
-	$('.zig-zag-3').removeClass('fadeInDownBig');
-	$('.zig-zag-3').addClass('fadeOutDownBig');
-	$('.zig-zag-4').removeClass('fadeInLeftBig');
-	$('.zig-zag-4').addClass('fadeOutLeftBig');
-	remove_classes();
+	if($(window).width() > 770 ){
+		
+		zig_zag_animate_out();
+		remove_classes();
+	}
 
 	//on scroll
 	$(document).on('scroll', function(e){
 
-		if($(window).width() > 767 )
+		//fixes document.ready issue on ipads
+		$('.logo_cloud img').show();
+
+		if($(window).width() > 770 ){
+			
 			if($(window).scrollTop() <= 300){
 
 				//removes primary animation class to anchor holding image
-				$('.zig-zag').removeClass('fadeInUpBig');
-				$('.zig-zag').addClass('fadeOutUpBig');
-				$('.zig-zag-1').removeClass('fadeInRightBig');
-				$('.zig-zag-1').addClass('fadeOutRightBig');
-				$('.zig-zag-2').removeClass('fadeInLeftBig');
-				$('.zig-zag-2').addClass('fadeOutLeftBig');
-				$('.zig-zag-3').removeClass('fadeInDownBig');
-				$('.zig-zag-3').addClass('fadeOutDownBig');
-				$('.zig-zag-4').removeClass('fadeInLeftBig');
-				$('.zig-zag-4').addClass('fadeOutLeftBig');
+				zig-zag_animate_out();
 			
 			}else if($(window).scrollTop() >= 300 && $(window).scrollTop() <= 924){
 
 				//adds primary animation class to anchor holding image
-				$('.zig-zag').removeClass('fadeOutUpBig')
-				$('.zig-zag').addClass('fadeInUpBig');
-				$('.zig-zag-1').removeClass('fadeOutRightBig')
-				$('.zig-zag-1').addClass('fadeInRightBig');
-				$('.zig-zag-2').removeClass('fadeOutLeftBig')
-				$('.zig-zag-2').addClass('fadeInLeftBig');
-				$('.zig-zag-3').removeClass('fadeOutDownBig')
-				$('.zig-zag-3').addClass('fadeInDownBig');
-				$('.zig-zag-4').removeClass('fadeOutLeftBig')
-				$('.zig-zag-4').addClass('fadeInLeftBig');
+				zig_zag_animate_in();
 			
 			}
 
 			if($(window).scrollTop() >= 925){
 
 				//removes primary animation class to anchor holding image
-				$('.zig-zag').removeClass('fadeInUpBig');
-				$('.zig-zag').addClass('fadeOutUpBig');
-				$('.zig-zag-1').removeClass('fadeInRightBig');
-				$('.zig-zag-1').addClass('fadeOutRightBig');
-				$('.zig-zag-2').removeClass('fadeInLeftBig');
-				$('.zig-zag-2').addClass('fadeOutLeftBig');
-				$('.zig-zag-3').removeClass('fadeInDownBig');
-				$('.zig-zag-3').addClass('fadeOutDownBig');
-				$('.zig-zag-4').removeClass('fadeInLeftBig');
-				$('.zig-zag-4').addClass('fadeOutLeftBig');
+				zig_zag_animate_out();
 			}
-		}// if > 767
-
-		//logo cloud animations
-		if($(window).scrollTop() <= 1199){
-			
-			if(logo_cloud_frame == true){
-				animate_cloud_out();
-				logo_cloud_frame = false;
-			};
-		};
-
-		if($(window).scrollTop() >= 1200 && $(window).scrollTop() <= 2000){
-
-			if(logo_cloud_frame == false){
-
-				animate_cloud_in();
-				logo_cloud_frame = true;
-			};
-			
-		};
-		
-		if($(window).scrollTop() >= 1999){
-			
-			if(logo_cloud_frame == true){
-				animate_cloud_out();
-				logo_cloud_frame = false;
-			};
-		};
 		
 
+			//logo cloud animations
+			if($(window).scrollTop() <= 1199){
+				
+				if(logo_cloud_frame == true){
+					animate_cloud_out();
+					logo_cloud_frame = false;
+				};
+			};
+
+
+			if($(window).scrollTop() >= 1200 && $(window).scrollTop() <= 2000){
+				
+				if(logo_cloud_frame == false){
+
+					animate_cloud_in();
+					logo_cloud_frame = true;
+				};
+				
+			};
+			
+			if($(window).scrollTop() >= 1999){
+				
+
+				if(logo_cloud_frame == true){
+					animate_cloud_out();
+					logo_cloud_frame = false;
+				};
+			};
+		
+		}// if > 770
 
 	});// on scroll
 
@@ -339,6 +328,7 @@ var logo_cloud_frame = false;
 
 
 //--------------------------------------logo cloud----------------------------------
+//logo image classes
 // .air_l
 // .as_l
 // .cf_l
@@ -360,6 +350,39 @@ var logo_cloud_frame = false;
 // .sass_l
 // .terminal_l
 // .wp_l
+
+
+	function zig_zag_animate_in(){
+		$('.zig-zag').removeClass('fadeOutUpBig')
+		$('.zig-zag').addClass('fadeInUpBig');
+		$('.zig-zag-1').removeClass('fadeOutRightBig')
+		$('.zig-zag-1').addClass('fadeInRightBig');
+		$('.zig-zag-2').removeClass('fadeOutLeftBig')
+		$('.zig-zag-2').addClass('fadeInLeftBig');
+		$('.zig-zag-3').removeClass('fadeOutDownBig')
+		$('.zig-zag-3').addClass('fadeInDownBig');
+		$('.zig-zag-4').removeClass('fadeOutLeftBig')
+		$('.zig-zag-4').addClass('fadeInLeftBig');
+	};
+
+
+
+
+	function zig_zag_animate_out(){
+		$('.zig-zag').removeClass('fadeInUpBig');
+		$('.zig-zag').addClass('fadeOutUpBig');
+		$('.zig-zag-1').removeClass('fadeInRightBig');
+		$('.zig-zag-1').addClass('fadeOutRightBig');
+		$('.zig-zag-2').removeClass('fadeInLeftBig');
+		$('.zig-zag-2').addClass('fadeOutLeftBig');
+		$('.zig-zag-3').removeClass('fadeInDownBig');
+		$('.zig-zag-3').addClass('fadeOutDownBig');
+		$('.zig-zag-4').removeClass('fadeInLeftBig');
+		$('.zig-zag-4').addClass('fadeOutLeftBig');
+	};
+
+
+
 
 	function remove_classes(){
 

@@ -9,13 +9,7 @@
 "Good UI design is humble.” – Jono DiCarlo
 */
 /*
-white: f6feff;
-icon light gray: cccccc;
-light gray: 5c5c5c;
-text mid gray: 5d5d5d;
-dark gray: 252525;
-red: d93330;
-blue: 5d95ba;
+
 
 ----------------SASS------------------*/
 $white: #f6feff;
@@ -28,175 +22,12 @@ $red: #d93330;
 $blue: #5d95ba;
 $green: #479648;
 
-@mixin duration($time: .7s){
-		transition-duration: $time;
--webkit-transition-duration: $time;
-}
-
-/*-----12 col grid------*/
-
-@mixin col($num_col){
-
-	@if $num_col == 1 {
-		width: 8.33333333%;
-		}
-	@if $num_col == 2 {
-		width: 16.6666667%;
-		}
-	@if $num_col == 3 {
-		width: 25%;
-		}
-	@if  $num_col == 4 {
-		width: 33.3333333%;
-		}
-	@if $num_col == 5 {
-		width: 41.6666666%;//margin center 29.1666667% 
-		}
-	@if $num_col == 6 {
-		width: 50%;
-		}
-	@if $num_col == 7 {
-		width: 58.3333333%;
-		}
-	@if $num_col == 8 {
-		width: 66.6666666%;// margin center 16.6666667%
-		}
-	@if $num_col == 9 {//margin center 12.5%
-		width: 75%;
-		}
-	@if $num_col == 10{
-		width: 83.3333333%;//margin center 8.33333335%
-		}
-	@if $num_col == 11 {
-		width: 91.6666666%;//margin center 4.1666667%
-		}
-	@if $num_col == 12 {
-		width: 100%;
-	}
-}
-
-// @include col(12);
-
-@mixin vertical-align($top_num:50%){
-  position: relative;
-  top: $top_num;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/*--------------------------------------Start CSS Reset---------------------------------------------*/
-
-/* http://meyerweb.com/eric/tools/css/reset/
-v2.0 | 20110126
-License: none (public domain)
-*/
-
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, cite, code,del, em, img, strike, strong, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-display: block;
-}
-
-ul {
-list-style: none;
-}
-
-/*--------------------------------------End CSS Reset / Start General-------------------------------*/
-
-//border box borrowed from responsive.gs
-* { -webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box; 
-}
+/*----Sass imports----*/
+@import "reset";
+@import "defaults";
+@import "util";
 
 
-body{
-color: $text-gray;
-font: 62.5% 'Droid Serif', "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
--webkit-font-smoothing: antialiased;
-}
-
-h1, h2, h3, h4{
-font-family: 'Ubuntu', "Helvetica Neue Light", Helvetica, Arial, sans-serif;
-}
-
-h1{
-font-size: 3.6em; /*18x4*/
-line-height: 1.5;
-}
-
-h2{
-font-size: 2.4em;/*18x3*/
-line-height: 1.5;
-}
-
-h3{
-font-size: 1.6em;/*18x2 - 6*/
-line-height: 1.5;
-}
-
-p, ul, dl{
-font-size: 1.6em;
-font-weight: 100;
-line-height: 1.5;
-margin-bottom: 20px;
-}
-
-
-ul{
-line-height: 1.5;
-}
-
-a, input[type="submit"]{
-text-decoration: none;
-color: $blue;
-opacity: 1;
-// @include duration;
-outline: none;
--webkit-appearance: none;/*overrides safari mobile default styling*/
-}
-
-a:visited{
-	outline: none;
-}
-
-a:hover, input[type="submit"]:hover{
-opacity: .5;
-// @include duration;
-}
-
-a.no-tran:hover{
-	opacity: 1;
-}
-
-img{
-	max-width: 100%;
-}
-
-::-webkit-input-placeholder { /* WebKit browsers */
-    color: $icon-gray;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: $icon-gray;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: $icon-gray;
-}
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color: $icon-gray;
-}
 
 /*--------------------------------------End General / Start Objects------------------------------------*/
 

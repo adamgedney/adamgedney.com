@@ -46,10 +46,10 @@ body.projects-temp{
 
 nav{
 	overflow: hidden;
-	display: inline;
+	// display: inline; //do not use. Breaks JQuery show/hide
 	position: relative;
 	z-index: 99999;
-	
+
 	ul{
 		float: right;
 		margin-bottom: 0;

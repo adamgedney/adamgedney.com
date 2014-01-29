@@ -78,33 +78,31 @@ $(function(){
 
 	//Menu button for mobile====================//
 
-	// if($(window).width() < 767 ){
-	// 	// $('#main-nav').fadeOut(2000);
+	if($(window).width() < 767 ){
+		$('#main-nav').fadeOut(2000);
 		
-	// }else if($(window).width() > 767){
-	// 	$('.menu-btn').hide();
-	// }
-	$('#main-nav').hide();
+	}else if($(window).width() > 767){
+		$('.menu-btn').hide();
+	}
+	
 	var menu_toggle = false;
 	$(document).on('click', '.menu-btn', function(e){
-	$('#main-nav').show();
-	e.preventDefault();
-return false;
-		// if(!menu_toggle){
-		// 	console.log(menu_toggle, "false");
-		// 	$('#main-nav').css('display', 'inline');
+	
+		if(!menu_toggle){
 
-		// 		menu_toggle = true;
+			$('#main-nav').fadeIn();
 
-		// 			$('.menu-btn').css('opacity', '.3');
-		// }else{
-		// 	console.log(menu_toggle, "true");
-		// 	$('#main-nav').css('display', 'none');
+				menu_toggle = true;
 
-		// 		menu_toggle = false;
+					$('.menu-btn').css('opacity', '.3');
+		}else{
 
-		// 			$('.menu-btn').css('opacity', '1');
-		// }
+			$('#main-nav').fadeOut();
+
+				menu_toggle = false;
+
+					$('.menu-btn').css('opacity', '1');
+		}
 	});
 
 

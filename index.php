@@ -30,7 +30,7 @@
 	<link rel="stylesheet" href="css/main.css" />
 
 	<!-- Google maps -->
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script id="maps_script" type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>

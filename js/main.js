@@ -3,12 +3,15 @@ $(function(){
 //globals
 var logo_cloud_frame = false;
 
+
 // Google maps
 	function initialize() {
 		// Source: http://stiern.com/tutorials/adding-custom-google-maps-to-your-website/
-		//
-		var latlng = new google.maps.LatLng(26.7153, -80.0534);
 		
+
+		var latlng = new google.maps.LatLng(26.7153, -80.0534);
+
+
 		var settings = {
 			zoom: 8,
 			scrollwheel: false,
@@ -443,6 +446,16 @@ var logo_cloud_frame = false;
 			});
 
 	}//animate_cloud_out()
+
+
+
+
+
+
+
+
+
+
 
 
 

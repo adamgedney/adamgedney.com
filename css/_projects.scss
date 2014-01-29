@@ -1,4 +1,4 @@
-body.projects{
+body.projects-temp{
 	background: $white;
 
 }
@@ -19,9 +19,11 @@ body.projects{
 	header h1{
 		color: $red;
 		font-size: 1.6em;
-		display: block;
+		display: inline-block;
 		line-height: 54px;
 		text-align: center;
+		@include col(7);
+		@include col_margin_auto(7);
 	}
 
 	h3{
@@ -39,12 +41,15 @@ body.projects{
 	margin: 0 auto;
 	// padding: 0 36px;
 	font-weight: 100;
+	overflow: hidden;
 }
 
 nav{
 	overflow: hidden;
 	display: inline;
-
+	position: relative;
+	z-index: 99999;
+	
 	ul{
 		float: right;
 		margin-bottom: 0;
@@ -70,6 +75,16 @@ nav{
 	}
 } 
 
+.menu-btn{
+	position: absolute;
+	right: 18px;
+	top: 14px;
+	z-index: 9999;
+}
+
+.menu-btn:hover{
+	opacity: .5;
+}
 
 .featured{
 	@include col(12);
@@ -256,6 +271,8 @@ and (min-width : 767px) {
 		header h1{
 			color: $icon-gray;
 			display: inline;
+			@include col(7);
+			@include col_margin_auto(0);
 		}
 
 		h3{
@@ -292,7 +309,7 @@ and (min-width : 767px) {
 			bottom: 34%;
 			right: 22%;
 			z-index: 200;
-			font-size: 18em;/*fallback for vw font size*/
+			font-size: 7.5em;/*fallback for vw font size*/
 			font-size: 8.5vw; /*when combined with above %based positions, the text floats center and resizes with div*/
 			font-family: 'Tangerine', cursive;
 			color: $red;
@@ -345,7 +362,7 @@ and (min-width : 767px) {
 		}
 	}
 
-	body.projects .contact-icons{
+	body.projects-temp .contact-icons{
 		border-bottom: 1px solid $icon-gray;
 	}
 }

@@ -1,0 +1,302 @@
+body.projects{
+	background: $white;
+}
+
+.projects{
+	header{
+		position: fixed;
+		z-index: 500;
+		// width: 100%;
+		@include col(12);
+		height: 54px;
+		background: #252525;
+		opacity: .8;
+		font-family: 'Ubuntu', "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+	}
+
+	header h1{
+		color: $icon-gray;
+		font-size: 1.6em;
+		display: inline;
+		line-height: 54px;
+	}
+
+	h3{
+		font-weight: 100;
+		margin-bottom: 9px;
+		color: $red;
+	}
+}
+
+.header-inner{
+	// max-width: 1140px;
+	@include col(11);
+	margin: 0 auto;
+	padding: 0 36px;
+	font-weight: 100;
+}
+
+nav{
+	overflow: hidden;
+	display: inline;
+
+	ul{
+		float: right;
+		margin-bottom: 0;
+
+		a{
+			color: $icon-gray;
+		}
+
+		li{
+			display: inline-block;
+			font-size: .8em;
+			padding-left: 18px;
+			line-height: 54px;
+		}
+	}
+} 
+
+.featured{
+	height: 654px;
+	// width: 100%;
+	@include col(12);
+	overflow: hidden;
+	position: relative;
+
+	h2{
+		position: absolute;
+		top: 34%;
+		left: 22%;
+		bottom: 34%;
+		right: 22%;
+		z-index: 200;
+		font-size: 18em;/*fallback for vw font size*/
+		font-size: 8.5vw; /*when combined with above %based positions, the text floats center and resizes with div*/
+		font-family: 'Tangerine', cursive;
+		color: $red;
+		text-align: center;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	}
+
+	img{
+		// width: 100%;
+		@include col(12);
+	}
+}
+
+.project-inner{
+	// max-width: 1140px;
+	@include col(11);
+	margin: 0 auto;
+}
+
+.description{
+	text-align: center;
+	padding: 87px 0 88px; /*keeps height fluid -no height defined on div*/
+	border-bottom: 1px solid $icon-gray;
+
+	h3{
+		font-size: 5.8em;
+		font-family: 'Tangerine', cursive;
+	}
+}
+
+.description h4, .details-sidebar h4{
+	font-size: 2.1em;
+	font-weight: 100;
+	// width: 100%;
+	@include col(12);
+}
+
+.details{
+	overflow: hidden;
+	padding: 88px 0 0;
+	border-bottom: 1px solid $icon-gray;
+	margin-bottom: 108px;
+	position: relative;
+}
+
+.details-desc{
+	// max-width: 570px;
+	@include col(6);
+	padding-right: 3.157895%;/*18px*/
+	float: left;
+
+	p{
+		margin-bottom: 162px;
+	}
+}
+
+.details-sidebar{
+	// max-width: 570px;
+	@include col(6);
+	float: left;
+	padding-top: 10px;
+
+	h4{
+		margin-bottom: 9px;
+		color: $red;
+		padding-bottom: 9px;
+		border-bottom: 1px solid $icon-gray;
+	}
+
+	p{
+		margin-bottom: 39px;
+	}
+
+	ul{
+		list-style-type: disc;
+		padding-left: 16px;
+	}
+}
+
+.github-link{
+	display: block;
+	font-size: 1.4em;
+	margin-bottom: 9px;
+	position: absolute;
+	bottom: 0;
+}
+
+.shots{
+	overflow: hidden;
+	margin-bottom: 88px;
+
+		img{
+			display: block;
+			margin-bottom: 36px;
+		}
+}
+
+
+
+.shot-left-col{
+	float: left;
+	margin-right: 36px;
+}
+
+.shot-right-col{
+	float: left;
+}
+
+.lb-caption{/*overrides lightbox caption font settings*/
+	font-family: 'Ubuntu', "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	color: $icon-gray;
+}
+
+.project-contact{
+	h3{
+		text-align: center;
+		border-bottom: 1px solid $icon-gray;
+	}
+
+	.contact-icons{
+		margin: 0 auto 88px;
+		// width: 1140px;
+		@include col(11);
+		text-align: center;
+		border-bottom: 1px solid $icon-gray;
+
+		a{
+			display: inline-block;
+			padding: 36px;
+		}
+	}
+}
+
+
+
+
+
+
+/*Media Queries====================*/
+
+/* Smartphones =====================*/
+@media only screen 
+and (min-width : 200px){
+
+}
+
+
+
+
+
+
+
+
+
+/* min width 480 ======================*/
+@media only screen 
+and (min-width : 480px) {
+
+}
+
+
+
+
+
+
+
+
+
+/* min width 767 ======================*/
+@media only screen 
+and (min-width : 767px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+/* min width 980 ======================*/
+@media only screen 
+and (min-width : 980px) {
+
+}
+
+
+
+
+
+
+
+
+
+/* min width 1220 ======================*/
+@media only screen 
+and (min-width : 1220px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

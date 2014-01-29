@@ -58,7 +58,10 @@
 
 
 @mixin col_margin_auto($num_col){
-
+	@if $num_col == 0 {
+		margin-left: 0;
+		margin-right: 0;
+		}
 	@if $num_col == 1 {
 		margin-left: 45.8333334%;
 		margin-right: 45.8333334%;
@@ -104,7 +107,8 @@
 		margin-right: 4.1666667%;
 		}
 	@if $num_col == 12 {
-		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
 	}
 }
 

@@ -47,6 +47,7 @@ body.projects-temp{
 nav{
 	overflow: hidden;
 	// display: inline; //do not use. Breaks JQuery show/hide
+	display: inline-block;
 	position: relative;
 	z-index: 99999;
 
@@ -73,7 +74,7 @@ nav{
 			opacity: .8;
 		}
 	}
-} 
+}
 
 .menu-btn{
 	position: absolute;
@@ -231,7 +232,7 @@ nav{
 /*Media Queries====================*/
 
 /* Smartphones =====================*/
-// @media only screen 
+// @media only screen
 // and (min-width : 200px){
 
 // }
@@ -245,7 +246,7 @@ nav{
 
 
 /* min width 480 ======================*/
-@media only screen 
+@media only screen
 and (min-width : 480px) {
 
 }
@@ -259,7 +260,7 @@ and (min-width : 480px) {
 
 
 /* min width 767 ======================*/
-@media only screen 
+@media only screen
 and (min-width : 767px) {
 
 	.projects{
@@ -294,7 +295,7 @@ and (min-width : 767px) {
 				border: none;
 			}
 		}
-	} 
+	}
 
 	/*check the above for duplicate rules*/
 	.featured{
@@ -377,7 +378,7 @@ and (min-width : 767px) {
 
 
 /* min width 980 ======================*/
-@media only screen 
+@media only screen
 and (min-width : 980px) {
 
 	.shots{
@@ -403,7 +404,7 @@ and (min-width : 980px) {
 
 
 /* min width 1500 ======================*/
-@media only screen 
+@media only screen
 and (min-width : 1500px) {
 
 	.projects{
@@ -412,7 +413,7 @@ and (min-width : 1500px) {
 				@include col(3);
 			}
 		}
-	} 
+	}
 
 	.shots{
 		@include col(12);

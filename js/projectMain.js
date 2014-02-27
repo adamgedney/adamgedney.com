@@ -74,8 +74,6 @@ $(function(){
 
 
 
-
-
 	//Menu button for mobile====================//
 
 	if($(window).width() < 767 ){

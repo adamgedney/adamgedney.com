@@ -144,3 +144,42 @@
 		transition-duration: $time;
 -webkit-transition-duration: $time;
 }
+
+
+
+
+
+
+
+
+
+
+
+/*Breakpoints -------------------*/
+@mixin break-sm {
+  @media only screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin break-md{
+  @media only screen and (min-width: 770px) {
+    @content;
+  }
+}
+
+@mixin break-lg {
+  @media only screen and (max-width: 1140px) {
+    @content;
+  }
+}
+
+
+
+
+
+
+
+
+
+

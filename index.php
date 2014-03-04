@@ -63,18 +63,18 @@
 					<div class="page-inner">
 						<h1 class="red">I like...</h1>
 
-						<p>designing websites, logos & print collateral, <span class="red">being silly,</span> writing music & books. I build things, google things, think, read, & sometimes I update my <a class="underline light-gray" target="_blank" href="http://usabilityintelligence.com" >blog</a> too.</p>
+						<p>designing websites, logos & print collateral, <span class="red">being silly,</span> writing music & books. I build things, google things, think, read, & sometimes I update my <a class="underline light-gray" target="_blank" href="http://frontenderwear.com" >blog</a> too.</p>
 
 						<div class="img-container">
 							<a data-proj="I build websites & stuff" class="zig-zag animated" target="_blank" href="#"><span></span><img src="images/angelfire-thumb.jpg" title="My rendition of angelfire.com. Check it in my work section below." alt="likes image 1"/></a>
-							
+
 							<a data-proj="I like designing stuff" class="zig-zag-1 animated" target="_blank" href="#"><span></span><img src="images/pangea-thumb.jpg" title="Graphic design, & just design in general, are a passion of mine." alt="likes image 2"/></a>
-							
-							<a data-proj="This is Julie, my wife & stuff" class="zig-zag-2 animated" target="_blank" href="#"><span></span><img src="images/silly-thumb.jpg" title="I finally found the woman of my dreams. I couldn't be luckier. <3" alt="likes image 3"/></a>
-							
-							<a data-proj="Check out the music I've released & stuff" class="zig-zag-3 animated" target="_blank" href="https://itunes.apple.com/us/artist/adam-shields/id637020445"><span></span><img src="images/itunes-thumb.jpg" title="I've been writing electronic music for 20 years now. Ugh. I'm getting old!" alt="likes image 4"/></a>
-							
-							<a data-proj="This is my blog & stuff" class="zig-zag-4 animated" target="_blank" href="http://usabilityintelligence.com"><span></span><img src="images/ui-thumb.jpg" title="That's my blog, but you can find my book here: http://lifestyling.adamgedney.com" alt="likes image 5"/></a>
+
+							<a data-proj="This is Julie, my wife" class="zig-zag-2 animated" target="_blank" href="#"><span></span><img src="images/silly-thumb.jpg" title="I finally found the woman of my dreams. I couldn't be luckier. <3" alt="likes image 3"/></a>
+
+							<a data-proj="Check out the music I've released" class="zig-zag-3 animated" target="_blank" href="https://itunes.apple.com/us/artist/adam-shields/id637020445"><span></span><img src="images/itunes-thumb.jpg" title="I've been writing electronic music for 20 years now. Ugh. I'm getting old!" alt="likes image 4"/></a>
+
+							<a data-proj="This is my blog" class="zig-zag-4 animated" target="_blank" href="http://frontenderwear.com"><span></span><img src="images/ui-thumb.jpg" title="That's my blog, but you can find my book here: http://lifestyling.adamgedney.com" alt="likes image 5"/></a>
 						</div><!-- /.like-img-container-->
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->
@@ -111,7 +111,7 @@
 							<img class="terminal_l animated" src="images/logos/terminal.png" title="Terminal is for nerds. Unix Shell all the way!" alt="web logos"/>
 							<img class="wp_l animated" src="images/logos/wp.png" title="Wordpress. We love your bloat. ;)" alt="web logos"/>
 						</div><!-- /.logo_cloud-->
-						
+
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->
 
@@ -126,51 +126,51 @@
 						<h3>Front-end Projects</h3>
 						<div class="img-container">
 								<a data-proj="SGWebMarketing.com" href="work/sgwebmarketing.html" ><span></span><img src="images/sgweb-thumb.jpg" alt="love image 1"/></a>
-						
+
 								<a data-proj="Gimmesauce.com" href="work/gimmesauce.html" ><span></span><img src="images/gimme-thumb.jpg" alt="love image 4"/></a>
 
 								<a data-proj="Maceoplexmix.com" href="work/maceoplexmix.html" ><span></span><img src="images/maceo-thumb.jpg" alt="love image 2"/></a>
 
 								<a data-proj="Angelfire.com redesign" href="work/angelfire-redesign.html" ><span></span><img src="images/angelfireMobile-thumb.jpg" alt="love image 3"/></a>
-								
+
 								<a data-proj="Jericho Canyon Vineyard" href="work/jericho-vineyard.html" ><span></span><img src="images/jericho-thumb.jpg" alt="love image 5"/></a>
-							
+
 						</div><!-- /.love-img-container-->
 
 						<h3>Development Projects</h3>
 						<div class="img-container">
 							<a data-proj="Bloggity.org" href="work/bloggity-cms.html" ><span></span><img src="images/bloggityMac-thumb.jpg" alt="love image 1"/></a>
-							
+
 							<a data-proj="Picasa JQuery Plugin" href="work/simple-picasa.html" ><span></span><img src="images/picasa-thumb.jpg" alt="love image 2"/></a>
-							
+
 							<a data-proj="Mantissa Soft Synth" href="work/mantissa-synth.html" ><span></span><img src="images/mantissaSynth-thumb.jpg" alt="love image 3"/></a>
-							
+
 							<a data-proj="Madserv.us Auth API" href="work/madserv.html" ><span></span><img src="images/madserv-thumb.jpg" alt="love image 5"/></a>
 
 							<a data-proj="Suprvideo.com Converter" href="work/suprvideo.html" ><span></span><img src="images/suprvideo-thumb.jpg" alt="love image 4"/></a>
-						
+
 						</div><!-- /.love-img-container-->
 
 						<h3>Print / Graphic Design Projects</h3>
 						<div class="img-container print_thumbs last">
 							<!-- <img src="images/aubert-thumb.jpg" alt="love image 1"/>
-							
+
 							<img src="images/orbits-thumb.jpg" alt="love image 2"/>
-							
+
 							<img src="images/stzosima-thumb.jpg" alt="love image 3"/>
-							
+
 							<img src="images/meditrinaBiz-thumb.jpg" alt="love image 4"/>
-							
+
 							<img src="images/uiLogo-thumb.jpg" alt="love image 5"/> -->
 
 							<a data-proj="Marketing Collateral" href="work/aubert-form.html" ><span></span><img src="images/aubert-thumb.jpg" alt="love image 1"/></a>
-							
+
 							<a data-proj="Advertising" href="work/orbitz-class-ad.html" ><span></span><img src="images/orbits-thumb.jpg" alt="love image 2"/></a>
-							
+
 							<a data-proj="Postcard Marketing" href="work/zosima-cards.html" ><span></span><img src="images/stzosima-thumb.jpg" alt="love image 3"/></a>
-							
+
 							<a data-proj="Business Cards" href="work/meditrina-business-cards.html" ><span></span><img src="images/meditrinaBiz-thumb.jpg" alt="love image 4"/></a>
-							
+
 							<a data-proj="Logos" href="work/ui-logo.html" ><span></span><img src="images/uiLogo-thumb.jpg" alt="love image 5"/></a>
 						</div><!-- /.love-img-container-->
 
@@ -186,17 +186,17 @@
 						<p>if you’re interested in hiring me, working with me, or having me manage your next project. I'm not against contract work either.</p>
 
 					</div><!-- /.page-inner-->
-					
+
 						<!-- Google Map -->
 						<div id="map-canvas" >
 						</div><!-- /#map-canvas _ -->
-						
+
 					<div class="page-inner">
 						<div class="contact-body" id="contact">
-							
+
 
 							<div class="contact-content">
-							
+
 							<p><span class="red">I’m interested in working in the West Palm Beach to Miami area.</span>  But, if the opportunity is right, feel free to fly me around the world. <span class="dark-gray">Contact me</span> via this form, by phone, or email, even if it's just to say hi. <!-- <span class="red">&#9786;</span> --></p>
 
 							<p class="info"><span class="red">Adam Shields Gedney</span>
@@ -205,22 +205,22 @@
 
 							<div class="contact-icons">
 								<a class="no-tran" target="_blank" href="http://github.com/adamgedney"><img class="github-icon" src="images/github-icon.png" alt="github icon" /></a>
-								
+
 								<a class="no-tran" target="_blank" href="http://forrst.com"><img class="forrst-icon" src="images/forrst-icon.png" alt="forrst icon" /></a>
-								
+
 								<a class="no-tran" target="_blank" href="http://dribbble.com/adamgedney"><img class="dribbble-icon" src="images/dribbble-icon.png" alt="dribbble icon" /></a>
-								
+
 								<a class="no-tran" target="_blank" href="http://facebook.com/shieldsadam"><img class="fb-icon" src="images/fb-icon.png" alt="facebook icon" /></a>
 
 								<a class="no-tran" target="_blank" href="http://linkedin.adamgedney.com"><img class="linkedin-icon" src="images/linkedin-icon.png" alt="linkedin icon" /></a>
 							</div><!-- /.contact-icons-->
-						
+
 							</div><!-- /.contact-content-->
 
 							<div class="contact-form">
-								<form action="?controller=form" method="post"> 
+								<form action="?controller=form" method="post">
 									<input type="text" name="name" placeholder="FULL NAME"/>
-									
+
 									<input id="email" type="email" name="email" placeholder="EMAIL ADDRESS" />
 									<p class="error email-error"></p>
 
@@ -231,12 +231,12 @@
 
 									<input id="contact-submit-button" type="submit" value="CONTACT ME"/>
 								</form>
-						
+
 							</div><!-- /.contact-form-->
 						</div><!-- /.contact-body-->
 					</div><!-- /.page-inner-->
-				</div><!-- /.page-->	
-			</div><!-- /.container-->	
+				</div><!-- /.page-->
+			</div><!-- /.container-->
 
 		<footer>
 		<p><span class="red">&copy;2014</span> adamgedney.com</p>
@@ -247,6 +247,6 @@
 		<script src="js/jquery.event.special.js"></script>
   		<script src="js/jquery.easing.min.js"></script>
   		<script src="js/jquery.scrollsnap.js"></script>
-		<script src="js/main.js"></script> 
+		<script src="js/main.js"></script>
 	</body>
 </html>

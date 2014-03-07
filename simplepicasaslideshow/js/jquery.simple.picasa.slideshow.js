@@ -1,7 +1,7 @@
 (function($){
 
 
-//This is a simple JQuery plugin that utilizes lightbox.js. 
+//This is a simple JQuery plugin that utilizes lightbox.js.
 //The Simple Picasa Slideshow allows you to add dynamic content to web projects.
 //It's perfect for giving your clients a Google based solution to updating
 //a static website's photo slideshow.
@@ -41,7 +41,7 @@ $.ajax({
 
 		//loops through album pics, storing in an array
 		for(var i=0; i < result_array.length; i++){
-			
+
 			var pic = result_array[i].content.src;
 			pic_array.push(pic);
 
@@ -53,7 +53,7 @@ $.ajax({
 		var count = 0;
 		var img = pic_array;
 		var html = '<a href="' + img[count] + '" data-lightbox="' + img[count] + '"><img class="picasa-pic" src="' + img[count] + '" alt="picasa image"/></a>'
-		
+
 		//load initial image
 		$('.picasagallery').append(html);
 
@@ -127,7 +127,7 @@ $.ajax({
 
 			looper();// reruns settimeout
 		};
-		
+
 	}// success
 });//ajax
 
@@ -135,9 +135,9 @@ $.ajax({
 
 
 $.fn.picasa_slideshow.defaults = {
-	username: 'lizadivacatana',
-	album: 'WebsiteAlbum',
-	speed: '4000'
+	username: 'calaquendidolls',
+	album: 'PicasaKittensDayitaAugustus',
+	speed: '5000'
 };
 
 
